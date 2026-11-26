@@ -1,6 +1,5 @@
 //! Export one catalog widget as a standalone `.figcraft` document.
 
-use crate::atlas::resolve_hug_subtree;
 use crate::catalog::Catalog;
 use crate::convert::convert_node;
 use crate::validate::validate_widget;
@@ -9,6 +8,7 @@ use anyhow::{Context, Result, bail};
 use figcraft_doc::Document;
 use std::path::Path;
 
+/// Build a document that mirrors the fragment JSON (no hug/layout rewrite).
 pub fn build_widget_document(root: &Path, catalog: &Catalog, class: &str) -> Result<Document> {
     let entry = catalog
         .widgets
@@ -25,10 +25,8 @@ pub fn build_widget_document(root: &Path, catalog: &Catalog, class: &str) -> Res
         .first_page()
         .ok_or_else(|| anyhow::anyhow!("Document::new must create a page"))?;
 
-    let mut root_frag = widget.figcraft.root.clone();
-    root_frag.name = widget.class.clone();
-    let id = convert_node(&mut doc, page, &root_frag, &widget.class)?;
-    resolve_hug_subtree(&mut doc, id);
+    // Keep the fragment root name from JSON so export matches the source tree.
+    convert_node(&mut doc, page, &widget.figcraft.root, &widget.class)?;
     Ok(doc)
 }
 

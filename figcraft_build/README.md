@@ -19,6 +19,7 @@ Pin FigCraft: commit `4acc293c2ec941ac1400837ee7e3ab51780399f8` (приложе�
 cargo run -p figcraft_build -- validate
 cargo run -p figcraft_build -- atlas
 cargo run -p figcraft_build -- widget Navbar
+cargo run -p figcraft_build -- verify-all
 ```
 
 Артефакты пишутся в `dist/` (в `.gitignore`). Один виджет → `dist/<snake_case>.figcraft` (например `dist/navbar.figcraft`).

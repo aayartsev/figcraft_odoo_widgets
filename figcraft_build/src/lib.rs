@@ -2,6 +2,7 @@
 
 pub mod atlas;
 pub mod catalog;
+pub mod compare;
 pub mod convert;
 pub mod export_widget;
 pub mod props;
