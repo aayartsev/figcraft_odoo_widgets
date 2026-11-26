@@ -102,7 +102,7 @@ pub fn build_atlas(root: &Path, catalog: &Catalog, opts: &AtlasOptions) -> Resul
 
 fn atlas_root_props() -> Map<String, Value> {
     json!({
-        "fill": "#F9F9F9",
+        "fill": "#F8F9FA",
         "layout": "vertical",
         "gap": 80,
         "padding": 40,

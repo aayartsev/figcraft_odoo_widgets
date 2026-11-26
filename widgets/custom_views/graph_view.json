@@ -66,7 +66,7 @@
               "width": 48,
               "height": 120,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             },
@@ -76,7 +76,7 @@
               "width": 48,
               "height": 180,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             },
@@ -86,7 +86,7 @@
               "width": 48,
               "height": 220,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             },
@@ -96,7 +96,7 @@
               "width": 48,
               "height": 160,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             },
@@ -106,7 +106,7 @@
               "width": 48,
               "height": 260,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             },
@@ -116,7 +116,7 @@
               "width": 48,
               "height": 200,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "cornerRadius": 2
               }
             }

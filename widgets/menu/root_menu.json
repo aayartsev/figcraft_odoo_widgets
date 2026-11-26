@@ -3,7 +3,7 @@
   "class": "RootMenu",
   "odooVersion": "20",
   "category": "menu",
-  "description": "Левое корневое меню приложения со списком пунктов",
+  "description": "Содержимое боковой панели AppsMenu: список приложений",
   "size": {
     "width": 260,
     "height": 722
@@ -24,6 +24,7 @@
   ],
   "tags": [
     "menu",
+    "apps-sidebar",
     "navigation"
   ],
   "figcraft": {

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "class": "NavbarSections",
+  "odooVersion": "20",
+  "category": "navbar_widgets",
+  "description": "Разделы текущего приложения в верхней панели",
+  "size": {
+    "width": 360,
+    "height": 40
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "navbar",
+    "sections"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "NavbarSections",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 40,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 4,
+        "crossAlign": "center",
+        "sizingH": "hug",
+        "sizingV": "fixed"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "SectionActive",
+          "width": 72,
+          "height": 32,
+          "props": {
+            "fill": "#5C5282",
+            "cornerRadius": 4,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center",
+            "padding": [
+              0,
+              12,
+              0,
+              12
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "ActiveLabel",
+              "text": "Inbox",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Medium",
+                "fontSize": 13,
+                "fill": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "SectionIdle",
+          "width": 88,
+          "height": 32,
+          "props": {
+            "fill": "#00000000",
+            "cornerRadius": 4,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center",
+            "padding": [
+              0,
+              12,
+              0,
+              12
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "IdleLabel",
+              "text": "Starred",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Regular",
+                "fontSize": 13,
+                "fill": "#FFFFFFCC"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "SectionIdle2",
+          "width": 96,
+          "height": 32,
+          "props": {
+            "fill": "#00000000",
+            "cornerRadius": 4,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center",
+            "padding": [
+              0,
+              12,
+              0,
+              12
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "IdleLabel2",
+              "text": "Channels",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Regular",
+                "fontSize": 13,
+                "fill": "#FFFFFFCC"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # figcraft_odoo_widgets
 
-Библиотека UI-виджетов **Odoo 20 Web Client** для макетов в FigCraft.
+Библиотека UI-виджетов **Odoo 20 Community** для макетов в FigCraft.
 
 Каждый виджет — один JSON: метаданные для сборки страниц и визуальный фрагмент FigCraft. Из них удобно собирать демо-экраны и обсуждать интерфейс с клиентами.
 
@@ -9,8 +9,8 @@
 ```
 widgets/
   shell/             # каркас: WebClientShell, Navbar
-  navbar_widgets/    # apps-меню, systray, пользователь, сообщения
-  menu/              # RootMenu, MenuItem
+  navbar_widgets/    # apps-меню, разделы, systray, пользователь, сообщения, компания
+  menu/              # содержимое боковой панели AppsMenu (RootMenu, MenuItem)
   views/             # control panel, list / form / kanban
   fields/            # стандартные поля форм
   custom_views/      # calendar, graph, pivot, activity (+ _template.json)
@@ -48,9 +48,9 @@ cargo run -p figcraft_build -- atlas
 
 | Категория | Зачем |
 |-----------|--------|
-| `shell` | Каркас приложения |
-| `navbar_widgets` | Элементы systray и apps-меню |
-| `menu` | Боковая навигация |
+| `shell` | Каркас приложения (navbar + область действия) |
+| `navbar_widgets` | Элементы верхней панели и systray |
+| `menu` | Содержимое боковой панели AppsMenu (не постоянное левое меню) |
 | `views` | Стандартные list / form / kanban и control panel |
 | `fields` | Поля форм |
 | `custom_views` | Другие режимы вида: calendar, graph, pivot, activity |
@@ -59,11 +59,11 @@ cargo run -p figcraft_build -- atlas
 
 ## Визуальный ориентир
 
-Типичный chrome Odoo Web Client: бренд `#714B67`, фон `#F9F9F9`, акцент Discuss `#008784`. Это узнаваемый стиль, а не пиксель-перфект с живой базы.
+Odoo 20 **Community**: бренд `#71639E`, фон `#F8F9FA`, основные кнопки того же бренда, акцент Discuss `#017E84`, badge navbar `#28A745`. В макетах FigCraft шрифт **Inter**. Это узнаваемый стиль, а не пиксель-перфект с живой базы.
 
 ## Демо
 
-[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — справочный compose: shell + navbar + root menu + control panel + пустая область view. Пока **не** собирается `figcraft_build` (билдер v1 делает только атлас виджетов).
+[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — справочный compose: shell + navbar (apps / разделы / systray) + control panel + пустая область view. Без постоянного левого меню. Пока **не** собирается `figcraft_build` (билдер v1 делает только атлас виджетов).
 
 ## С чего начать
 

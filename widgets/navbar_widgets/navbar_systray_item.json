@@ -3,7 +3,7 @@
   "class": "NavbarSystrayItem",
   "odooVersion": "20",
   "category": "navbar_widgets",
-  "description": "Обычная иконка systray с опциональным бейджем",
+  "description": "Шаблон произвольного пункта systray с опциональным бейджем",
   "size": {
     "width": 36,
     "height": 40
@@ -50,7 +50,7 @@
           "width": 8,
           "height": 8,
           "props": {
-            "fill": "#EB7F6D"
+            "fill": "#28A745"
           }
         }
       ]

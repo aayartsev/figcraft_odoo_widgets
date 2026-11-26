@@ -1,234 +1,134 @@
 {
-  "kind": "design",
+  "schemaVersion": 1,
+  "kind": "demo",
   "name": "demo_shell_empty_action",
+  "description": "Демо: WebClientShell + Navbar (apps / sections / systray) + ControlPanel + пустая область view, без левого меню",
   "odooVersion": "20",
-  "description": "Демо: WebClientShell + Navbar (apps / messaging / user) + RootMenu с пунктами + ControlPanel + пустая область view",
-  "composedFrom": [
-    "widgets/shell/web_client_shell.json",
-    "widgets/shell/navbar.json",
-    "widgets/navbar_widgets/navbar_apps_menu.json",
-    "widgets/navbar_widgets/navbar_messaging_menu.json",
-    "widgets/navbar_widgets/navbar_user_menu.json",
-    "widgets/menu/root_menu.json",
-    "widgets/menu/menu_item.json",
-    "widgets/views/control_panel.json"
-  ],
-  "pages": [
-    {
-      "name": "Demo",
-      "type": "PAGE",
-      "background": "#E9ECEF",
+  "figcraft": {
+    "kind": "document",
+    "root": {
+      "type": "frame",
+      "name": "DemoShellEmptyAction",
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 768,
+      "props": {
+        "fill": "#F8F9FA",
+        "layout": "vertical",
+        "gap": 0,
+        "padding": 0
+      },
       "children": [
         {
           "type": "frame",
-          "name": "DemoShellList",
-          "x": 0,
-          "y": 0,
+          "name": "Navbar",
           "width": 1366,
-          "height": 768,
+          "height": 46,
           "props": {
-            "fill": "#F9F9F9",
-            "layout": "vertical",
-            "gap": 0,
-            "padding": 0,
-            "sizingH": "fixed",
-            "sizingV": "fixed"
+            "fill": "#71639E",
+            "layout": "horizontal",
+            "gap": 12,
+            "padding": [0, 12, 0, 8],
+            "mainAlign": "spaceBetween",
+            "crossAlign": "center"
           },
           "children": [
             {
               "type": "frame",
-              "name": "slot:navbar",
-              "width": 1366,
+              "name": "Left",
+              "width": 900,
               "height": 46,
               "props": {
-                "fill": "#714B67",
+                "fill": "#00000000",
                 "layout": "horizontal",
+                "gap": 12,
+                "crossAlign": "center",
                 "sizingH": "fill",
-                "sizingV": "fixed"
+                "sizingV": "fill"
               },
               "children": [
                 {
                   "type": "frame",
-                  "name": "Navbar",
-                  "x": 0,
-                  "y": 0,
-                  "width": 1366,
-                  "height": 46,
+                  "name": "NavbarAppsMenu",
+                  "width": 40,
+                  "height": 40,
                   "props": {
-                    "fill": "#714B67",
+                    "fill": "#00000000",
                     "layout": "horizontal",
-                    "gap": 12,
-                    "padding": [
-                      0,
-                      12,
-                      0,
-                      8
-                    ],
-                    "mainAlign": "spaceBetween",
+                    "mainAlign": "center",
                     "crossAlign": "center"
                   },
                   "children": [
                     {
                       "type": "frame",
-                      "name": "Left",
-                      "width": 400,
-                      "height": 46,
+                      "name": "AppsGrid",
+                      "width": 18,
+                      "height": 18,
                       "props": {
                         "fill": "#00000000",
                         "layout": "horizontal",
-                        "gap": 8,
-                        "crossAlign": "center",
-                        "sizingH": "hug",
-                        "sizingV": "fill"
+                        "gap": 3,
+                        "wrap": true
+                      },
+                      "children": [
+                        { "type": "rectangle", "name": "d1", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d2", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d3", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d4", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d5", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d6", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d7", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d8", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } },
+                        { "type": "rectangle", "name": "d9", "width": 4, "height": 4, "props": { "fill": "#FFFFFF", "cornerRadius": 1 } }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "CurrentApp",
+                  "text": "Discuss",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Semi Bold",
+                    "fontSize": 16,
+                    "fill": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "name": "NavbarSections",
+                  "width": 280,
+                  "height": 40,
+                  "props": {
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "gap": 4,
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "name": "SectionActive",
+                      "width": 72,
+                      "height": 32,
+                      "props": {
+                        "fill": "#5C5282",
+                        "cornerRadius": 4,
+                        "layout": "horizontal",
+                        "mainAlign": "center",
+                        "crossAlign": "center"
                       },
                       "children": [
                         {
-                          "type": "frame",
-                          "name": "slot:apps",
-                          "width": 40,
-                          "height": 40,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "mainAlign": "center",
-                            "crossAlign": "center",
-                            "sizingH": "hug",
-                            "sizingV": "hug"
-                          },
-                          "children": [
-                            {
-                              "type": "frame",
-                              "name": "NavbarAppsMenu",
-                              "x": 0,
-                              "y": 0,
-                              "width": 40,
-                              "height": 40,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "mainAlign": "center",
-                                "crossAlign": "center",
-                                "cornerRadius": 6
-                              },
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "name": "AppsGrid",
-                                  "width": 18,
-                                  "height": 18,
-                                  "props": {
-                                    "fill": "#00000000",
-                                    "layout": "horizontal",
-                                    "gap": 3,
-                                    "wrap": true,
-                                    "sizingH": "fixed",
-                                    "sizingV": "fixed"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d1",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d2",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d3",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d4",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d5",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d6",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d7",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d8",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    },
-                                    {
-                                      "type": "rectangle",
-                                      "name": "d9",
-                                      "width": 4,
-                                      "height": 4,
-                                      "props": {
-                                        "fill": "#FFFFFF",
-                                        "cornerRadius": 1
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
                           "type": "text",
-                          "name": "CurrentApp",
-                          "text": "Discuss",
+                          "name": "ActiveLabel",
+                          "text": "Inbox",
                           "props": {
                             "fontFamily": "Inter",
-                            "fontStyle": "Semi Bold",
-                            "fontSize": 16,
+                            "fontStyle": "Medium",
+                            "fontSize": 13,
                             "fill": "#FFFFFF"
                           }
                         }
@@ -236,95 +136,25 @@
                     },
                     {
                       "type": "frame",
-                      "name": "slot:systray",
-                      "width": 280,
-                      "height": 46,
+                      "name": "SectionIdle",
+                      "width": 88,
+                      "height": 32,
                       "props": {
                         "fill": "#00000000",
                         "layout": "horizontal",
-                        "gap": 4,
-                        "mainAlign": "max",
-                        "crossAlign": "center",
-                        "sizingH": "hug",
-                        "sizingV": "fill"
+                        "mainAlign": "center",
+                        "crossAlign": "center"
                       },
                       "children": [
                         {
-                          "type": "frame",
-                          "name": "NavbarMessagingMenu",
-                          "x": 0,
-                          "y": 0,
-                          "width": 40,
-                          "height": 40,
+                          "type": "text",
+                          "name": "IdleLabel",
+                          "text": "Starred",
                           "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "mainAlign": "center",
-                            "crossAlign": "center"
-                          },
-                          "children": [
-                            {
-                              "type": "frame",
-                              "name": "Bubble",
-                              "width": 20,
-                              "height": 16,
-                              "props": {
-                                "fill": "#FFFFFF",
-                                "cornerRadius": 4
-                              },
-                              "children": []
-                            },
-                            {
-                              "type": "ellipse",
-                              "name": "UnreadBadge",
-                              "x": 26,
-                              "y": 6,
-                              "width": 10,
-                              "height": 10,
-                              "props": {
-                                "fill": "#EB7F6D"
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "name": "NavbarUserMenu",
-                          "x": 0,
-                          "y": 0,
-                          "width": 44,
-                          "height": 40,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "mainAlign": "center",
-                            "crossAlign": "center",
-                            "gap": 6
-                          },
-                          "children": [
-                            {
-                              "type": "ellipse",
-                              "name": "Avatar",
-                              "width": 28,
-                              "height": 28,
-                              "props": {
-                                "fill": "#FFFFFF"
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "name": "Initials",
-                              "text": "AD",
-                              "x": 8,
-                              "y": 11,
-                              "props": {
-                                "fontFamily": "Inter",
-                                "fontStyle": "Semi Bold",
-                                "fontSize": 11,
-                                "fill": "#714B67"
-                              }
-                            }
-                          ]
+                            "fontFamily": "Inter",
+                            "fontSize": 13,
+                            "fill": "#FFFFFFCC"
+                          }
                         }
                       ]
                     }
@@ -334,563 +164,234 @@
             },
             {
               "type": "frame",
-              "name": "Body",
-              "width": 1366,
-              "height": 722,
+              "name": "Systray",
+              "width": 280,
+              "height": 46,
               "props": {
-                "fill": "#F9F9F9",
+                "fill": "#00000000",
                 "layout": "horizontal",
-                "gap": 0,
-                "sizingH": "fill",
-                "sizingV": "fill"
+                "gap": 8,
+                "mainAlign": "max",
+                "crossAlign": "center"
               },
               "children": [
                 {
                   "type": "frame",
-                  "name": "slot:menu",
-                  "width": 260,
-                  "height": 722,
+                  "name": "NavbarSwitchCompanyMenu",
+                  "width": 100,
+                  "height": 32,
                   "props": {
-                    "fill": "#FFFFFF",
-                    "layout": "vertical",
-                    "sizingH": "fixed",
-                    "sizingV": "fill"
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "gap": 6,
+                    "crossAlign": "center"
                   },
                   "children": [
                     {
-                      "type": "frame",
-                      "name": "RootMenu",
-                      "x": 0,
-                      "y": 0,
-                      "width": 260,
-                      "height": 722,
+                      "type": "ellipse",
+                      "name": "CompanyDot",
+                      "width": 10,
+                      "height": 10,
+                      "props": { "fill": "#FFFFFF" }
+                    },
+                    {
+                      "type": "text",
+                      "name": "CompanyName",
+                      "text": "My Company",
                       "props": {
-                        "fill": "#FFFFFF",
-                        "layout": "vertical",
-                        "gap": 0,
-                        "padding": [
-                          12,
-                          0,
-                          12,
-                          0
-                        ],
-                        "stroke": "#DEE2E6",
-                        "strokeWeight": 1,
-                        "strokeAlign": "outside"
-                      },
-                      "children": [
-                        {
-                          "type": "frame",
-                          "name": "AppHeader",
-                          "width": 260,
-                          "height": 40,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "padding": [
-                              0,
-                              16,
-                              0,
-                              16
-                            ],
-                            "crossAlign": "center",
-                            "sizingH": "fill",
-                            "sizingV": "fixed"
-                          },
-                          "children": [
-                            {
-                              "type": "text",
-                              "name": "AppName",
-                              "text": "Discuss",
-                              "props": {
-                                "fontFamily": "Inter",
-                                "fontStyle": "Semi Bold",
-                                "fontSize": 14,
-                                "fill": "#212529"
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "name": "slot:items",
-                          "width": 260,
-                          "height": 670,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "vertical",
-                            "gap": 2,
-                            "padding": [
-                              4,
-                              8,
-                              4,
-                              8
-                            ],
-                            "sizingH": "fill",
-                            "sizingV": "fill"
-                          },
-                          "children": [
-                            {
-                              "type": "frame",
-                              "name": "MenuItem_0",
-                              "x": 0,
-                              "y": 0,
-                              "width": 244,
-                              "height": 36,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "gap": 10,
-                                "padding": [
-                                  0,
-                                  12,
-                                  0,
-                                  12
-                                ],
-                                "crossAlign": "center",
-                                "cornerRadius": 6,
-                                "sizingH": "fill",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "ellipse",
-                                  "name": "Icon",
-                                  "width": 14,
-                                  "height": 14,
-                                  "props": {
-                                    "fill": "#6C757D"
-                                  }
-                                },
-                                {
-                                  "type": "text",
-                                  "name": "Label",
-                                  "text": "Inbox",
-                                  "props": {
-                                    "fontFamily": "Inter",
-                                    "fontStyle": "Regular",
-                                    "fontSize": 13,
-                                    "fill": "#212529"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "name": "MenuItem_1",
-                              "x": 0,
-                              "y": 0,
-                              "width": 244,
-                              "height": 36,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "gap": 10,
-                                "padding": [
-                                  0,
-                                  12,
-                                  0,
-                                  12
-                                ],
-                                "crossAlign": "center",
-                                "cornerRadius": 6,
-                                "sizingH": "fill",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "ellipse",
-                                  "name": "Icon",
-                                  "width": 14,
-                                  "height": 14,
-                                  "props": {
-                                    "fill": "#6C757D"
-                                  }
-                                },
-                                {
-                                  "type": "text",
-                                  "name": "Label",
-                                  "text": "Starred",
-                                  "props": {
-                                    "fontFamily": "Inter",
-                                    "fontStyle": "Regular",
-                                    "fontSize": 13,
-                                    "fill": "#212529"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "name": "MenuItem_2",
-                              "x": 0,
-                              "y": 0,
-                              "width": 244,
-                              "height": 36,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "gap": 10,
-                                "padding": [
-                                  0,
-                                  12,
-                                  0,
-                                  12
-                                ],
-                                "crossAlign": "center",
-                                "cornerRadius": 6,
-                                "sizingH": "fill",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "ellipse",
-                                  "name": "Icon",
-                                  "width": 14,
-                                  "height": 14,
-                                  "props": {
-                                    "fill": "#6C757D"
-                                  }
-                                },
-                                {
-                                  "type": "text",
-                                  "name": "Label",
-                                  "text": "Channels",
-                                  "props": {
-                                    "fontFamily": "Inter",
-                                    "fontStyle": "Regular",
-                                    "fontSize": 13,
-                                    "fill": "#212529"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "name": "MenuItem_3",
-                              "x": 0,
-                              "y": 0,
-                              "width": 244,
-                              "height": 36,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "gap": 10,
-                                "padding": [
-                                  0,
-                                  12,
-                                  0,
-                                  12
-                                ],
-                                "crossAlign": "center",
-                                "cornerRadius": 6,
-                                "sizingH": "fill",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "ellipse",
-                                  "name": "Icon",
-                                  "width": 14,
-                                  "height": 14,
-                                  "props": {
-                                    "fill": "#6C757D"
-                                  }
-                                },
-                                {
-                                  "type": "text",
-                                  "name": "Label",
-                                  "text": "Direct messages",
-                                  "props": {
-                                    "fontFamily": "Inter",
-                                    "fontStyle": "Regular",
-                                    "fontSize": 13,
-                                    "fill": "#212529"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                        "fontFamily": "Inter",
+                        "fontStyle": "Medium",
+                        "fontSize": 12,
+                        "fill": "#FFFFFF"
+                      }
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "name": "slot:action",
-                  "width": 1106,
-                  "height": 722,
+                  "name": "NavbarMessagingMenu",
+                  "width": 40,
+                  "height": 40,
                   "props": {
-                    "fill": "#F9F9F9",
-                    "layout": "vertical",
-                    "gap": 0,
-                    "sizingH": "fill",
-                    "sizingV": "fill"
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
                   },
                   "children": [
                     {
                       "type": "frame",
-                      "name": "ControlPanel",
-                      "x": 0,
-                      "y": 0,
-                      "width": 1106,
-                      "height": 72,
-                      "props": {
-                        "fill": "#FFFFFF",
-                        "layout": "vertical",
-                        "gap": 8,
-                        "padding": [
-                          10,
-                          16,
-                          10,
-                          16
-                        ],
-                        "stroke": "#DEE2E6",
-                        "strokeWeight": 1,
-                        "strokeAlign": "outside"
-                      },
-                      "children": [
-                        {
-                          "type": "frame",
-                          "name": "TopRow",
-                          "width": 1074,
-                          "height": 28,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "mainAlign": "spaceBetween",
-                            "crossAlign": "center",
-                            "sizingH": "fill",
-                            "sizingV": "hug"
-                          },
-                          "children": [
-                            {
-                              "type": "text",
-                              "name": "Breadcrumb",
-                              "text": "Discuss / Inbox",
-                              "props": {
-                                "fontFamily": "Inter",
-                                "fontStyle": "Semi Bold",
-                                "fontSize": 16,
-                                "fill": "#212529"
-                              }
-                            },
-                            {
-                              "type": "frame",
-                              "name": "slot:actions",
-                              "width": 200,
-                              "height": 28,
-                              "props": {
-                                "fill": "#00000000",
-                                "layout": "horizontal",
-                                "gap": 8,
-                                "mainAlign": "max",
-                                "crossAlign": "center",
-                                "sizingH": "hug",
-                                "sizingV": "hug"
-                              },
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "name": "NewButton",
-                                  "width": 72,
-                                  "height": 28,
-                                  "props": {
-                                    "fill": "#714B67",
-                                    "cornerRadius": 4,
-                                    "layout": "horizontal",
-                                    "mainAlign": "center",
-                                    "crossAlign": "center"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "name": "NewLabel",
-                                      "text": "New",
-                                      "props": {
-                                        "fontFamily": "Inter",
-                                        "fontStyle": "Medium",
-                                        "fontSize": 13,
-                                        "fill": "#FFFFFF"
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "name": "BottomRow",
-                          "width": 1074,
-                          "height": 28,
-                          "props": {
-                            "fill": "#00000000",
-                            "layout": "horizontal",
-                            "gap": 8,
-                            "mainAlign": "spaceBetween",
-                            "crossAlign": "center",
-                            "sizingH": "fill",
-                            "sizingV": "hug"
-                          },
-                          "children": [
-                            {
-                              "type": "frame",
-                              "name": "SearchBar",
-                              "width": 420,
-                              "height": 28,
-                              "props": {
-                                "fill": "#F9F9F9",
-                                "cornerRadius": 4,
-                                "stroke": "#DEE2E6",
-                                "strokeWeight": 1,
-                                "layout": "horizontal",
-                                "padding": [
-                                  0,
-                                  10,
-                                  0,
-                                  10
-                                ],
-                                "crossAlign": "center",
-                                "sizingH": "fill",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "name": "SearchPlaceholder",
-                                  "text": "Search...",
-                                  "props": {
-                                    "fontFamily": "Inter",
-                                    "fontStyle": "Regular",
-                                    "fontSize": 13,
-                                    "fill": "#6C757D"
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "name": "ViewSwitcher",
-                              "width": 120,
-                              "height": 28,
-                              "props": {
-                                "fill": "#F9F9F9",
-                                "cornerRadius": 4,
-                                "stroke": "#DEE2E6",
-                                "strokeWeight": 1,
-                                "layout": "horizontal",
-                                "gap": 0,
-                                "sizingH": "hug",
-                                "sizingV": "fixed"
-                              },
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "name": "ListMode",
-                                  "width": 40,
-                                  "height": 28,
-                                  "props": {
-                                    "fill": "#714B67",
-                                    "layout": "horizontal",
-                                    "mainAlign": "center",
-                                    "crossAlign": "center"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "name": "ListLabel",
-                                      "text": "≡",
-                                      "props": {
-                                        "fontSize": 14,
-                                        "fill": "#FFFFFF"
-                                      }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "name": "KanbanMode",
-                                  "width": 40,
-                                  "height": 28,
-                                  "props": {
-                                    "fill": "#00000000",
-                                    "layout": "horizontal",
-                                    "mainAlign": "center",
-                                    "crossAlign": "center"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "name": "KanbanLabel",
-                                      "text": "▦",
-                                      "props": {
-                                        "fontSize": 12,
-                                        "fill": "#6C757D"
-                                      }
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "name": "FormMode",
-                                  "width": 40,
-                                  "height": 28,
-                                  "props": {
-                                    "fill": "#00000000",
-                                    "layout": "horizontal",
-                                    "mainAlign": "center",
-                                    "crossAlign": "center"
-                                  },
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "name": "FormLabel",
-                                      "text": "▭",
-                                      "props": {
-                                        "fontSize": 12,
-                                        "fill": "#6C757D"
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                      "name": "Bubble",
+                      "width": 20,
+                      "height": 16,
+                      "props": { "fill": "#FFFFFF", "cornerRadius": 4 },
+                      "children": []
                     },
                     {
+                      "type": "ellipse",
+                      "name": "UnreadBadge",
+                      "x": 26,
+                      "y": 6,
+                      "width": 10,
+                      "height": 10,
+                      "props": { "fill": "#28A745" }
+                    }
+                  ]
+                },
+                {
+                  "type": "ellipse",
+                  "name": "Avatar",
+                  "width": 28,
+                  "height": 28,
+                  "props": { "fill": "#FFFFFF" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Action",
+          "width": 1366,
+          "height": 722,
+          "props": {
+            "fill": "#F8F9FA",
+            "layout": "vertical",
+            "gap": 0,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "ControlPanel",
+              "width": 1366,
+              "height": 52,
+              "props": {
+                "fill": "#FFFFFF",
+                "layout": "horizontal",
+                "gap": 16,
+                "padding": [8, 16, 8, 16],
+                "crossAlign": "center",
+                "mainAlign": "spaceBetween",
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "BreadcrumbsZone",
+                  "width": 280,
+                  "height": 36,
+                  "props": {
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "gap": 8,
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
                       "type": "frame",
-                      "name": "EmptyViewArea",
-                      "width": 1106,
-                      "height": 650,
+                      "name": "NewButton",
+                      "width": 72,
+                      "height": 28,
                       "props": {
-                        "fill": "#FFFFFF",
-                        "layout": "vertical",
+                        "fill": "#71639E",
+                        "cornerRadius": 4,
+                        "layout": "horizontal",
                         "mainAlign": "center",
-                        "crossAlign": "center",
-                        "sizingH": "fill",
-                        "sizingV": "fill",
-                        "stroke": "#DEE2E6",
-                        "strokeWeight": 1
+                        "crossAlign": "center"
                       },
                       "children": [
                         {
                           "type": "text",
-                          "name": "Placeholder",
-                          "text": "View area — drop ListView / FormView / DiscussThread here",
+                          "name": "NewLabel",
+                          "text": "New",
                           "props": {
                             "fontFamily": "Inter",
-                            "fontSize": 14,
-                            "fill": "#6C757D"
+                            "fontStyle": "Medium",
+                            "fontSize": 13,
+                            "fill": "#FFFFFF"
                           }
                         }
                       ]
+                    },
+                    {
+                      "type": "text",
+                      "name": "Breadcrumb",
+                      "text": "Discuss / Inbox",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontStyle": "Semi Bold",
+                        "fontSize": 16,
+                        "fill": "#212529"
+                      }
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "name": "Search",
+                  "width": 420,
+                  "height": 32,
+                  "props": {
+                    "fill": "#F8F9FA",
+                    "cornerRadius": 4,
+                    "stroke": "#DEE2E6",
+                    "strokeWeight": 1,
+                    "layout": "horizontal",
+                    "padding": [0, 10, 0, 10],
+                    "crossAlign": "center",
+                    "sizingH": "fill"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "SearchPlaceholder",
+                      "text": "Search...",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 13,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "Pager",
+                  "text": "1-80 / 240",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "EmptyView",
+              "width": 1366,
+              "height": 670,
+              "props": {
+                "fill": "#F8F9FA",
+                "layout": "vertical",
+                "mainAlign": "center",
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "EmptyHint",
+                  "text": "Empty action area",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "#6C757D"
+                  }
                 }
               ]
             }
@@ -898,5 +399,5 @@
         }
       ]
     }
-  ]
+  }
 }

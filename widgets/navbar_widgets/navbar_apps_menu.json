@@ -3,7 +3,7 @@
   "class": "NavbarAppsMenu",
   "odooVersion": "20",
   "category": "navbar_widgets",
-  "description": "Кнопка переключения приложений (иконка-сетка) в navbar",
+  "description": "Кнопка AppsMenu (сетка) в верхней панели",
   "size": {
     "width": 40,
     "height": 40

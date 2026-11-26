@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "class": "NavbarSwitchCompanyMenu",
+  "odooVersion": "20",
+  "category": "navbar_widgets",
+  "description": "Смена компании в systray",
+  "size": {
+    "width": 88,
+    "height": 40
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "navbar",
+    "systray",
+    "company"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "NavbarSwitchCompanyMenu",
+      "x": 0,
+      "y": 0,
+      "width": 88,
+      "height": 40,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 6,
+        "mainAlign": "center",
+        "crossAlign": "center",
+        "padding": [
+          0,
+          8,
+          0,
+          8
+        ],
+        "cornerRadius": 4
+      },
+      "children": [
+        {
+          "type": "ellipse",
+          "name": "CompanyDot",
+          "width": 10,
+          "height": 10,
+          "props": {
+            "fill": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "name": "CompanyName",
+          "text": "My Company",
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Medium",
+            "fontSize": 12,
+            "fill": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  }
+}

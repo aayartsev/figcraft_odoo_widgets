@@ -71,7 +71,7 @@
               "width": 256,
               "height": 32,
               "props": {
-                "fill": "#F9F9F9",
+                "fill": "#F8F9FA",
                 "cornerRadius": 4,
                 "stroke": "#DEE2E6",
                 "strokeWeight": 1,

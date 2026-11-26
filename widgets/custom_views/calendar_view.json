@@ -182,7 +182,7 @@
           "width": 1074,
           "height": 460,
           "props": {
-            "fill": "#F9F9F9",
+            "fill": "#F8F9FA",
             "layout": "horizontal",
             "gap": 4,
             "sizingH": "fill",
@@ -210,7 +210,7 @@
                   "width": 134,
                   "height": 48,
                   "props": {
-                    "fill": "#714B67",
+                    "fill": "#71639E",
                     "cornerRadius": 4,
                     "padding": 6,
                     "layout": "vertical"

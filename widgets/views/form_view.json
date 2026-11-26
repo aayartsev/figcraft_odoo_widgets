@@ -5,10 +5,16 @@
   "category": "views",
   "description": "Form view: статус, заголовок и область для полей",
   "size": {
-    "width": 1106,
+    "width": 1366,
     "height": 640
   },
   "slots": [
+    {
+      "name": "control_panel",
+      "accepts": [
+        "ControlPanel"
+      ]
+    },
     {
       "name": "fields",
       "accepts": [
@@ -17,13 +23,14 @@
         "BooleanField",
         "Many2oneField",
         "SelectionField",
-        "DateField",
+        "DateTimeField",
         "MonetaryField"
       ]
     }
   ],
   "slotAnchors": {
-    "fields": "slot:fields"
+    "fields": "slot:fields",
+    "control_panel": "slot:control_panel"
   },
   "variants": [
     "default"
@@ -39,15 +46,28 @@
       "name": "FormView",
       "x": 0,
       "y": 0,
-      "width": 1106,
+      "width": 1366,
       "height": 640,
       "props": {
-        "fill": "#F9F9F9",
+        "fill": "#F8F9FA",
         "layout": "vertical",
         "gap": 16,
         "padding": 16
       },
       "children": [
+        {
+          "type": "frame",
+          "name": "slot:control_panel",
+          "width": 1366,
+          "height": 0,
+          "props": {
+            "fill": "#00000000",
+            "layout": "vertical",
+            "sizingH": "fill",
+            "sizingV": "hug"
+          },
+          "children": []
+        },
         {
           "type": "frame",
           "name": "StatusBar",
@@ -68,7 +88,7 @@
               "width": 80,
               "height": 28,
               "props": {
-                "fill": "#714B67",
+                "fill": "#71639E",
                 "layout": "horizontal",
                 "mainAlign": "center",
                 "crossAlign": "center",

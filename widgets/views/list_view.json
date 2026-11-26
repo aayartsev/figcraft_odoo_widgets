@@ -5,17 +5,24 @@
   "category": "views",
   "description": "Табличный list / tree view с заголовком и примером строк",
   "size": {
-    "width": 1106,
+    "width": 1366,
     "height": 520
   },
   "slots": [
+    {
+      "name": "control_panel",
+      "accepts": [
+        "ControlPanel"
+      ]
+    },
     {
       "name": "columns",
       "accepts": []
     }
   ],
   "slotAnchors": {
-    "columns": "slot:columns"
+    "columns": "slot:columns",
+    "control_panel": "slot:control_panel"
   },
   "variants": [
     "default"
@@ -32,7 +39,7 @@
       "name": "ListView",
       "x": 0,
       "y": 0,
-      "width": 1106,
+      "width": 1366,
       "height": 520,
       "props": {
         "fill": "#FFFFFF",
@@ -45,11 +52,24 @@
       "children": [
         {
           "type": "frame",
+          "name": "slot:control_panel",
+          "width": 1366,
+          "height": 0,
+          "props": {
+            "fill": "#00000000",
+            "layout": "vertical",
+            "sizingH": "fill",
+            "sizingV": "hug"
+          },
+          "children": []
+        },
+        {
+          "type": "frame",
           "name": "HeaderRow",
-          "width": 1106,
+          "width": 1366,
           "height": 40,
           "props": {
-            "fill": "#F9F9F9",
+            "fill": "#F8F9FA",
             "layout": "horizontal",
             "gap": 0,
             "padding": [
@@ -118,7 +138,7 @@
         {
           "type": "frame",
           "name": "slot:columns",
-          "width": 1106,
+          "width": 1366,
           "height": 480,
           "props": {
             "fill": "#FFFFFF",
@@ -131,7 +151,7 @@
             {
               "type": "frame",
               "name": "Row1",
-              "width": 1106,
+              "width": 1366,
               "height": 40,
               "props": {
                 "fill": "#FFFFFF",
@@ -198,10 +218,10 @@
             {
               "type": "frame",
               "name": "Row2",
-              "width": 1106,
+              "width": 1366,
               "height": 40,
               "props": {
-                "fill": "#F9F9F9",
+                "fill": "#F8F9FA",
                 "layout": "horizontal",
                 "padding": [
                   0,
@@ -265,7 +285,7 @@
             {
               "type": "frame",
               "name": "Row3",
-              "width": 1106,
+              "width": 1366,
               "height": 40,
               "props": {
                 "fill": "#FFFFFF",

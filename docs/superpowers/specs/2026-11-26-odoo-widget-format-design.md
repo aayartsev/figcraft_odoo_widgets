@@ -1,7 +1,7 @@
 # Формат гибридного JSON-виджета Odoo
 
 **Дата:** 2026-11-26  
-**Целевая версия Odoo:** 20 (типичный вид Web Client)  
+**Целевая версия Odoo:** 20 **Community** (типичный вид Web Client)  
 **Статус:** утверждено к реализации
 
 ## Зачем это
@@ -19,8 +19,8 @@
 | category | путь | роль |
 |----------|------|------|
 | `shell` | `widgets/shell/` | Каркас приложения (web client, navbar) |
-| `navbar_widgets` | `widgets/navbar_widgets/` | Куски apps-меню и systray |
-| `menu` | `widgets/menu/` | Корневое меню и пункты |
+| `navbar_widgets` | `widgets/navbar_widgets/` | Куски apps-меню, разделы, systray |
+| `menu` | `widgets/menu/` | Содержимое боковой панели AppsMenu (sidebar), не постоянное левое меню |
 | `views` | `widgets/views/` | Стандартные виды + control panel |
 | `fields` | `widgets/fields/` | Виджеты полей форм и списков |
 | `custom_views` | `widgets/custom_views/` | Нестандартные виды (calendar, graph, pivot, …) |
@@ -51,7 +51,7 @@
 ### Объект слота
 
 ```json
-{ "name": "systray", "accepts": ["NavbarSystrayItem", "NavbarUserMenu"] }
+{ "name": "systray", "accepts": ["NavbarSystrayItem", "NavbarUserMenu", "NavbarMessagingMenu", "NavbarSwitchCompanyMenu"] }
 ```
 
 `accepts` — какие классы виджетов можно положить в слот. Пустой `accepts` значит «любой виджет».
@@ -68,7 +68,7 @@
   "y": 0,
   "width": 1366,
   "height": 46,
-  "props": { "fill": "#714B67", "layout": "horizontal", "gap": 8, "padding": [0, 12, 0, 12] },
+  "props": { "fill": "#71639E", "layout": "horizontal", "gap": 8, "padding": [0, 12, 0, 12] },
   "children": []
 }
 ```
@@ -80,6 +80,8 @@
 У текстовых узлов символы лежат в `text`.
 
 Плейсхолдеры слотов — фреймы с именем `slot:<slotName>` (например `slot:systray`), чтобы сборщик находил точки монтирования.
+
+Шрифт в макетах FigCraft: **`Inter`**. В живом Odoo — system UI stack; в JSON виджетов фиксируем Inter как стабильную замену.
 
 ## Каталог
 
@@ -95,23 +97,26 @@
 }
 ```
 
-## Визуальный язык (типичный Odoo 20 Web Client)
+## Визуальный язык (Odoo 20 Community)
 
-Не пиксель-перфект с живой БД. Общие токены:
+Не пиксель-перфект с живой БД. Ориентир — **Community** (`$o-community-color`). Все hex в файлах — верхний регистр.
 
 | token | значение | где |
 |-------|----------|-----|
-| `brand` | `#714B67` | Navbar, основные акценты |
-| `brandDark` | `#5D3E56` | Hover / active в navbar |
+| `brand` | `#71639E` | Navbar, основные акценты |
+| `brandDark` | `#5C5282` | Библиотечный hover / active в navbar (~10% затемнение бренда; в SCSS Odoo отдельного имени нет) |
 | `surface` | `#FFFFFF` | Карточки, панели |
-| `canvas` | `#F9F9F9` | Фон приложения |
+| `canvas` | `#F8F9FA` | Фон приложения (`$o-gray-100`) |
 | `border` | `#DEE2E6` | Разделители, инпуты |
 | `text` | `#212529` | Основной текст |
 | `muted` | `#6C757D` | Вторичные подписи |
-| `primaryBtn` | `#714B67` | Основные кнопки |
-| `link` | `#008784` | Ссылки / акцент Discuss |
+| `primaryBtn` | `#71639E` | Основные кнопки (в Community `$o-action` = бренд) |
+| `link` | `#017E84` | Ссылки / акцент Discuss (`$o-enterprise-action-color`; в mail и в Community) |
+| `navbarBadge` | `#28A745` | Badge в верхней панели (`$o-success`) |
 
-Размер shell по умолчанию: **1366×768**.
+Каркас приложения: **верхняя панель (`Navbar`) + область действия** — без постоянного левого меню. `RootMenu` / `MenuItem` — содержимое боковой панели AppsMenu, категория `menu` сохраняется.
+
+Размер shell по умолчанию: **1366×768**. Высота navbar: **46px**.
 
 ## Правила сборки
 

@@ -59,7 +59,7 @@
           "width": 1074,
           "height": 500,
           "props": {
-            "fill": "#F9F9F9",
+            "fill": "#F8F9FA",
             "layout": "vertical",
             "sizingH": "fill",
             "sizingV": "fill"

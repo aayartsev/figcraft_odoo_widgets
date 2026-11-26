@@ -3,7 +3,7 @@
   "class": "WebClientShell",
   "odooVersion": "20",
   "category": "shell",
-  "description": "Каркас web client: navbar, меню и область action",
+  "description": "Каркас web client: верхняя панель и область действия",
   "size": {
     "width": 1366,
     "height": 768
@@ -16,19 +16,12 @@
       ]
     },
     {
-      "name": "menu",
-      "accepts": [
-        "RootMenu"
-      ]
-    },
-    {
       "name": "action",
       "accepts": []
     }
   ],
   "slotAnchors": {
     "navbar": "slot:navbar",
-    "menu": "slot:menu",
     "action": "slot:action"
   },
   "variants": [
@@ -48,7 +41,7 @@
       "width": 1366,
       "height": 768,
       "props": {
-        "fill": "#F9F9F9",
+        "fill": "#F8F9FA",
         "layout": "vertical",
         "gap": 0,
         "padding": 0,
@@ -62,7 +55,7 @@
           "width": 1366,
           "height": 46,
           "props": {
-            "fill": "#714B67",
+            "fill": "#71639E",
             "layout": "horizontal",
             "sizingH": "fill",
             "sizingV": "fixed"
@@ -71,45 +64,17 @@
         },
         {
           "type": "frame",
-          "name": "Body",
+          "name": "slot:action",
           "width": 1366,
           "height": 722,
           "props": {
-            "fill": "#F9F9F9",
-            "layout": "horizontal",
+            "fill": "#F8F9FA",
+            "layout": "vertical",
             "gap": 0,
             "sizingH": "fill",
             "sizingV": "fill"
           },
-          "children": [
-            {
-              "type": "frame",
-              "name": "slot:menu",
-              "width": 260,
-              "height": 722,
-              "props": {
-                "fill": "#FFFFFF",
-                "layout": "vertical",
-                "sizingH": "fixed",
-                "sizingV": "fill"
-              },
-              "children": []
-            },
-            {
-              "type": "frame",
-              "name": "slot:action",
-              "width": 1106,
-              "height": 722,
-              "props": {
-                "fill": "#F9F9F9",
-                "layout": "vertical",
-                "gap": 0,
-                "sizingH": "fill",
-                "sizingV": "fill"
-              },
-              "children": []
-            }
-          ]
+          "children": []
         }
       ]
     }

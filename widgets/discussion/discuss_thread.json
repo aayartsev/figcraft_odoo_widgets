@@ -43,7 +43,7 @@
       "width": 826,
       "height": 640,
       "props": {
-        "fill": "#F9F9F9",
+        "fill": "#F8F9FA",
         "layout": "vertical",
         "gap": 0
       },
@@ -87,7 +87,7 @@
           "width": 826,
           "height": 500,
           "props": {
-            "fill": "#F9F9F9",
+            "fill": "#F8F9FA",
             "layout": "vertical",
             "gap": 12,
             "padding": 16,

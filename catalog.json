@@ -69,10 +69,10 @@
       "description": "Однострочное текстовое поле"
     },
     {
-      "class": "DateField",
+      "class": "DateTimeField",
       "category": "fields",
-      "path": "widgets/fields/date_field.json",
-      "description": "Поле даты"
+      "path": "widgets/fields/date_time_field.json",
+      "description": "Поле даты или даты-времени (один макет на date и datetime)"
     },
     {
       "class": "Many2oneField",
@@ -102,19 +102,19 @@
       "class": "MenuItem",
       "category": "menu",
       "path": "widgets/menu/menu_item.json",
-      "description": "Пункт корневого меню (заголовок секции или кликабельный элемент)"
+      "description": "Пункт боковой панели AppsMenu (приложение или секция)"
     },
     {
       "class": "RootMenu",
       "category": "menu",
       "path": "widgets/menu/root_menu.json",
-      "description": "Левое корневое меню приложения со списком пунктов"
+      "description": "Содержимое боковой панели AppsMenu: список приложений"
     },
     {
       "class": "NavbarAppsMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_apps_menu.json",
-      "description": "Кнопка переключения приложений (иконка-сетка) в navbar"
+      "description": "Кнопка AppsMenu (сетка) в верхней панели"
     },
     {
       "class": "NavbarMessagingMenu",
@@ -123,10 +123,22 @@
       "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных"
     },
     {
+      "class": "NavbarSections",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_sections.json",
+      "description": "Разделы текущего приложения в верхней панели"
+    },
+    {
+      "class": "NavbarSwitchCompanyMenu",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_switch_company_menu.json",
+      "description": "Смена компании в systray"
+    },
+    {
       "class": "NavbarSystrayItem",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_systray_item.json",
-      "description": "Обычная иконка systray с опциональным бейджем"
+      "description": "Шаблон произвольного пункта systray с опциональным бейджем"
     },
     {
       "class": "NavbarUserMenu",
@@ -138,19 +150,19 @@
       "class": "Navbar",
       "category": "shell",
       "path": "widgets/shell/navbar.json",
-      "description": "Верхняя панель приложения: apps-меню, название приложения и systray"
+      "description": "Верхняя панель: apps-меню, название приложения, разделы и systray"
     },
     {
       "class": "WebClientShell",
       "category": "shell",
       "path": "widgets/shell/web_client_shell.json",
-      "description": "Каркас web client: navbar, меню и область action"
+      "description": "Каркас web client: верхняя панель и область действия"
     },
     {
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия: breadcrumbs, поиск, переключатель видов и кнопки"
+      "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов"
     },
     {
       "class": "FormView",

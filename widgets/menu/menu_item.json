@@ -3,7 +3,7 @@
   "class": "MenuItem",
   "odooVersion": "20",
   "category": "menu",
-  "description": "Пункт корневого меню (заголовок секции или кликабельный элемент)",
+  "description": "Пункт боковой панели AppsMenu (приложение или секция)",
   "size": {
     "width": 244,
     "height": 36
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "menu",
+    "apps-sidebar",
     "navigation"
   ],
   "figcraft": {

@@ -43,7 +43,7 @@
           "width": 700,
           "height": 52,
           "props": {
-            "fill": "#F9F9F9",
+            "fill": "#F8F9FA",
             "cornerRadius": 6,
             "layout": "horizontal",
             "padding": 10,
@@ -69,7 +69,7 @@
           "width": 72,
           "height": 36,
           "props": {
-            "fill": "#008784",
+            "fill": "#017E84",
             "cornerRadius": 4,
             "layout": "horizontal",
             "mainAlign": "center",

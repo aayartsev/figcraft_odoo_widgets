@@ -3,7 +3,7 @@
   "class": "Navbar",
   "odooVersion": "20",
   "category": "shell",
-  "description": "Верхняя панель приложения: apps-меню, название приложения и systray",
+  "description": "Верхняя панель: apps-меню, название приложения, разделы и systray",
   "size": {
     "width": 1366,
     "height": 46
@@ -16,16 +16,24 @@
       ]
     },
     {
+      "name": "sections",
+      "accepts": [
+        "NavbarSections"
+      ]
+    },
+    {
       "name": "systray",
       "accepts": [
         "NavbarSystrayItem",
         "NavbarUserMenu",
-        "NavbarMessagingMenu"
+        "NavbarMessagingMenu",
+        "NavbarSwitchCompanyMenu"
       ]
     }
   ],
   "slotAnchors": {
     "apps": "slot:apps",
+    "sections": "slot:sections",
     "systray": "slot:systray"
   },
   "variants": [
@@ -45,7 +53,7 @@
       "width": 1366,
       "height": 46,
       "props": {
-        "fill": "#714B67",
+        "fill": "#71639E",
         "layout": "horizontal",
         "gap": 12,
         "padding": [
@@ -61,14 +69,14 @@
         {
           "type": "frame",
           "name": "Left",
-          "width": 400,
+          "width": 720,
           "height": 46,
           "props": {
             "fill": "#00000000",
             "layout": "horizontal",
-            "gap": 8,
+            "gap": 12,
             "crossAlign": "center",
-            "sizingH": "hug",
+            "sizingH": "fill",
             "sizingV": "fill"
           },
           "children": [
@@ -97,6 +105,21 @@
                 "fontSize": 16,
                 "fill": "#FFFFFF"
               }
+            },
+            {
+              "type": "frame",
+              "name": "slot:sections",
+              "width": 400,
+              "height": 46,
+              "props": {
+                "fill": "#00000000",
+                "layout": "horizontal",
+                "gap": 4,
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fill"
+              },
+              "children": []
             }
           ]
         },

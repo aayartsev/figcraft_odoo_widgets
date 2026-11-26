@@ -3,10 +3,10 @@
   "class": "ControlPanel",
   "odooVersion": "20",
   "category": "views",
-  "description": "Панель действия: breadcrumbs, поиск, переключатель видов и кнопки",
+  "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов",
   "size": {
-    "width": 1106,
-    "height": 72
+    "width": 1366,
+    "height": 52
   },
   "slots": [
     {
@@ -31,37 +31,67 @@
       "name": "ControlPanel",
       "x": 0,
       "y": 0,
-      "width": 1106,
-      "height": 72,
+      "width": 1366,
+      "height": 52,
       "props": {
         "fill": "#FFFFFF",
-        "layout": "vertical",
-        "gap": 8,
+        "layout": "horizontal",
+        "gap": 16,
         "padding": [
-          10,
+          8,
           16,
-          10,
+          8,
           16
         ],
+        "crossAlign": "center",
+        "mainAlign": "spaceBetween",
         "stroke": "#DEE2E6",
         "strokeWeight": 1,
-        "strokeAlign": "outside"
+        "strokeAlign": "outside",
+        "sizingH": "fill",
+        "sizingV": "fixed"
       },
       "children": [
         {
           "type": "frame",
-          "name": "TopRow",
-          "width": 1074,
-          "height": 28,
+          "name": "BreadcrumbsZone",
+          "width": 360,
+          "height": 36,
           "props": {
             "fill": "#00000000",
             "layout": "horizontal",
-            "mainAlign": "spaceBetween",
+            "gap": 8,
             "crossAlign": "center",
-            "sizingH": "fill",
+            "sizingH": "hug",
             "sizingV": "hug"
           },
           "children": [
+            {
+              "type": "frame",
+              "name": "NewButton",
+              "width": 72,
+              "height": 28,
+              "props": {
+                "fill": "#71639E",
+                "cornerRadius": 4,
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "NewLabel",
+                  "text": "New",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Medium",
+                    "fontSize": 13,
+                    "fill": "#FFFFFF"
+                  }
+                }
+              ]
+            },
             {
               "type": "text",
               "name": "Breadcrumb",
@@ -72,101 +102,68 @@
                 "fontSize": 16,
                 "fill": "#212529"
               }
-            },
-            {
-              "type": "frame",
-              "name": "slot:actions",
-              "width": 200,
-              "height": 28,
-              "props": {
-                "fill": "#00000000",
-                "layout": "horizontal",
-                "gap": 8,
-                "mainAlign": "max",
-                "crossAlign": "center",
-                "sizingH": "hug",
-                "sizingV": "hug"
-              },
-              "children": [
-                {
-                  "type": "frame",
-                  "name": "NewButton",
-                  "width": 72,
-                  "height": 28,
-                  "props": {
-                    "fill": "#714B67",
-                    "cornerRadius": 4,
-                    "layout": "horizontal",
-                    "mainAlign": "center",
-                    "crossAlign": "center"
-                  },
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "NewLabel",
-                      "text": "New",
-                      "props": {
-                        "fontFamily": "Inter",
-                        "fontStyle": "Medium",
-                        "fontSize": 13,
-                        "fill": "#FFFFFF"
-                      }
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
         {
           "type": "frame",
-          "name": "BottomRow",
-          "width": 1074,
-          "height": 28,
+          "name": "slot:actions",
+          "width": 420,
+          "height": 32,
+          "props": {
+            "fill": "#F8F9FA",
+            "cornerRadius": 4,
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1,
+            "layout": "horizontal",
+            "padding": [
+              0,
+              10,
+              0,
+              10
+            ],
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "sizingV": "fixed"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "SearchPlaceholder",
+              "text": "Search...",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Regular",
+                "fontSize": 13,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "NavigationZone",
+          "width": 220,
+          "height": 32,
           "props": {
             "fill": "#00000000",
             "layout": "horizontal",
-            "gap": 8,
-            "mainAlign": "spaceBetween",
+            "gap": 12,
+            "mainAlign": "max",
             "crossAlign": "center",
-            "sizingH": "fill",
+            "sizingH": "hug",
             "sizingV": "hug"
           },
           "children": [
             {
-              "type": "frame",
-              "name": "SearchBar",
-              "width": 420,
-              "height": 28,
+              "type": "text",
+              "name": "Pager",
+              "text": "1-80 / 240",
               "props": {
-                "fill": "#F9F9F9",
-                "cornerRadius": 4,
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1,
-                "layout": "horizontal",
-                "padding": [
-                  0,
-                  10,
-                  0,
-                  10
-                ],
-                "crossAlign": "center",
-                "sizingH": "fill",
-                "sizingV": "fixed"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "SearchPlaceholder",
-                  "text": "Search...",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontStyle": "Regular",
-                    "fontSize": 13,
-                    "fill": "#6C757D"
-                  }
-                }
-              ]
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#6C757D"
+              }
             },
             {
               "type": "frame",
@@ -174,7 +171,7 @@
               "width": 120,
               "height": 28,
               "props": {
-                "fill": "#F9F9F9",
+                "fill": "#F8F9FA",
                 "cornerRadius": 4,
                 "stroke": "#DEE2E6",
                 "strokeWeight": 1,
@@ -190,7 +187,7 @@
                   "width": 40,
                   "height": 28,
                   "props": {
-                    "fill": "#714B67",
+                    "fill": "#71639E",
                     "layout": "horizontal",
                     "mainAlign": "center",
                     "crossAlign": "center"
