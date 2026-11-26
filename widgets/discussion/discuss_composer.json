@@ -1,103 +1,354 @@
 {
-  "schemaVersion": 1,
-  "class": "DiscussComposer",
-  "odooVersion": "20",
-  "category": "discussion",
-  "description": "Поле ввода сообщения Discuss (pill)",
-  "size": {
-    "width": 616,
-    "height": 46
-  },
-  "slots": [],
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "discussion",
-    "composer"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "DiscussComposer",
-      "x": 0,
-      "y": 0,
-      "width": 616,
-      "height": 46,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "gap": 8,
-        "padding": [
-          0,
-          8,
-          0,
-          8
-        ],
-        "crossAlign": "center",
-        "sizingH": "fill"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "DiscussComposer",
+  "next_id": 7,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "Input",
-          "width": 560,
-          "height": 40,
-          "props": {
-            "fill": "#FFFFFF",
-            "cornerRadius": 21,
-            "stroke": "#DEE2E6",
-            "strokeWeight": 1,
-            "layout": "horizontal",
-            "padding": [
-              0,
-              16,
-              0,
-              16
-            ],
-            "crossAlign": "center",
-            "sizingH": "fill",
-            "sizingV": "fixed"
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "Placeholder",
-              "text": "Message OdooBot…",
-              "props": {
-                "fontFamily": "Inter",
-                "fontSize": 13,
-                "fill": "#495057"
-              }
-            }
-          ]
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        3,
+        5
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "Send",
-          "width": 32,
-          "height": 32,
-          "props": {
-            "fill": "#017E84",
-            "cornerRadius": 16,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "SendLabel",
-              "text": "↑",
-              "props": {
-                "fontSize": 14,
-                "fill": "#FFFFFF"
-              }
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 46.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          8.0,
+          0.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "DiscussComposer",
+      "parent": 1,
+      "type": "frame",
+      "width": 616.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        4
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          21.0,
+          21.0,
+          21.0,
+          21.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Input",
+      "parent": 2,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 560.0
+    },
+    "4": {
+      "blend": "normal",
+      "characters": "Message OdooBot…",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.34117648005485535,
+            "g": 0.3137255012989044,
+            "r": 0.2862745225429535
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 4,
+      "name": "Placeholder",
+      "parent": 3,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 117.0
+    },
+    "5": {
+      "children": [
+        6
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          16.0,
+          16.0,
+          16.0,
+          16.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.5176470875740051,
+            "g": 0.4941176474094391,
+            "r": 0.003921568859368563
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Send",
+      "parent": 2,
+      "type": "frame",
+      "width": 32.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "↑",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 6,
+      "name": "SendLabel",
+      "parent": 5,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 14.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

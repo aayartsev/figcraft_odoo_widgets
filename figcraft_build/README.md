@@ -1,34 +1,23 @@
 # figcraft_build
 
-Утилита: проверяет JSON-виджеты Odoo и собирает файл атласа `.figcraft`.
+Проверяет каталог виджетов Odoo: `catalog.json` + нативные JSON FigCraft в `widgets/`.
+
+Формат: [docs/superpowers/specs/2026-11-26-native-widget-storage-design.md](../docs/superpowers/specs/2026-11-26-native-widget-storage-design.md).
 
 ## Требования
 
-- Rust **1.95+** (см. [`rust-toolchain.toml`](../rust-toolchain.toml) в корне репо)
-- Сеть при первой сборке: git-зависимости FigCraft
-
-Pin FigCraft: commit `4acc293c2ec941ac1400837ee7e3ab51780399f8` (приложение **0.18.1**).
-
-В v1 нет `figcraft-engine::normalize`: после сборки атласа размеры и позиции автолейаут-фреймов считаются упрощённо из размеров детей, чтобы файл было видно в FigCraft.
+- Rust **1.95+** ([`rust-toolchain.toml`](../rust-toolchain.toml))
+- Сеть при первой сборке: git-зависимости FigCraft (pin `4acc293…`, приложение **0.18.1**)
 
 ## Команды
 
-Из корня репозитория:
-
 ```bash
 cargo run -p figcraft_build -- validate
-cargo run -p figcraft_build -- atlas
-cargo run -p figcraft_build -- widget Navbar
-cargo run -p figcraft_build -- verify-all
 ```
 
-Артефакты пишутся в `dist/` (в `.gitignore`). Один виджет → `dist/<snake_case>.figcraft` (например `dist/navbar.figcraft`).
+Флаги: `--root`, `--catalog`.
 
-Флаги:
-
-- `--root <path>` — корень с `catalog.json` / `widgets/`
-- `--catalog <path>` — путь к каталогу
-- `atlas --out <path>` / `widget --out <path>` — куда писать `.figcraft`
+Бинарный `.figcraft` утилита не пишет.
 
 ## Тесты
 

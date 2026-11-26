@@ -1,5 +1,7 @@
 use crate::catalog::Catalog;
-use crate::widget::{FragmentNode, WidgetDoc, class_to_snake, load_widget};
+use crate::native_doc::{
+    class_to_snake, collect_slot_names, ensure_frame_root, load_native_document, page_root_id,
+};
 use anyhow::{Context, Result};
 use jsonschema::Validator;
 use serde_json::Value;
@@ -46,7 +48,14 @@ impl SchemaValidator {
     }
 }
 
-pub fn validate_catalog(root: &Path, catalog: &Catalog, schema: &SchemaValidator) -> Result<()> {
+pub fn validate_catalog(root: &Path, catalog: &Catalog, catalog_schema: &SchemaValidator) -> Result<()> {
+    let catalog_path = default_catalog_path(root);
+    let catalog_raw = fs::read_to_string(&catalog_path)
+        .with_context(|| format!("read {}", catalog_path.display()))?;
+    let catalog_value: Value = serde_json::from_str(&catalog_raw)
+        .with_context(|| format!("parse {}", catalog_path.display()))?;
+    catalog_schema.validate_value(&catalog_value, &catalog_path)?;
+
     let mut seen_paths = BTreeSet::new();
     for entry in &catalog.widgets {
         let widget_path = root.join(&entry.path);
@@ -71,91 +80,70 @@ pub fn validate_catalog(root: &Path, catalog: &Catalog, schema: &SchemaValidator
             anyhow::bail!("duplicate catalog path {}", entry.path);
         }
 
+        let expected_stem = class_to_snake(&entry.class);
+        let stem = widget_path
+            .file_stem()
+            .and_then(|s| s.to_str())
+            .unwrap_or("");
+        if stem != expected_stem {
+            anyhow::bail!(
+                "file name `{}` must be snake_case of class `{}` (expected `{expected_stem}.json`)",
+                file_name,
+                entry.class
+            );
+        }
+
         let raw = fs::read_to_string(&widget_path)
             .with_context(|| format!("read {}", widget_path.display()))?;
-        let value: Value = serde_json::from_str(&raw)
-            .with_context(|| format!("parse JSON {}", widget_path.display()))?;
-        schema.validate_value(&value, &widget_path)?;
-
-        let widget = load_widget(&widget_path)?;
-        validate_widget(&widget, &widget_path, Some(entry))?;
-    }
-    Ok(())
-}
-
-pub fn validate_widget(
-    widget: &WidgetDoc,
-    path: &Path,
-    catalog_entry: Option<&crate::catalog::CatalogEntry>,
-) -> Result<()> {
-    let stem = path
-        .file_stem()
-        .and_then(|s| s.to_str())
-        .unwrap_or("");
-    let expected = class_to_snake(&widget.class);
-    if stem != expected {
-        anyhow::bail!(
-            "file name `{}` must be snake_case of class `{}` (expected `{expected}.json`)",
-            path.file_name().and_then(|s| s.to_str()).unwrap_or("?"),
-            widget.class
-        );
-    }
-
-    if let Some(entry) = catalog_entry {
-        if entry.class != widget.class {
+        let doc = load_native_document(&raw)
+            .with_context(|| format!("native document {}", widget_path.display()))?;
+        let problems = doc.validate();
+        if !problems.is_empty() {
             anyhow::bail!(
-                "catalog class `{}` != widget class `{}` in {}",
-                entry.class,
-                widget.class,
-                path.display()
+                "Document::validate failed for {}: {:?}",
+                widget_path.display(),
+                problems
             );
         }
-        if entry.category != widget.category {
+
+        let root_id = page_root_id(&doc).ok_or_else(|| {
+            anyhow::anyhow!("{}: no widget root on first page", widget_path.display())
+        })?;
+        ensure_frame_root(&doc, root_id, &entry.class)
+            .with_context(|| format!("{}", widget_path.display()))?;
+
+        let root_node = doc.node(root_id).unwrap();
+        let eps = 0.51_f64;
+        if (root_node.width - entry.size.width).abs() > eps
+            || (root_node.height - entry.size.height).abs() > eps
+        {
             anyhow::bail!(
-                "catalog category `{}` != widget category `{}` in {}",
-                entry.category,
-                widget.category,
-                path.display()
+                "{}: catalog size {}×{} != root {}×{}",
+                widget_path.display(),
+                entry.size.width,
+                entry.size.height,
+                root_node.width,
+                root_node.height
+            );
+        }
+
+        let declared: BTreeSet<String> = entry.slots.iter().map(|s| s.name.clone()).collect();
+        let mut found = BTreeSet::new();
+        collect_slot_names(&doc, root_id, &mut found);
+        if declared != found {
+            anyhow::bail!(
+                "slots mismatch in {}: catalog {:?}, found slot:* {:?}",
+                widget_path.display(),
+                declared.iter().cloned().collect::<Vec<_>>(),
+                found.iter().cloned().collect::<Vec<_>>()
             );
         }
     }
-
-    if widget.figcraft.kind != "fragment" {
-        anyhow::bail!(
-            "figcraft.kind must be `fragment` in {}",
-            path.display()
-        );
-    }
-
-    let slot_names: BTreeSet<String> = widget.slots.iter().map(|s| s.name.clone()).collect();
-    let mut found_slots = BTreeSet::new();
-    collect_slot_frames(&widget.figcraft.root, &mut found_slots);
-
-    if slot_names != found_slots {
-        anyhow::bail!(
-            "slots mismatch in {}: declared {:?}, found slot:* {:?}",
-            path.display(),
-            slot_names.iter().cloned().collect::<Vec<_>>(),
-            found_slots.iter().cloned().collect::<Vec<_>>()
-        );
-    }
-
     Ok(())
-}
-
-fn collect_slot_frames(node: &FragmentNode, out: &mut BTreeSet<String>) {
-    if let Some(name) = node.name.strip_prefix("slot:") {
-        out.insert(name.to_string());
-    }
-    if let Some(children) = &node.children {
-        for child in children {
-            collect_slot_frames(child, out);
-        }
-    }
 }
 
 pub fn schema_path(root: &Path) -> PathBuf {
-    root.join("schemas/widget.schema.json")
+    root.join("schemas/catalog.schema.json")
 }
 
 pub fn default_catalog_path(root: &Path) -> PathBuf {

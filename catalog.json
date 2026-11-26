@@ -1,186 +1,688 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "odooVersion": "20",
   "widgets": [
     {
       "class": "ActivityView",
       "category": "custom_views",
       "path": "widgets/custom_views/activity_view.json",
-      "description": "Расписание активностей (activity view)"
+      "description": "Расписание активностей (activity view)",
+      "size": {
+        "width": 1106,
+        "height": 420
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "custom_views",
+        "activity"
+      ]
     },
     {
       "class": "CalendarView",
       "category": "custom_views",
       "path": "widgets/custom_views/calendar_view.json",
-      "description": "Календарный custom view с сеткой недели и событиями"
+      "description": "Календарный custom view с сеткой недели и событиями",
+      "size": {
+        "width": 1106,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "events",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "week",
+        "month",
+        "day"
+      ],
+      "tags": [
+        "custom_views",
+        "calendar"
+      ]
     },
     {
       "class": "GraphView",
       "category": "custom_views",
       "path": "widgets/custom_views/graph_view.json",
-      "description": "График / chart custom view со столбцами-заглушками"
+      "description": "График / chart custom view со столбцами-заглушками",
+      "size": {
+        "width": 1106,
+        "height": 480
+      },
+      "slots": [],
+      "variants": [
+        "bar",
+        "line",
+        "pie"
+      ],
+      "tags": [
+        "custom_views",
+        "graph"
+      ]
     },
     {
       "class": "PivotView",
       "category": "custom_views",
       "path": "widgets/custom_views/pivot_view.json",
-      "description": "Сводная таблица (pivot)"
+      "description": "Сводная таблица (pivot)",
+      "size": {
+        "width": 1106,
+        "height": 420
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "custom_views",
+        "pivot"
+      ]
     },
     {
       "class": "DiscussChannelItem",
       "category": "discussion",
       "path": "widgets/discussion/discuss_channel_item.json",
-      "description": "Элемент списка бесед Discuss (NotificationItem)"
+      "description": "Элемент списка бесед Discuss (NotificationItem)",
+      "size": {
+        "width": 174,
+        "height": 58
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "active",
+        "unread"
+      ],
+      "tags": [
+        "discussion",
+        "channel"
+      ]
     },
     {
       "class": "DiscussComposer",
       "category": "discussion",
       "path": "widgets/discussion/discuss_composer.json",
-      "description": "Поле ввода сообщения Discuss (pill)"
+      "description": "Поле ввода сообщения Discuss (pill)",
+      "size": {
+        "width": 616,
+        "height": 46
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "discussion",
+        "composer"
+      ]
     },
     {
       "class": "DiscussMessage",
       "category": "discussion",
       "path": "widgets/discussion/discuss_message.json",
-      "description": "Одно сообщение Discuss: автор и bubble"
+      "description": "Одно сообщение Discuss: автор и bubble",
+      "size": {
+        "width": 592,
+        "height": 80
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "own",
+        "system"
+      ],
+      "tags": [
+        "discussion",
+        "message"
+      ]
     },
     {
       "class": "DiscussSidebar",
       "category": "discussion",
       "path": "widgets/discussion/discuss_sidebar.json",
-      "description": "Сайдбар Discuss Odoo 20: icon rail + список бесед"
+      "description": "Сайдбар Discuss Odoo 20: icon rail + список бесед",
+      "size": {
+        "width": 278,
+        "height": 722
+      },
+      "slots": [
+        {
+          "name": "channels",
+          "accepts": [
+            "DiscussChannelItem"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "discussion",
+        "discuss"
+      ]
     },
     {
       "class": "DiscussThread",
       "category": "discussion",
       "path": "widgets/discussion/discuss_thread.json",
-      "description": "Панель переписки Discuss: header + messages + composer"
+      "description": "Панель переписки Discuss: header + messages + composer",
+      "size": {
+        "width": 624,
+        "height": 640
+      },
+      "slots": [
+        {
+          "name": "messages",
+          "accepts": [
+            "DiscussMessage"
+          ]
+        },
+        {
+          "name": "composer",
+          "accepts": [
+            "DiscussComposer"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "discussion",
+        "thread"
+      ]
     },
     {
       "class": "BooleanField",
       "category": "fields",
       "path": "widgets/fields/boolean_field.json",
-      "description": "Чекбокс boolean"
+      "description": "Чекбокс boolean",
+      "size": {
+        "width": 540,
+        "height": 28
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "checked",
+        "readonly"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "CharField",
       "category": "fields",
       "path": "widgets/fields/char_field.json",
-      "description": "Однострочное текстовое поле"
+      "description": "Однострочное текстовое поле",
+      "size": {
+        "width": 540,
+        "height": 36
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "DateTimeField",
       "category": "fields",
       "path": "widgets/fields/date_time_field.json",
-      "description": "Поле даты или даты-времени (один макет на date и datetime)"
+      "description": "Поле даты или даты-времени (один макет на date и datetime)",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields",
+        "date",
+        "datetime"
+      ]
     },
     {
       "class": "Many2oneField",
       "category": "fields",
       "path": "widgets/fields/many2one_field.json",
-      "description": "Поле many2one; ссылка form-link #66598F"
+      "description": "Поле many2one: закрытое (ссылка #66598F) и открытое с поиском (variant:open)",
+      "size": {
+        "width": 540.0,
+        "height": 40.0
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "open",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "MonetaryField",
       "category": "fields",
       "path": "widgets/fields/monetary_field.json",
-      "description": "Денежное поле с валютой"
+      "description": "Денежное поле с валютой",
+      "size": {
+        "width": 540,
+        "height": 36
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "SelectionField",
       "category": "fields",
       "path": "widgets/fields/selection_field.json",
-      "description": "Поле selection (выпадающий список)"
+      "description": "Поле selection (выпадающий список)",
+      "size": {
+        "width": 540,
+        "height": 36
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "TextField",
       "category": "fields",
       "path": "widgets/fields/text_field.json",
-      "description": "Многострочное текстовое поле"
+      "description": "Многострочное текстовое поле",
+      "size": {
+        "width": 540,
+        "height": 72
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "readonly",
+        "invalid"
+      ],
+      "tags": [
+        "fields"
+      ]
     },
     {
       "class": "MenuItem",
       "category": "menu",
       "path": "widgets/menu/menu_item.json",
-      "description": "Пункт боковой панели AppsMenu (приложение или секция)"
+      "description": "Пункт боковой панели AppsMenu (приложение или секция)",
+      "size": {
+        "width": 244,
+        "height": 36
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "active",
+        "section"
+      ],
+      "tags": [
+        "menu",
+        "apps-sidebar",
+        "navigation"
+      ]
     },
     {
       "class": "RootMenu",
       "category": "menu",
       "path": "widgets/menu/root_menu.json",
-      "description": "Содержимое боковой панели AppsMenu: список приложений"
+      "description": "Содержимое боковой панели AppsMenu: список приложений",
+      "size": {
+        "width": 260,
+        "height": 722
+      },
+      "slots": [
+        {
+          "name": "items",
+          "accepts": [
+            "MenuItem"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "menu",
+        "apps-sidebar",
+        "navigation"
+      ]
     },
     {
       "class": "NavbarAppsMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_apps_menu.json",
-      "description": "Кнопка AppsMenu (сетка) в верхней панели"
+      "description": "Кнопка AppsMenu (сетка) в верхней панели",
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "open"
+      ],
+      "tags": [
+        "navbar",
+        "apps"
+      ]
     },
     {
       "class": "NavbarMessagingMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_messaging_menu.json",
-      "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных"
+      "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных",
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "withUnread"
+      ],
+      "tags": [
+        "navbar",
+        "systray",
+        "discuss",
+        "messaging"
+      ]
     },
     {
       "class": "NavbarSections",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_sections.json",
-      "description": "Разделы текущего приложения в верхней панели"
+      "description": "Разделы текущего приложения в верхней панели",
+      "size": {
+        "width": 360,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "navbar",
+        "sections"
+      ]
     },
     {
       "class": "NavbarSwitchCompanyMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_switch_company_menu.json",
-      "description": "Смена компании в systray"
+      "description": "Смена компании в systray",
+      "size": {
+        "width": 88,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "navbar",
+        "systray",
+        "company"
+      ]
     },
     {
       "class": "NavbarSystrayItem",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_systray_item.json",
-      "description": "Шаблон произвольного пункта systray с опциональным бейджем"
+      "description": "Шаблон произвольного пункта systray с опциональным бейджем",
+      "size": {
+        "width": 36,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "withBadge"
+      ],
+      "tags": [
+        "navbar",
+        "systray"
+      ]
     },
     {
       "class": "NavbarUserMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_user_menu.json",
-      "description": "Аватар / меню пользователя в systray"
+      "description": "Аватар / меню пользователя в systray",
+      "size": {
+        "width": 44,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "navbar",
+        "systray",
+        "user"
+      ]
     },
     {
       "class": "Navbar",
       "category": "shell",
       "path": "widgets/shell/navbar.json",
-      "description": "Верхняя панель: apps-меню, название приложения, разделы и systray"
+      "description": "Верхняя панель: apps-меню, название приложения, разделы и systray",
+      "size": {
+        "width": 1366,
+        "height": 46
+      },
+      "slots": [
+        {
+          "name": "apps",
+          "accepts": [
+            "NavbarAppsMenu"
+          ]
+        },
+        {
+          "name": "sections",
+          "accepts": [
+            "NavbarSections"
+          ]
+        },
+        {
+          "name": "systray",
+          "accepts": [
+            "NavbarSystrayItem",
+            "NavbarUserMenu",
+            "NavbarMessagingMenu",
+            "NavbarSwitchCompanyMenu"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "shell",
+        "navbar"
+      ]
     },
     {
       "class": "WebClientShell",
       "category": "shell",
       "path": "widgets/shell/web_client_shell.json",
-      "description": "Каркас web client: верхняя панель и область действия"
+      "description": "Каркас web client: верхняя панель и область действия",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "slots": [
+        {
+          "name": "navbar",
+          "accepts": [
+            "Navbar"
+          ]
+        },
+        {
+          "name": "action",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "shell",
+        "webclient"
+      ]
     },
     {
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия (~93px): кнопки, поиск, pager и виды"
+      "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов",
+      "size": {
+        "width": 1366,
+        "height": 93
+      },
+      "slots": [
+        {
+          "name": "actions",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "views",
+        "control-panel"
+      ]
     },
     {
       "class": "FormView",
       "category": "views",
       "path": "widgets/views/form_view.json",
-      "description": "Form view: статус, заголовок и область для полей"
+      "description": "Form view: статус, заголовок и область для полей",
+      "size": {
+        "width": 1366,
+        "height": 640
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        },
+        {
+          "name": "fields",
+          "accepts": [
+            "CharField",
+            "TextField",
+            "BooleanField",
+            "Many2oneField",
+            "SelectionField",
+            "DateTimeField",
+            "MonetaryField"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "views",
+        "form"
+      ]
     },
     {
       "class": "KanbanView",
       "category": "views",
       "path": "widgets/views/kanban_view.json",
-      "description": "Kanban Contacts: карточки без колонок (ungrouped)"
+      "description": "Kanban Contacts: карточки без колонок (ungrouped)",
+      "size": {
+        "width": 1366,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        },
+        {
+          "name": "columns",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "default",
+        "ungrouped"
+      ],
+      "tags": [
+        "views",
+        "kanban"
+      ]
     },
     {
       "class": "ListView",
       "category": "views",
       "path": "widgets/views/list_view.json",
-      "description": "Табличный list / tree view с заголовком и примером строк"
+      "description": "Табличный list / tree view с заголовком и примером строк",
+      "size": {
+        "width": 1366,
+        "height": 520
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        },
+        {
+          "name": "columns",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "views",
+        "list",
+        "tree"
+      ]
     }
   ]
 }

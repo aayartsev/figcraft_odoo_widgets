@@ -1,130 +1,492 @@
 {
-  "schemaVersion": 1,
-  "class": "DiscussMessage",
-  "odooVersion": "20",
-  "category": "discussion",
-  "description": "Одно сообщение Discuss: автор и bubble",
-  "size": {
-    "width": 592,
-    "height": 80
-  },
-  "slots": [],
-  "variants": [
-    "default",
-    "own",
-    "system"
-  ],
-  "tags": [
-    "discussion",
-    "message"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "DiscussMessage",
-      "x": 0,
-      "y": 0,
-      "width": 592,
-      "height": 80,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "gap": 12,
-        "sizingH": "fill"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "DiscussMessage",
+  "next_id": 10,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "Avatar",
-          "width": 32,
-          "height": 32,
-          "props": {
-            "fill": "#71639E",
-            "cornerRadius": 6
-          },
-          "children": []
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        3,
+        4
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "Body",
-          "width": 548,
-          "height": 80,
-          "props": {
-            "layout": "vertical",
-            "gap": 4,
-            "sizingH": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "frame",
-              "name": "Meta",
-              "width": 548,
-              "height": 18,
-              "props": {
-                "layout": "horizontal",
-                "gap": 8,
-                "crossAlign": "center"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "Author",
-                  "text": "OdooBot",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontStyle": "Semi Bold",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "Time",
-                  "text": "22:02",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 11,
-                    "fill": "#6C757D"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Bubble",
-              "width": 420,
-              "height": 52,
-              "props": {
-                "fill": "#E8F6F8",
-                "stroke": "#D1E6EA",
-                "strokeWeight": 1,
-                "cornerRadius": 9,
-                "layout": "vertical",
-                "padding": [
-                  8,
-                  12,
-                  8,
-                  12
-                ],
-                "sizingH": "hug"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "Content",
-                  "text": "Hello 👋 Odoo's Discuss helps employees collaborate.",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#495057"
-                  }
-                }
-              ]
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 80.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 12.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "DiscussMessage",
+      "parent": 1,
+      "type": "frame",
+      "width": 592.0
+    },
+    "3": {
+      "clip": true,
+      "corners": {
+        "radii": [
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 3,
+      "name": "Avatar",
+      "parent": 2,
+      "type": "frame",
+      "width": 32.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        5,
+        8
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 80.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Body",
+      "parent": 2,
+      "type": "frame",
+      "width": 548.0
+    },
+    "5": {
+      "children": [
+        6,
+        7
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 18.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Meta",
+      "parent": 4,
+      "type": "frame",
+      "width": 548.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "OdooBot",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 6,
+      "name": "Author",
+      "parent": 5,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 51.0
+    },
+    "7": {
+      "blend": "normal",
+      "characters": "22:02",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 15.0,
+      "id": 7,
+      "name": "Time",
+      "parent": 5,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 11.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 31.0
+    },
+    "8": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        9
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          9.0,
+          9.0,
+          9.0,
+          9.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9725490212440491,
+            "g": 0.9647058844566345,
+            "r": 0.9098039269447327
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 52.0,
+      "id": 8,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          8.0,
+          12.0,
+          8.0,
+          12.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Bubble",
+      "parent": 4,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9176470637321472,
+            "g": 0.9019607901573181,
+            "r": 0.8196078538894653
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 420.0
+    },
+    "9": {
+      "blend": "normal",
+      "characters": "Hello 👋 Odoo's Discuss helps employees collaborate.",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.34117648005485535,
+            "g": 0.3137255012989044,
+            "r": 0.2862745225429535
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 9,
+      "name": "Content",
+      "parent": 8,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 372.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

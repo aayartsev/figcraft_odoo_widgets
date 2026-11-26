@@ -1,8 +1,10 @@
 # Формат гибридного JSON-виджета Odoo
 
+> **Устарела.** Актуальная спека: [2026-11-26-native-widget-storage-design.md](2026-11-26-native-widget-storage-design.md) (нативный JSON FigCraft + каталог-обёртка, без бинарных `.figcraft`).
+
 **Дата:** 2026-11-26  
 **Целевая версия Odoo:** 20 **Community** (типичный вид Web Client)  
-**Статус:** утверждено к реализации
+**Статус:** устарела (заменена native storage)
 
 ## Зачем это
 
@@ -29,7 +31,7 @@
 
 ## Схема документа
 
-Машиночитаемая схема: [`schemas/widget.schema.json`](../../../schemas/widget.schema.json)
+Машиночитаемая схема гибрида удалена; актуальная схема каталога: [`schemas/catalog.schema.json`](../../../schemas/catalog.schema.json)
 
 Обязательные поля верхнего уровня:
 

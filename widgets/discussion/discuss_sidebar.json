@@ -1,269 +1,1028 @@
 {
-  "schemaVersion": 1,
-  "class": "DiscussSidebar",
-  "odooVersion": "20",
-  "category": "discussion",
-  "description": "Сайдбар Discuss Odoo 20: icon rail + список бесед",
-  "size": {
-    "width": 278,
-    "height": 722
-  },
-  "slots": [
-    {
-      "name": "channels",
-      "accepts": [
-        "DiscussChannelItem"
-      ]
-    }
-  ],
-  "slotAnchors": {
-    "channels": "slot:channels"
-  },
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "discussion",
-    "discuss"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "DiscussSidebar",
-      "x": 0,
-      "y": 0,
-      "width": 278,
-      "height": 722,
-      "props": {
-        "fill": "#F8F9FA",
-        "layout": "horizontal",
-        "gap": 8,
-        "padding": 8,
-        "sizingH": "fixed",
-        "sizingV": "fixed"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "DiscussSidebar",
+  "next_id": 19,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "IconRail",
-          "width": 72,
-          "height": 706,
-          "props": {
-            "fill": "#F8F9FA",
-            "layout": "vertical",
-            "gap": 8,
-            "padding": [
-              8,
-              8,
-              8,
-              8
-            ],
-            "crossAlign": "center",
-            "sizingV": "fill"
-          },
-          "children": [
-            {
-              "type": "frame",
-              "name": "TabChats",
-              "width": 40,
-              "height": 40,
-              "props": {
-                "fill": "#017E84",
-                "cornerRadius": 20,
-                "layout": "horizontal",
-                "mainAlign": "center",
-                "crossAlign": "center"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "TabChatsIcon",
-                  "text": "💬",
-                  "props": {
-                    "fontSize": 14,
-                    "fill": "#FFFFFF"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "TabChannels",
-              "width": 40,
-              "height": 40,
-              "props": {
-                "fill": "#DDDBE8",
-                "cornerRadius": 20,
-                "layout": "horizontal",
-                "mainAlign": "center",
-                "crossAlign": "center"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "TabChannelsIcon",
-                  "text": "#",
-                  "props": {
-                    "fontSize": 16,
-                    "fill": "#66598F"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "TabMeetings",
-              "width": 40,
-              "height": 40,
-              "props": {
-                "fill": "#DDDBE8",
-                "cornerRadius": 20,
-                "layout": "horizontal",
-                "mainAlign": "center",
-                "crossAlign": "center"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "TabMeetingsIcon",
-                  "text": "◷",
-                  "props": {
-                    "fontSize": 14,
-                    "fill": "#66598F"
-                  }
-                }
-              ]
-            }
-          ]
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "10": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        11,
+        13,
+        18
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
         {
-          "type": "frame",
-          "name": "ListCard",
-          "width": 190,
-          "height": 706,
-          "props": {
-            "fill": "#FFFFFF",
-            "cornerRadius": 12,
-            "stroke": "#DEE2E6",
-            "strokeWeight": 1,
-            "layout": "vertical",
-            "gap": 8,
-            "padding": 8,
-            "sizingH": "fill",
-            "sizingV": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
           },
-          "children": [
-            {
-              "type": "frame",
-              "name": "SearchBox",
-              "width": 174,
-              "height": 32,
-              "props": {
-                "fill": "#F8F9FA",
-                "cornerRadius": 8,
-                "layout": "horizontal",
-                "padding": [
-                  0,
-                  10,
-                  0,
-                  10
-                ],
-                "crossAlign": "center",
-                "sizingH": "fill"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "ph",
-                  "text": "Search Conversation",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 12,
-                    "fill": "#6C757D"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Filters",
-              "width": 174,
-              "height": 24,
-              "props": {
-                "layout": "horizontal",
-                "gap": 4,
-                "sizingH": "fill"
-              },
-              "children": [
-                {
-                  "type": "frame",
-                  "name": "FilterAll",
-                  "width": 40,
-                  "height": 22,
-                  "props": {
-                    "fill": "#E9ECEF",
-                    "cornerRadius": 11,
-                    "layout": "horizontal",
-                    "mainAlign": "center",
-                    "crossAlign": "center"
-                  },
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "FilterAllLabel",
-                      "text": "All",
-                      "props": {
-                        "fontFamily": "Inter",
-                        "fontSize": 11,
-                        "fill": "#212529"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "FilterUnread",
-                  "width": 52,
-                  "height": 22,
-                  "props": {
-                    "fill": "#00000000",
-                    "cornerRadius": 11,
-                    "layout": "horizontal",
-                    "mainAlign": "center",
-                    "crossAlign": "center"
-                  },
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "FilterUnreadLabel",
-                      "text": "Unread",
-                      "props": {
-                        "fontFamily": "Inter",
-                        "fontSize": 11,
-                        "fill": "#6C757D"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "slot:channels",
-              "width": 174,
-              "height": 620,
-              "props": {
-                "layout": "vertical",
-                "gap": 4,
-                "sizingH": "fill",
-                "sizingV": "fill"
-              },
-              "children": []
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 706.0,
+      "id": 10,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "ListCard",
+      "parent": 2,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 190.0
+    },
+    "11": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        12
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 11,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          10.0,
+          0.0,
+          10.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "SearchBox",
+      "parent": 10,
+      "type": "frame",
+      "width": 174.0
+    },
+    "12": {
+      "blend": "normal",
+      "characters": "Search Conversation",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 12,
+      "name": "ph",
+      "parent": 11,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 128.0
+    },
+    "13": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        14,
+        16
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 24.0,
+      "id": 13,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Filters",
+      "parent": 10,
+      "type": "frame",
+      "width": 174.0
+    },
+    "14": {
+      "children": [
+        15
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9372549057006836,
+            "g": 0.9254902005195618,
+            "r": 0.9137254953384399
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 22.0,
+      "id": 14,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "FilterAll",
+      "parent": 13,
+      "type": "frame",
+      "width": 40.0
+    },
+    "15": {
+      "blend": "normal",
+      "characters": "All",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 15.0,
+      "id": 15,
+      "name": "FilterAllLabel",
+      "parent": 14,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 11.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 19.0
+    },
+    "16": {
+      "children": [
+        17
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 22.0,
+      "id": 16,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "FilterUnread",
+      "parent": 13,
+      "type": "frame",
+      "width": 52.0
+    },
+    "17": {
+      "blend": "normal",
+      "characters": "Unread",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 15.0,
+      "id": 17,
+      "name": "FilterUnreadLabel",
+      "parent": 16,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 11.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 37.0
+    },
+    "18": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 620.0,
+      "id": 18,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:channels",
+      "parent": 10,
+      "type": "frame",
+      "width": 174.0
+    },
+    "2": {
+      "children": [
+        3,
+        10
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 722.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "DiscussSidebar",
+      "parent": 1,
+      "type": "frame",
+      "width": 278.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "fill"
+      },
+      "children": [
+        4,
+        6,
+        8
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 706.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "IconRail",
+      "parent": 2,
+      "type": "frame",
+      "width": 72.0
+    },
+    "4": {
+      "children": [
+        5
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.5176470875740051,
+            "g": 0.4941176474094391,
+            "r": 0.003921568859368563
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "TabChats",
+      "parent": 3,
+      "type": "frame",
+      "width": 40.0
+    },
+    "5": {
+      "blend": "normal",
+      "characters": "💬",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 5,
+      "name": "TabChatsIcon",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 14.0
+    },
+    "6": {
+      "children": [
+        7
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9098039269447327,
+            "g": 0.8588235378265381,
+            "r": 0.8666666746139526
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 6,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "TabChannels",
+      "parent": 3,
+      "type": "frame",
+      "width": 40.0
+    },
+    "7": {
+      "blend": "normal",
+      "characters": "#",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.5607843399047852,
+            "g": 0.3490196168422699,
+            "r": 0.4000000059604645
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 21.0,
+      "id": 7,
+      "name": "TabChannelsIcon",
+      "parent": 6,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 16.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 16.0
+    },
+    "8": {
+      "children": [
+        9
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9098039269447327,
+            "g": 0.8588235378265381,
+            "r": 0.8666666746139526
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 8,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "TabMeetings",
+      "parent": 3,
+      "type": "frame",
+      "width": 40.0
+    },
+    "9": {
+      "blend": "normal",
+      "characters": "◷",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.5607843399047852,
+            "g": 0.3490196168422699,
+            "r": 0.4000000059604645
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 9,
+      "name": "TabMeetingsIcon",
+      "parent": 8,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 14.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

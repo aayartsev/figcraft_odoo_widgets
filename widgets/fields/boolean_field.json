@@ -1,74 +1,258 @@
 {
-  "schemaVersion": 1,
-  "class": "BooleanField",
-  "odooVersion": "20",
-  "category": "fields",
-  "description": "Чекбокс boolean",
-  "size": {
-    "width": 540,
-    "height": 28
-  },
-  "slots": [],
-  "variants": [
-    "default",
-    "checked",
-    "readonly"
-  ],
-  "tags": [
-    "fields"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "BooleanField",
-      "x": 0,
-      "y": 0,
-      "width": 540,
-      "height": 28,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "gap": 12,
-        "crossAlign": "center"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "BooleanField",
+  "next_id": 6,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "text",
-          "name": "Label",
-          "text": "Is Company",
-          "width": 160,
-          "props": {
-            "fontFamily": "Inter",
-            "fontSize": 13,
-            "fill": "#6C757D"
-          }
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "children": [
+        3,
+        4
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "Checkbox",
-          "width": 16,
-          "height": 16,
-          "props": {
-            "fill": "#71639E",
-            "cornerRadius": 3,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "Check",
-              "text": "✓",
-              "props": {
-                "fontSize": 11,
-                "fill": "#FFFFFF"
-              }
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 28.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 12.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "BooleanField",
+      "parent": 1,
+      "type": "frame",
+      "width": 540.0
+    },
+    "3": {
+      "blend": "normal",
+      "characters": "Is Company",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 3,
+      "name": "Label",
+      "parent": 2,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 160.0
+    },
+    "4": {
+      "children": [
+        5
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Checkbox",
+      "parent": 2,
+      "type": "frame",
+      "width": 16.0
+    },
+    "5": {
+      "blend": "normal",
+      "characters": "✓",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 15.0,
+      "id": 5,
+      "name": "Check",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 11.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 11.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

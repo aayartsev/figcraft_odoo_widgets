@@ -1,116 +1,441 @@
 {
-  "schemaVersion": 1,
-  "class": "DiscussChannelItem",
-  "odooVersion": "20",
-  "category": "discussion",
-  "description": "Элемент списка бесед Discuss (NotificationItem)",
-  "size": {
-    "width": 174,
-    "height": 58
-  },
-  "slots": [],
-  "variants": [
-    "default",
-    "active",
-    "unread"
-  ],
-  "tags": [
-    "discussion",
-    "channel"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "DiscussChannelItem",
-      "x": 0,
-      "y": 0,
-      "width": 174,
-      "height": 58,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "gap": 8,
-        "padding": 8,
-        "crossAlign": "center",
-        "cornerRadius": 12,
-        "stroke": "#212529",
-        "strokeWeight": 1,
-        "sizingH": "fill"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "DiscussChannelItem",
+  "next_id": 9,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "Avatar",
-          "width": 36,
-          "height": 36,
-          "props": {
-            "fill": "#71639E",
-            "cornerRadius": 8
-          },
-          "children": []
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        3,
+        4,
+        7
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
         {
-          "type": "frame",
-          "name": "Body",
-          "width": 90,
-          "height": 42,
-          "props": {
-            "layout": "vertical",
-            "gap": 2,
-            "sizingH": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "Name",
-              "text": "OdooBot",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 13,
-                "fill": "#212529"
-              }
-            },
-            {
-              "type": "text",
-              "name": "Preview",
-              "text": "Hello 👋",
-              "props": {
-                "fontFamily": "Inter",
-                "fontSize": 12,
-                "fill": "#6C757D"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "name": "UnreadBadge",
-          "width": 18,
-          "height": 18,
-          "props": {
-            "fill": "#28A745",
-            "cornerRadius": 9,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center"
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "Count",
-              "text": "1",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Bold",
-                "fontSize": 10,
-                "fill": "#FFFFFF"
-              }
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 58.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "DiscussChannelItem",
+      "parent": 1,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 174.0
+    },
+    "3": {
+      "clip": true,
+      "corners": {
+        "radii": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 36.0,
+      "id": 3,
+      "name": "Avatar",
+      "parent": 2,
+      "type": "frame",
+      "width": 36.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        5,
+        6
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 42.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 2.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Body",
+      "parent": 2,
+      "type": "frame",
+      "width": 90.0
+    },
+    "5": {
+      "blend": "normal",
+      "characters": "OdooBot",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 5,
+      "name": "Name",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 51.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "Hello 👋",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 6,
+      "name": "Preview",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 48.0
+    },
+    "7": {
+      "children": [
+        8
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          9.0,
+          9.0,
+          9.0,
+          9.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.2705882489681244,
+            "g": 0.6549019813537598,
+            "r": 0.1568627506494522
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 18.0,
+      "id": 7,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "UnreadBadge",
+      "parent": 2,
+      "type": "frame",
+      "width": 18.0
+    },
+    "8": {
+      "blend": "normal",
+      "characters": "1",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 13.0,
+      "id": 8,
+      "name": "Count",
+      "parent": 7,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 10.0,
+        "font_style": "Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 10.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

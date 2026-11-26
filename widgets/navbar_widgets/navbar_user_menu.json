@@ -1,65 +1,204 @@
 {
-  "schemaVersion": 1,
-  "class": "NavbarUserMenu",
-  "odooVersion": "20",
-  "category": "navbar_widgets",
-  "description": "Аватар / меню пользователя в systray",
-  "size": {
-    "width": 44,
-    "height": 40
-  },
-  "slots": [],
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "navbar",
-    "systray",
-    "user"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "NavbarUserMenu",
-      "x": 0,
-      "y": 0,
-      "width": 44,
-      "height": 40,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "mainAlign": "center",
-        "crossAlign": "center"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "NavbarUserMenu",
+  "next_id": 5,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
+        },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "children": [
+        3
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "Avatar",
-          "width": 28,
-          "height": 28,
-          "props": {
-            "fill": "#FFFFFF",
-            "cornerRadius": 14,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "Initials",
-              "text": "AD",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 11,
-                "fill": "#71639E"
-              }
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 40.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "NavbarUserMenu",
+      "parent": 1,
+      "type": "frame",
+      "width": 44.0
+    },
+    "3": {
+      "children": [
+        4
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          14.0,
+          14.0,
+          14.0,
+          14.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 28.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Avatar",
+      "parent": 2,
+      "type": "frame",
+      "width": 28.0
+    },
+    "4": {
+      "blend": "normal",
+      "characters": "AD",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 15.0,
+      "id": 4,
+      "name": "Initials",
+      "parent": 3,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 11.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 13.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

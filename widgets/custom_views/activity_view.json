@@ -1,109 +1,411 @@
 {
-  "schemaVersion": 1,
-  "class": "ActivityView",
-  "odooVersion": "20",
-  "category": "custom_views",
-  "description": "Расписание активностей (activity view)",
-  "size": {
-    "width": 1106,
-    "height": 420
-  },
-  "slots": [],
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "custom_views",
-    "activity"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "ActivityView",
-      "x": 0,
-      "y": 0,
-      "width": 1106,
-      "height": 420,
-      "props": {
-        "fill": "#FFFFFF",
-        "layout": "vertical",
-        "gap": 8,
-        "padding": 16
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "ActivityView",
+  "next_id": 9,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "text",
-          "name": "Title",
-          "text": "Activities",
-          "props": {
-            "fontFamily": "Inter",
-            "fontStyle": "Semi Bold",
-            "fontSize": 16,
-            "fill": "#212529"
-          }
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "children": [
+        3,
+        4
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "ActRow",
-          "width": 1074,
-          "height": 56,
-          "props": {
-            "fill": "#F8F9FA",
-            "layout": "horizontal",
-            "gap": 12,
-            "padding": 12,
-            "crossAlign": "center",
-            "cornerRadius": 6,
-            "sizingH": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
           },
-          "children": [
-            {
-              "type": "ellipse",
-              "name": "Dot",
-              "width": 12,
-              "height": 12,
-              "props": {
-                "fill": "#28A745"
-              }
-            },
-            {
-              "type": "frame",
-              "name": "Meta",
-              "width": 800,
-              "height": 32,
-              "props": {
-                "layout": "vertical",
-                "gap": 2,
-                "sizingH": "fill"
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "a1",
-                  "text": "Call Azure Interior",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontStyle": "Medium",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "a2",
-                  "text": "Due today · Phone Call",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 12,
-                    "fill": "#6C757D"
-                  }
-                }
-              ]
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 420.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          16.0,
+          16.0,
+          16.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "ActivityView",
+      "parent": 1,
+      "type": "frame",
+      "width": 1106.0
+    },
+    "3": {
+      "blend": "normal",
+      "characters": "Activities",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 21.0,
+      "id": 3,
+      "name": "Title",
+      "parent": 2,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 16.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 90.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        5,
+        6
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 56.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 12.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "ActRow",
+      "parent": 2,
+      "type": "frame",
+      "width": 1074.0
+    },
+    "5": {
+      "blend": "normal",
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.2705882489681244,
+            "g": 0.6549019813537598,
+            "r": 0.1568627506494522
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 12.0,
+      "id": 5,
+      "inner": 0.0,
+      "name": "Dot",
+      "parent": 4,
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "type": "ellipse",
+      "width": 12.0
+    },
+    "6": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        7,
+        8
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 6,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 2.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Meta",
+      "parent": 4,
+      "type": "frame",
+      "width": 800.0
+    },
+    "7": {
+      "blend": "normal",
+      "characters": "Call Azure Interior",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 7,
+      "name": "a1",
+      "parent": 6,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Medium",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 139.0
+    },
+    "8": {
+      "blend": "normal",
+      "characters": "Due today · Phone Call",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 8,
+      "name": "a2",
+      "parent": 6,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 148.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

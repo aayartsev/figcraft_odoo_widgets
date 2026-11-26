@@ -1,146 +1,448 @@
 {
-  "schemaVersion": 1,
-  "class": "NavbarAppsMenu",
-  "odooVersion": "20",
-  "category": "navbar_widgets",
-  "description": "Кнопка AppsMenu (сетка) в верхней панели",
-  "size": {
-    "width": 40,
-    "height": 40
-  },
-  "slots": [],
-  "variants": [
-    "default",
-    "open"
-  ],
-  "tags": [
-    "navbar",
-    "apps"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "NavbarAppsMenu",
-      "x": 0,
-      "y": 0,
-      "width": 40,
-      "height": 40,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "mainAlign": "center",
-        "crossAlign": "center",
-        "cornerRadius": 6
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "NavbarAppsMenu",
+  "next_id": 13,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
+        },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "10": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
         {
-          "type": "frame",
-          "name": "AppsGrid",
-          "width": 18,
-          "height": 18,
-          "props": {
-            "fill": "#00000000",
-            "layout": "horizontal",
-            "gap": 3,
-            "wrap": true,
-            "sizingH": "fixed",
-            "sizingV": "fixed"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
           },
-          "children": [
-            {
-              "type": "rectangle",
-              "name": "d1",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d2",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d3",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d4",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d5",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d6",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d7",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d8",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            },
-            {
-              "type": "rectangle",
-              "name": "d9",
-              "width": 4,
-              "height": 4,
-              "props": {
-                "fill": "#FFFFFF",
-                "cornerRadius": 1
-              }
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 4.0,
+      "id": 10,
+      "name": "d7",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "11": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 11,
+      "name": "d8",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "12": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 12,
+      "name": "d9",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "2": {
+      "children": [
+        3
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "NavbarAppsMenu",
+      "parent": 1,
+      "type": "frame",
+      "width": 40.0
+    },
+    "3": {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 18.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 3.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": true
+      },
+      "name": "AppsGrid",
+      "parent": 2,
+      "type": "frame",
+      "width": 18.0
+    },
+    "4": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 4,
+      "name": "d1",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "5": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 5,
+      "name": "d2",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "6": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 6,
+      "name": "d3",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "7": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 7,
+      "name": "d4",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "8": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 8,
+      "name": "d5",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
+    },
+    "9": {
+      "blend": "normal",
+      "corners": {
+        "radii": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 4.0,
+      "id": 9,
+      "name": "d6",
+      "parent": 3,
+      "type": "rectangle",
+      "width": 4.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

@@ -1,357 +1,1386 @@
 {
-  "schemaVersion": 1,
-  "class": "ListView",
-  "odooVersion": "20",
-  "category": "views",
-  "description": "Табличный list / tree view с заголовком и примером строк",
-  "size": {
-    "width": 1366,
-    "height": 520
-  },
-  "slots": [
-    {
-      "name": "control_panel",
-      "accepts": [
-        "ControlPanel"
-      ]
-    },
-    {
-      "name": "columns",
-      "accepts": []
-    }
-  ],
-  "slotAnchors": {
-    "columns": "slot:columns",
-    "control_panel": "slot:control_panel"
-  },
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "views",
-    "list",
-    "tree"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "ListView",
-      "x": 0,
-      "y": 0,
-      "width": 1366,
-      "height": 520,
-      "props": {
-        "fill": "#FFFFFF",
-        "layout": "vertical",
-        "gap": 0,
-        "padding": 0,
-        "stroke": "#DEE2E6",
-        "strokeWeight": 1
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "ListView",
+  "next_id": 25,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "slot:control_panel",
-          "width": 1366,
-          "height": 0,
-          "props": {
-            "fill": "#00000000",
-            "layout": "vertical",
-            "sizingH": "fill",
-            "sizingV": "hug"
-          },
-          "children": []
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "10": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "HeaderRow",
-          "width": 1366,
-          "height": 40,
-          "props": {
-            "fill": "#F8F9FA",
-            "layout": "horizontal",
-            "gap": 0,
-            "padding": [
-              0,
-              16,
-              0,
-              16
-            ],
-            "crossAlign": "center",
-            "sizingH": "fill",
-            "sizingV": "fixed",
-            "stroke": "#DEE2E6",
-            "strokeWeight": 1
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "ColName",
-              "text": "Name",
-              "width": 280,
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 12,
-                "fill": "#6C757D"
-              }
-            },
-            {
-              "type": "text",
-              "name": "ColEmail",
-              "text": "Email",
-              "width": 320,
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 12,
-                "fill": "#6C757D"
-              }
-            },
-            {
-              "type": "text",
-              "name": "ColPhone",
-              "text": "Phone",
-              "width": 200,
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 12,
-                "fill": "#6C757D"
-              }
-            },
-            {
-              "type": "text",
-              "name": "ColCity",
-              "text": "City",
-              "width": 180,
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 12,
-                "fill": "#6C757D"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "name": "slot:columns",
-          "width": 1366,
-          "height": 480,
-          "props": {
-            "fill": "#FFFFFF",
-            "layout": "vertical",
-            "gap": 0,
-            "sizingH": "fill",
-            "sizingV": "fill"
-          },
-          "children": [
-            {
-              "type": "frame",
-              "name": "Row1",
-              "width": 1366,
-              "height": 40,
-              "props": {
-                "fill": "#FFFFFF",
-                "layout": "horizontal",
-                "padding": [
-                  0,
-                  16,
-                  0,
-                  16
-                ],
-                "crossAlign": "center",
-                "sizingH": "fill",
-                "sizingV": "fixed",
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "r1n",
-                  "text": "Azure Interior",
-                  "width": 280,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r1e",
-                  "text": "azure@example.com",
-                  "width": 320,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r1p",
-                  "text": "+1 555-0100",
-                  "width": 200,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r1c",
-                  "text": "Metropolis",
-                  "width": 180,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Row2",
-              "width": 1366,
-              "height": 40,
-              "props": {
-                "fill": "#F8F9FA",
-                "layout": "horizontal",
-                "padding": [
-                  0,
-                  16,
-                  0,
-                  16
-                ],
-                "crossAlign": "center",
-                "sizingH": "fill",
-                "sizingV": "fixed",
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "r2n",
-                  "text": "Deco Addict",
-                  "width": 280,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r2e",
-                  "text": "deco@example.com",
-                  "width": 320,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r2p",
-                  "text": "+1 555-0101",
-                  "width": 200,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r2c",
-                  "text": "Gotham",
-                  "width": 180,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "Row3",
-              "width": 1366,
-              "height": 40,
-              "props": {
-                "fill": "#FFFFFF",
-                "layout": "horizontal",
-                "padding": [
-                  0,
-                  16,
-                  0,
-                  16
-                ],
-                "crossAlign": "center",
-                "sizingH": "fill",
-                "sizingV": "fixed",
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "r3n",
-                  "text": "Ready Mat",
-                  "width": 280,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r3e",
-                  "text": "ready@example.com",
-                  "width": 320,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r3p",
-                  "text": "+1 555-0102",
-                  "width": 200,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                },
-                {
-                  "type": "text",
-                  "name": "r3c",
-                  "text": "Star City",
-                  "width": 180,
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontSize": 13,
-                    "fill": "#212529"
-                  }
-                }
-              ]
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 40.0,
+      "id": 10,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Row1",
+      "parent": 9,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1366.0
+    },
+    "11": {
+      "blend": "normal",
+      "characters": "Azure Interior",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 11,
+      "name": "r1n",
+      "parent": 10,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 280.0
+    },
+    "12": {
+      "blend": "normal",
+      "characters": "azure@example.com",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 12,
+      "name": "r1e",
+      "parent": 10,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 320.0
+    },
+    "13": {
+      "blend": "normal",
+      "characters": "+1 555-0100",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 13,
+      "name": "r1p",
+      "parent": 10,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 200.0
+    },
+    "14": {
+      "blend": "normal",
+      "characters": "Metropolis",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 14,
+      "name": "r1c",
+      "parent": 10,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 180.0
+    },
+    "15": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 15,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Row2",
+      "parent": 9,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1366.0
+    },
+    "16": {
+      "blend": "normal",
+      "characters": "Deco Addict",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 16,
+      "name": "r2n",
+      "parent": 15,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 280.0
+    },
+    "17": {
+      "blend": "normal",
+      "characters": "deco@example.com",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 17,
+      "name": "r2e",
+      "parent": 15,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 320.0
+    },
+    "18": {
+      "blend": "normal",
+      "characters": "+1 555-0101",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 18,
+      "name": "r2p",
+      "parent": 15,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 200.0
+    },
+    "19": {
+      "blend": "normal",
+      "characters": "Gotham",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 19,
+      "name": "r2c",
+      "parent": 15,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 180.0
+    },
+    "2": {
+      "children": [
+        3,
+        4,
+        9
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 520.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "ListView",
+      "parent": 1,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1366.0
+    },
+    "20": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 20,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Row3",
+      "parent": 9,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1366.0
+    },
+    "21": {
+      "blend": "normal",
+      "characters": "Ready Mat",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 21,
+      "name": "r3n",
+      "parent": 20,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 280.0
+    },
+    "22": {
+      "blend": "normal",
+      "characters": "ready@example.com",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 22,
+      "name": "r3e",
+      "parent": 20,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 320.0
+    },
+    "23": {
+      "blend": "normal",
+      "characters": "+1 555-0102",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 23,
+      "name": "r3p",
+      "parent": 20,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 200.0
+    },
+    "24": {
+      "blend": "normal",
+      "characters": "Star City",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 24,
+      "name": "r3c",
+      "parent": 20,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 180.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "hug"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 0.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:control_panel",
+      "parent": 2,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "HeaderRow",
+      "parent": 2,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1366.0
+    },
+    "5": {
+      "blend": "normal",
+      "characters": "Name",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 5,
+      "name": "ColName",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 280.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "Email",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 6,
+      "name": "ColEmail",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 320.0
+    },
+    "7": {
+      "blend": "normal",
+      "characters": "Phone",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 7,
+      "name": "ColPhone",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 200.0
+    },
+    "8": {
+      "blend": "normal",
+      "characters": "City",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fixed",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 8,
+      "name": "ColCity",
+      "parent": 4,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 180.0
+    },
+    "9": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        10,
+        15,
+        20
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 480.0,
+      "id": 9,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:columns",
+      "parent": 2,
+      "type": "frame",
+      "width": 1366.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

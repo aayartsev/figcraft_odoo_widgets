@@ -1,186 +1,629 @@
 {
-  "schemaVersion": 1,
-  "class": "FormView",
-  "odooVersion": "20",
-  "category": "views",
-  "description": "Form view: статус, заголовок и область для полей",
-  "size": {
-    "width": 1366,
-    "height": 640
-  },
-  "slots": [
-    {
-      "name": "control_panel",
-      "accepts": [
-        "ControlPanel"
-      ]
-    },
-    {
-      "name": "fields",
-      "accepts": [
-        "CharField",
-        "TextField",
-        "BooleanField",
-        "Many2oneField",
-        "SelectionField",
-        "DateTimeField",
-        "MonetaryField"
-      ]
-    }
-  ],
-  "slotAnchors": {
-    "fields": "slot:fields",
-    "control_panel": "slot:control_panel"
-  },
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "views",
-    "form"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "FormView",
-      "x": 0,
-      "y": 0,
-      "width": 1366,
-      "height": 640,
-      "props": {
-        "fill": "#F8F9FA",
-        "layout": "vertical",
-        "gap": 16,
-        "padding": 16
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "FormView",
+  "next_id": 12,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "slot:control_panel",
-          "width": 1366,
-          "height": 0,
-          "props": {
-            "fill": "#00000000",
-            "layout": "vertical",
-            "sizingH": "fill",
-            "sizingV": "hug"
-          },
-          "children": []
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "10": {
+      "blend": "normal",
+      "characters": "Azure Interior",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
         {
-          "type": "frame",
-          "name": "StatusBar",
-          "width": 1074,
-          "height": 36,
-          "props": {
-            "fill": "#00000000",
-            "layout": "horizontal",
-            "mainAlign": "max",
-            "gap": 0,
-            "sizingH": "fill",
-            "sizingV": "hug"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
           },
-          "children": [
-            {
-              "type": "frame",
-              "name": "StatusDraft",
-              "width": 80,
-              "height": 28,
-              "props": {
-                "fill": "#71639E",
-                "layout": "horizontal",
-                "mainAlign": "center",
-                "crossAlign": "center",
-                "cornerRadius": 4
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "DraftLabel",
-                  "text": "Draft",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontStyle": "Medium",
-                    "fontSize": 12,
-                    "fill": "#FFFFFF"
-                  }
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "name": "StatusDone",
-              "width": 80,
-              "height": 28,
-              "props": {
-                "fill": "#E9ECEF",
-                "layout": "horizontal",
-                "mainAlign": "center",
-                "crossAlign": "center",
-                "cornerRadius": 4
-              },
-              "children": [
-                {
-                  "type": "text",
-                  "name": "DoneLabel",
-                  "text": "Done",
-                  "props": {
-                    "fontFamily": "Inter",
-                    "fontStyle": "Medium",
-                    "fontSize": 12,
-                    "fill": "#6C757D"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "name": "Sheet",
-          "width": 1074,
-          "height": 560,
-          "props": {
-            "fill": "#FFFFFF",
-            "layout": "vertical",
-            "gap": 16,
-            "padding": 24,
-            "cornerRadius": 6,
-            "stroke": "#DEE2E6",
-            "strokeWeight": 1,
-            "sizingH": "fill",
-            "sizingV": "fill"
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "Title",
-              "text": "Azure Interior",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Bold",
-                "fontSize": 24,
-                "fill": "#212529"
-              }
-            },
-            {
-              "type": "frame",
-              "name": "slot:fields",
-              "width": 1026,
-              "height": 460,
-              "props": {
-                "fill": "#00000000",
-                "layout": "vertical",
-                "gap": 12,
-                "sizingH": "fill",
-                "sizingV": "fill"
-              },
-              "children": []
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 32.0,
+      "id": 10,
+      "name": "Title",
+      "parent": 9,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 24.0,
+        "font_style": "Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 189.0
+    },
+    "11": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 460.0,
+      "id": 11,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 12.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:fields",
+      "parent": 9,
+      "type": "frame",
+      "width": 1026.0
+    },
+    "2": {
+      "children": [
+        3,
+        4,
+        9
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 640.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 16.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          16.0,
+          16.0,
+          16.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "FormView",
+      "parent": 1,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "hug"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 0.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:control_panel",
+      "parent": 2,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "hug"
+      },
+      "children": [
+        5,
+        7
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 36.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "max",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "StatusBar",
+      "parent": 2,
+      "type": "frame",
+      "width": 1074.0
+    },
+    "5": {
+      "children": [
+        6
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 28.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "StatusDraft",
+      "parent": 4,
+      "type": "frame",
+      "width": 80.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "Draft",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 6,
+      "name": "DraftLabel",
+      "parent": 5,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Medium",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 34.0
+    },
+    "7": {
+      "children": [
+        8
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9372549057006836,
+            "g": 0.9254902005195618,
+            "r": 0.9137254953384399
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 28.0,
+      "id": 7,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "StatusDone",
+      "parent": 4,
+      "type": "frame",
+      "width": 80.0
+    },
+    "8": {
+      "blend": "normal",
+      "characters": "Done",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 8,
+      "name": "DoneLabel",
+      "parent": 7,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Medium",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 27.0
+    },
+    "9": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        10,
+        11
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 560.0,
+      "id": 9,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 16.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Sheet",
+      "parent": 2,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 1074.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

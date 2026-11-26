@@ -1,3 +1,5 @@
+> **Устарела по части atlas/`.figcraft`.** Актуальная утилита — только `validate` над нативными JSON; см. [2026-11-26-native-widget-storage-design.md](2026-11-26-native-widget-storage-design.md).
+
 # Утилита сборки FigCraft из JSON-виджетов
 
 **Дата:** 2026-11-26  

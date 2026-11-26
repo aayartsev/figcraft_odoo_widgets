@@ -2,47 +2,39 @@
 
 Библиотека UI-виджетов **Odoo 20 Community** для макетов в FigCraft.
 
-Каждый виджет — один JSON: метаданные для сборки страниц и визуальный фрагмент FigCraft. Из них удобно собирать демо-экраны и обсуждать интерфейс с клиентами.
+Каждый виджет — **нативный JSON-документ FigCraft**: открывается в FigCraft без сборки. Метаданные для будущей склейки экранов — в [`catalog.json`](catalog.json).
+
+Спека: [docs/superpowers/specs/2026-11-26-native-widget-storage-design.md](docs/superpowers/specs/2026-11-26-native-widget-storage-design.md).
 
 ## Структура
 
 ```
-widgets/
-  shell/             # каркас: WebClientShell, Navbar
-  navbar_widgets/    # apps-меню, разделы, systray, пользователь, сообщения, компания
-  menu/              # содержимое боковой панели AppsMenu (RootMenu, MenuItem)
-  views/             # control panel, list / form / kanban
-  fields/            # стандартные поля форм
-  custom_views/      # calendar, graph, pivot, activity (+ _template.json)
-  discussion/        # Discuss: sidebar, thread, message, composer
-  custom/            # виджеты под конкретный проект (+ _template.json)
-demos/               # справочные compose (не все собираются билдером)
-schemas/             # JSON Schema для файлов виджетов
-catalog.json         # каталог всех виджетов
-figcraft_build/      # Rust-утилита: validate + atlas → .figcraft
-dist/                # собранные .figcraft (gitignore)
+widgets/             # нативные JSON FigCraft (один файл = один виджет)
+catalog.json         # обёртка: class, category, slots, size, …
+schemas/             # schema каталога
+figcraft_build/      # validate
+demos/               # устаревший справочный compose (вне нового формата)
+dist/                # локальные артефакты (gitignore)
 ```
 
-## Сборка атласа
+## Как открыть виджет
 
-Источник правды — JSON. Файл для FigCraft собирает утилита:
+В FigCraft: File → Open (или MCP `open_file`) на файл вроде `widgets/fields/date_time_field.json`.  
+Конвертация в бинарный `.figcraft` **не нужна** и в пайплайне не используется.
+
+## Проверка каталога
 
 ```bash
 cargo run -p figcraft_build -- validate
-cargo run -p figcraft_build -- atlas
 ```
 
-Откройте `dist/atlas_all_widgets.figcraft` в FigCraft **0.18.1**. Подробности: [`figcraft_build/README.md`](figcraft_build/README.md) и [спека билдера](docs/superpowers/specs/2026-11-26-figcraft-build-tool-design.md).
+## Правила
 
-## Правила файла виджета
-
-1. Один класс виджета → один JSON-файл
-2. Имя файла = `class` в **snake_case** (`Navbar` → `navbar.json`)
-3. Гибридный формат: метаданные (`slots`, `size`, …) + фрагмент `figcraft.root`
-4. Точки монтирования слотов — фреймы с именем `slot:<name>`
-5. Шаблоны `_template.json` в каталог не входят — скопируйте и переименуйте под новый виджет
-
-Подробности: [docs/superpowers/specs/2026-11-26-odoo-widget-format-design.md](docs/superpowers/specs/2026-11-26-odoo-widget-format-design.md).
+1. Имя файла = `class` в **snake_case** (`Navbar` → `navbar.json`)
+2. В файле макета — только нативный документ FigCraft
+3. Описание, слоты, размер, варианты — в записи `catalog.json`
+4. Точки монтирования — фреймы `slot:<name>` в макете
+5. В репозитории и пайплайне — **только текстовые JSON**, без бинарных `.figcraft`
 
 ## Категории
 
@@ -50,23 +42,17 @@ cargo run -p figcraft_build -- atlas
 |-----------|--------|
 | `shell` | Каркас приложения (navbar + область действия) |
 | `navbar_widgets` | Элементы верхней панели и systray |
-| `menu` | Содержимое боковой панели AppsMenu (не постоянное левое меню) |
-| `views` | Стандартные list / form / kanban и control panel |
+| `menu` | Содержимое боковой панели AppsMenu |
+| `views` | list / form / kanban и control panel |
 | `fields` | Поля форм |
-| `custom_views` | Другие режимы вида: calendar, graph, pivot, activity |
-| `discussion` | UI Discuss / сообщений (отдельно от systray) |
+| `custom_views` | calendar, graph, pivot, activity |
+| `discussion` | UI Discuss / сообщений |
 | `custom` | Разовые виджеты под проект |
 
 ## Визуальный ориентир
 
-Odoo 20 **Community**: бренд `#71639E`, фон `#F8F9FA`, основные кнопки того же бренда, акцент Discuss `#017E84`, ссылки формы / many2one `#66598F`, badge navbar `#28A745`. В макетах FigCraft шрифт **Inter**. Это узнаваемый стиль, а не пиксель-перфект с живой базы.
+Odoo 20 **Community**: бренд `#71639E`, фон `#F8F9FA`, Inter в макетах FigCraft. Узнаваемый стиль, не пиксель-перфект.
 
 ## Демо
 
-[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — справочный compose: shell + navbar (apps / разделы / systray) + control panel + пустая область view. Без постоянного левого меню. Пока **не** собирается `figcraft_build` (билдер v1 делает только атлас виджетов).
-
-## С чего начать
-
-1. Выберите виджеты в [`catalog.json`](catalog.json)
-2. Соберите атлас (`cargo run -p figcraft_build -- atlas`) и откройте в FigCraft
-3. Для своих кусков скопируйте `widgets/custom/_template.json` или `widgets/custom_views/_template.json`
+[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — **устаревший** справочный compose (старый гибридный DSL). Вне нового формата, `validate` его не проверяет. Перенос в нативный JSON — отдельная работа.

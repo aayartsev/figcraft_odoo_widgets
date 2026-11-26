@@ -1,136 +1,442 @@
 {
-  "schemaVersion": 1,
-  "class": "NavbarSections",
-  "odooVersion": "20",
-  "category": "navbar_widgets",
-  "description": "Разделы текущего приложения в верхней панели",
-  "size": {
-    "width": 360,
-    "height": 40
-  },
-  "slots": [],
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "navbar",
-    "sections"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "NavbarSections",
-      "x": 0,
-      "y": 0,
-      "width": 360,
-      "height": 40,
-      "props": {
-        "fill": "#00000000",
-        "layout": "horizontal",
-        "gap": 4,
-        "crossAlign": "center",
-        "sizingH": "hug",
-        "sizingV": "fixed"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "NavbarSections",
+  "next_id": 9,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "SectionActive",
-          "width": 72,
-          "height": 32,
-          "props": {
-            "fill": "#00000014",
-            "cornerRadius": 4,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center",
-            "padding": [
-              0,
-              12,
-              0,
-              12
-            ]
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "ActiveLabel",
-              "text": "Inbox",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Medium",
-                "fontSize": 13,
-                "fill": "#FFFFFF"
-              }
-            }
-          ]
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        3,
+        5,
+        7
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "SectionIdle",
-          "width": 88,
-          "height": 32,
-          "props": {
-            "fill": "#00000000",
-            "cornerRadius": 4,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center",
-            "padding": [
-              0,
-              12,
-              0,
-              12
-            ]
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
           },
-          "children": [
-            {
-              "type": "text",
-              "name": "IdleLabel",
-              "text": "Starred",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Regular",
-                "fontSize": 13,
-                "fill": "#FFFFFFCC"
-              }
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "name": "SectionIdle2",
-          "width": 96,
-          "height": 32,
-          "props": {
-            "fill": "#00000000",
-            "cornerRadius": 4,
-            "layout": "horizontal",
-            "mainAlign": "center",
-            "crossAlign": "center",
-            "padding": [
-              0,
-              12,
-              0,
-              12
-            ]
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "IdleLabel2",
-              "text": "Channels",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Regular",
-                "fontSize": 13,
-                "fill": "#FFFFFFCC"
-              }
-            }
-          ]
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 40.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "NavbarSections",
+      "parent": 1,
+      "type": "frame",
+      "width": 360.0
+    },
+    "3": {
+      "children": [
+        4
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0784313753247261,
+          "opacity": 0.0784313753247261,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          12.0,
+          0.0,
+          12.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "SectionActive",
+      "parent": 2,
+      "type": "frame",
+      "width": 72.0
+    },
+    "4": {
+      "blend": "normal",
+      "characters": "Inbox",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 4,
+      "name": "ActiveLabel",
+      "parent": 3,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Medium",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 37.0
+    },
+    "5": {
+      "children": [
+        6
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          12.0,
+          0.0,
+          12.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "SectionIdle",
+      "parent": 2,
+      "type": "frame",
+      "width": 88.0
+    },
+    "6": {
+      "blend": "normal",
+      "characters": "Starred",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "colorAlpha": 0.800000011920929,
+          "opacity": 0.800000011920929,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 6,
+      "name": "IdleLabel",
+      "parent": 5,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 51.0
+    },
+    "7": {
+      "children": [
+        8
+      ],
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 32.0,
+      "id": 7,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          12.0,
+          0.0,
+          12.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "SectionIdle2",
+      "parent": 2,
+      "type": "frame",
+      "width": 96.0
+    },
+    "8": {
+      "blend": "normal",
+      "characters": "Channels",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "colorAlpha": 0.800000011920929,
+          "opacity": 0.800000011920929,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 17.0,
+      "id": 8,
+      "name": "IdleLabel2",
+      "parent": 7,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 13.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 59.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

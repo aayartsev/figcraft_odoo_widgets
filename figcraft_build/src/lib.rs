@@ -1,19 +1,11 @@
-//! Validate Odoo widget JSON and build a FigCraft atlas document.
+//! Validate Odoo widget catalog against native FigCraft JSON files.
 
-pub mod atlas;
 pub mod catalog;
-pub mod compare;
-pub mod convert;
-pub mod export_widget;
-pub mod props;
+pub mod native_doc;
 pub mod root;
 pub mod validate;
-pub mod widget;
 
-pub use atlas::{AtlasOptions, build_atlas};
 pub use catalog::{Catalog, CatalogEntry, load_catalog};
-pub use convert::fragment_to_document;
-pub use export_widget::{build_widget_document, default_widget_out};
+pub use native_doc::{class_to_snake, load_native_document, page_root_id};
 pub use root::resolve_repo_root;
-pub use validate::{ValidationError, validate_catalog, validate_widget};
-pub use widget::{FragmentNode, WidgetDoc, load_widget};
+pub use validate::{ValidationError, default_catalog_path, schema_path, validate_catalog};

@@ -1,109 +1,291 @@
 {
-  "schemaVersion": 1,
-  "class": "RootMenu",
-  "odooVersion": "20",
-  "category": "menu",
-  "description": "Содержимое боковой панели AppsMenu: список приложений",
-  "size": {
-    "width": 260,
-    "height": 722
-  },
-  "slots": [
-    {
-      "name": "items",
-      "accepts": [
-        "MenuItem"
-      ]
-    }
-  ],
-  "slotAnchors": {
-    "items": "slot:items"
-  },
-  "variants": [
-    "default"
-  ],
-  "tags": [
-    "menu",
-    "apps-sidebar",
-    "navigation"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "RootMenu",
-      "x": 0,
-      "y": 0,
-      "width": 260,
-      "height": 722,
-      "props": {
-        "fill": "#FFFFFF",
-        "layout": "vertical",
-        "gap": 0,
-        "padding": [
-          12,
-          0,
-          12,
-          0
-        ],
-        "stroke": "#DEE2E6",
-        "strokeWeight": 1,
-        "strokeAlign": "outside"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "RootMenu",
+  "next_id": 6,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "AppHeader",
-          "width": 260,
-          "height": 40,
-          "props": {
-            "fill": "#00000000",
-            "layout": "horizontal",
-            "padding": [
-              0,
-              16,
-              0,
-              16
-            ],
-            "crossAlign": "center",
-            "sizingH": "fill",
-            "sizingV": "fixed"
-          },
-          "children": [
-            {
-              "type": "text",
-              "name": "AppName",
-              "text": "Discuss",
-              "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Semi Bold",
-                "fontSize": 14,
-                "fill": "#212529"
-              }
-            }
-          ]
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "2": {
+      "children": [
+        3,
+        5
+      ],
+      "clip": true,
+      "fills": [
         {
-          "type": "frame",
-          "name": "slot:items",
-          "width": 260,
-          "height": 670,
-          "props": {
-            "fill": "#00000000",
-            "layout": "vertical",
-            "gap": 2,
-            "padding": [
-              4,
-              8,
-              4,
-              8
-            ],
-            "sizingH": "fill",
-            "sizingV": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
           },
-          "children": []
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 722.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          12.0,
+          0.0,
+          12.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "RootMenu",
+      "parent": 1,
+      "stroke": {
+        "align": "outside",
+        "cap_end": "none",
+        "cap_start": "none",
+        "dashes": [],
+        "join": "miter",
+        "miter_limit": 4.0,
+        "sides": null,
+        "weight": 1.0
+      },
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 260.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        4
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 40.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          16.0,
+          0.0,
+          16.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "AppHeader",
+      "parent": 2,
+      "type": "frame",
+      "width": 260.0
+    },
+    "4": {
+      "blend": "normal",
+      "characters": "Discuss",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 4,
+      "name": "AppName",
+      "parent": 3,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 55.0
+    },
+    "5": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 670.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 2.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          4.0,
+          8.0,
+          4.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:items",
+      "parent": 2,
+      "type": "frame",
+      "width": 260.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

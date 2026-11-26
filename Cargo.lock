@@ -516,7 +516,6 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "clap",
- "figcraft-color",
  "figcraft-doc",
  "figcraft-format",
  "jsonschema",

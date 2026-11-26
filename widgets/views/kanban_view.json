@@ -1,231 +1,810 @@
 {
-  "schemaVersion": 1,
-  "class": "KanbanView",
-  "odooVersion": "20",
-  "category": "views",
-  "description": "Kanban Contacts: карточки без колонок (ungrouped)",
-  "size": {
-    "width": 1366,
-    "height": 560
-  },
-  "slots": [
-    {
-      "name": "control_panel",
-      "accepts": [
-        "ControlPanel"
-      ]
-    },
-    {
-      "name": "columns",
-      "accepts": []
-    }
-  ],
-  "slotAnchors": {
-    "columns": "slot:columns",
-    "control_panel": "slot:control_panel"
-  },
-  "variants": [
-    "default",
-    "ungrouped"
-  ],
-  "tags": [
-    "views",
-    "kanban"
-  ],
-  "figcraft": {
-    "kind": "fragment",
-    "root": {
-      "type": "frame",
-      "name": "KanbanView",
-      "x": 0,
-      "y": 0,
-      "width": 1366,
-      "height": 560,
-      "props": {
-        "fill": "#F8F9FA",
-        "layout": "vertical",
-        "gap": 0,
-        "padding": 0,
-        "sizingH": "fill",
-        "sizingV": "fill"
+  "comments": [],
+  "current_page": 1,
+  "document_colors": [],
+  "format": "figcraft",
+  "imageIndex": [],
+  "name": "KanbanView",
+  "next_id": 16,
+  "nodes": {
+    "1": {
+      "background": {
+        "a": 1.0,
+        "b": 0.9607843160629272,
+        "g": 0.9607843160629272,
+        "r": 0.9607843160629272
       },
       "children": [
-        {
-          "type": "frame",
-          "name": "slot:control_panel",
-          "width": 1366,
-          "height": 0,
-          "props": {
-            "fill": "#00000000",
-            "layout": "vertical",
-            "sizingH": "fill",
-            "sizingV": "hug"
-          },
-          "children": []
+        2
+      ],
+      "flows": [],
+      "height": 0.0,
+      "id": 1,
+      "name": "Page 1",
+      "prototype": {
+        "background": {
+          "a": 1.0,
+          "b": 0.11764705926179886,
+          "g": 0.11764705926179886,
+          "r": 0.11764705926179886
         },
+        "device": "None",
+        "rotation": "portrait"
+      },
+      "type": "page",
+      "width": 0.0
+    },
+    "10": {
+      "blend": "normal",
+      "characters": "admin@example.com",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
         {
-          "type": "frame",
-          "name": "Board",
-          "width": 1366,
-          "height": 560,
-          "props": {
-            "fill": "#F8F9FA",
-            "layout": "vertical",
-            "gap": 0,
-            "padding": 8,
-            "sizingH": "fill",
-            "sizingV": "fill"
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
           },
-          "children": [
-            {
-              "type": "frame",
-              "name": "slot:columns",
-              "width": 1350,
-              "height": 544,
-              "props": {
-                "fill": "#00000000",
-                "layout": "horizontal",
-                "gap": 8,
-                "wrap": true,
-                "sizingH": "fill",
-                "sizingV": "fill"
-              },
-              "children": [
-                {
-                  "type": "frame",
-                  "name": "CardAdmin",
-                  "width": 439,
-                  "height": 80,
-                  "props": {
-                    "fill": "#FFFFFF",
-                    "stroke": "#DEE2E6",
-                    "strokeWeight": 1,
-                    "layout": "horizontal",
-                    "gap": 8,
-                    "padding": 8,
-                    "crossAlign": "center",
-                    "sizingH": "fixed",
-                    "sizingV": "fixed"
-                  },
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Avatar1",
-                      "width": 48,
-                      "height": 48,
-                      "props": {
-                        "fill": "#71639E",
-                        "cornerRadius": 4
-                      },
-                      "children": []
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Meta1",
-                      "width": 360,
-                      "height": 64,
-                      "props": {
-                        "layout": "vertical",
-                        "gap": 4,
-                        "mainAlign": "center",
-                        "sizingH": "fill"
-                      },
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Title1",
-                          "text": "Administrator",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontStyle": "Semi Bold",
-                            "fontSize": 14,
-                            "fill": "#212529"
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "name": "Sub1",
-                          "text": "admin@example.com",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontSize": 12,
-                            "fill": "#6C757D"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "CardCompany",
-                  "width": 439,
-                  "height": 80,
-                  "props": {
-                    "fill": "#FFFFFF",
-                    "stroke": "#DEE2E6",
-                    "strokeWeight": 1,
-                    "layout": "horizontal",
-                    "gap": 8,
-                    "padding": 8,
-                    "crossAlign": "center",
-                    "sizingH": "fixed",
-                    "sizingV": "fixed"
-                  },
-                  "children": [
-                    {
-                      "type": "frame",
-                      "name": "Avatar2",
-                      "width": 48,
-                      "height": 48,
-                      "props": {
-                        "fill": "#E9ECEF",
-                        "cornerRadius": 4
-                      },
-                      "children": []
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Meta2",
-                      "width": 360,
-                      "height": 64,
-                      "props": {
-                        "layout": "vertical",
-                        "gap": 4,
-                        "mainAlign": "center",
-                        "sizingH": "fill"
-                      },
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "Title2",
-                          "text": "My Company",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontStyle": "Semi Bold",
-                            "fontSize": 14,
-                            "fill": "#212529"
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "name": "Sub2",
-                          "text": "Belarus",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontSize": 12,
-                            "fill": "#6C757D"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
         }
-      ]
+      ],
+      "height": 16.0,
+      "id": 10,
+      "name": "Sub1",
+      "parent": 8,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 115.0
+    },
+    "11": {
+      "children": [
+        12,
+        13
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 80.0,
+      "id": 11,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "CardCompany",
+      "parent": 5,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 439.0
+    },
+    "12": {
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9372549057006836,
+            "g": 0.9254902005195618,
+            "r": 0.9137254953384399
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 48.0,
+      "id": 12,
+      "name": "Avatar2",
+      "parent": 11,
+      "type": "frame",
+      "width": 48.0
+    },
+    "13": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        14,
+        15
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 64.0,
+      "id": 13,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Meta2",
+      "parent": 11,
+      "type": "frame",
+      "width": 360.0
+    },
+    "14": {
+      "blend": "normal",
+      "characters": "My Company",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 14,
+      "name": "Title2",
+      "parent": 13,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 79.0
+    },
+    "15": {
+      "blend": "normal",
+      "characters": "Belarus",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.4901960790157318,
+            "g": 0.4588235318660736,
+            "r": 0.42352941632270813
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 16.0,
+      "id": 15,
+      "name": "Sub2",
+      "parent": 13,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 12.0,
+        "font_style": "Regular",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 48.0
+    },
+    "2": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        3,
+        4
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 560.0,
+      "id": 2,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "KanbanView",
+      "parent": 1,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "3": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "hug"
+      },
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 0.0,
+      "id": 3,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "slot:control_panel",
+      "parent": 2,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "4": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        5
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "r": 0.9725490212440491
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 560.0,
+      "id": 4,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 0.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "vertical",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Board",
+      "parent": 2,
+      "type": "frame",
+      "width": 1366.0
+    },
+    "5": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fill"
+      },
+      "children": [
+        6,
+        11
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.0,
+            "g": 0.0,
+            "r": 0.0
+          },
+          "colorAlpha": 0.0,
+          "opacity": 0.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 544.0,
+      "id": 5,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": true
+      },
+      "name": "slot:columns",
+      "parent": 4,
+      "type": "frame",
+      "width": 1350.0
+    },
+    "6": {
+      "children": [
+        7,
+        8
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 80.0,
+      "id": 6,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "center",
+        "cross_gap": 0.0,
+        "gap": 8.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "min",
+        "mode": "horizontal",
+        "padding": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "CardAdmin",
+      "parent": 5,
+      "strokes": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.9019607901573181,
+            "g": 0.886274516582489,
+            "r": 0.8705882430076599
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "type": "frame",
+      "width": 439.0
+    },
+    "7": {
+      "clip": true,
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.6196078658103943,
+            "g": 0.38823530077934265,
+            "r": 0.4431372582912445
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 48.0,
+      "id": 7,
+      "name": "Avatar1",
+      "parent": 6,
+      "type": "frame",
+      "width": 48.0
+    },
+    "8": {
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "fill",
+        "sizing_v": "fixed"
+      },
+      "children": [
+        9,
+        10
+      ],
+      "clip": true,
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 1.0,
+            "g": 1.0,
+            "r": 1.0
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 64.0,
+      "id": 8,
+      "layout": {
+        "column_tracks": [],
+        "content_align": "auto",
+        "cross_align": "min",
+        "cross_gap": 0.0,
+        "gap": 4.0,
+        "grid_columns": 2,
+        "grid_rows": 2,
+        "main_align": "center",
+        "mode": "vertical",
+        "padding": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reverse_z": false,
+        "row_tracks": [],
+        "strokes_included": true,
+        "wrap": false
+      },
+      "name": "Meta1",
+      "parent": 6,
+      "type": "frame",
+      "width": 360.0
+    },
+    "9": {
+      "blend": "normal",
+      "characters": "Administrator",
+      "child_layout": {
+        "absolute": false,
+        "grid_column": null,
+        "grid_column_span": 0,
+        "grid_row": null,
+        "grid_row_span": 0,
+        "max_h": null,
+        "max_w": null,
+        "min_h": null,
+        "min_w": null,
+        "sizing_h": "hug",
+        "sizing_v": "hug"
+      },
+      "fills": [
+        {
+          "blend": "normal",
+          "color": {
+            "a": 1.0,
+            "b": 0.16078431904315948,
+            "g": 0.14509804546833038,
+            "r": 0.12941177189350128
+          },
+          "opacity": 1.0,
+          "type": "solid",
+          "visible": true
+        }
+      ],
+      "height": 19.0,
+      "id": 9,
+      "name": "Title1",
+      "parent": 8,
+      "style": {
+        "case": "original",
+        "decoration": "none",
+        "fills": null,
+        "font_family": "Inter",
+        "font_size": 14.0,
+        "font_style": "Semi Bold",
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "line_height": {
+          "unit": "auto"
+        },
+        "link": null
+      },
+      "type": "text",
+      "width": 102.0
     }
-  }
+  },
+  "pages": [
+    1
+  ],
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "version": 1
 }

@@ -3,7 +3,7 @@ use serde::Deserialize;
 use std::fs;
 use std::path::{Path, PathBuf};
 
-/// Stable category order for the atlas (format spec table).
+/// Stable category order for docs / future compose.
 pub const CATEGORY_ORDER: &[&str] = &[
     "shell",
     "navbar_widgets",
@@ -24,10 +24,29 @@ pub struct Catalog {
 }
 
 #[derive(Debug, Clone, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct CatalogEntry {
     pub class: String,
     pub category: String,
     pub path: String,
+    pub description: String,
+    pub size: Size,
+    pub slots: Vec<Slot>,
+    pub variants: Vec<String>,
+    #[serde(default)]
+    pub tags: Option<Vec<String>>,
+}
+
+#[derive(Debug, Clone, Deserialize)]
+pub struct Size {
+    pub width: f64,
+    pub height: f64,
+}
+
+#[derive(Debug, Clone, Deserialize)]
+pub struct Slot {
+    pub name: String,
+    pub accepts: Vec<String>,
 }
 
 pub fn load_catalog(path: &Path) -> Result<Catalog> {
@@ -35,9 +54,9 @@ pub fn load_catalog(path: &Path) -> Result<Catalog> {
         .with_context(|| format!("read catalog {}", path.display()))?;
     let catalog: Catalog = serde_json::from_str(&text)
         .with_context(|| format!("parse catalog {}", path.display()))?;
-    if catalog.schema_version != 1 {
+    if catalog.schema_version != 2 {
         bail!(
-            "unsupported catalog schemaVersion {} (expected 1)",
+            "unsupported catalog schemaVersion {} (expected 2)",
             catalog.schema_version
         );
     }
@@ -45,21 +64,6 @@ pub fn load_catalog(path: &Path) -> Result<Catalog> {
 }
 
 impl Catalog {
-    pub fn entries_by_category_order(&self) -> Vec<(String, Vec<&CatalogEntry>)> {
-        let mut out = Vec::new();
-        for &cat in CATEGORY_ORDER {
-            let entries: Vec<&CatalogEntry> = self
-                .widgets
-                .iter()
-                .filter(|w| w.category == cat)
-                .collect();
-            if !entries.is_empty() {
-                out.push((cat.to_string(), entries));
-            }
-        }
-        out
-    }
-
     pub fn resolve_path(&self, root: &Path, entry: &CatalogEntry) -> PathBuf {
         root.join(&entry.path)
     }
