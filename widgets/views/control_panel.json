@@ -6,7 +6,7 @@
   "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов",
   "size": {
     "width": 1366,
-    "height": 52
+    "height": 64
   },
   "slots": [
     {
@@ -32,22 +32,19 @@
       "x": 0,
       "y": 0,
       "width": 1366,
-      "height": 52,
+      "height": 64,
       "props": {
         "fill": "#FFFFFF",
         "layout": "horizontal",
-        "gap": 16,
+        "gap": 24,
         "padding": [
-          8,
+          12,
           16,
-          8,
+          16,
           16
         ],
         "crossAlign": "center",
         "mainAlign": "spaceBetween",
-        "stroke": "#DEE2E6",
-        "strokeWeight": 1,
-        "strokeAlign": "outside",
         "sizingH": "fill",
         "sizingV": "fixed"
       },

@@ -114,7 +114,7 @@
                       "width": 72,
                       "height": 32,
                       "props": {
-                        "fill": "#5C5282",
+                        "fill": "#00000014",
                         "cornerRadius": 4,
                         "layout": "horizontal",
                         "mainAlign": "center",
@@ -266,16 +266,14 @@
               "type": "frame",
               "name": "ControlPanel",
               "width": 1366,
-              "height": 52,
+              "height": 64,
               "props": {
                 "fill": "#FFFFFF",
                 "layout": "horizontal",
-                "gap": 16,
-                "padding": [8, 16, 8, 16],
+                "gap": 24,
+                "padding": [12, 16, 16, 16],
                 "crossAlign": "center",
-                "mainAlign": "spaceBetween",
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1
+                "mainAlign": "spaceBetween"
               },
               "children": [
                 {
