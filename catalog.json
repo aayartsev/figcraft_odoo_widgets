@@ -220,10 +220,10 @@
       "class": "CharField",
       "category": "fields",
       "path": "widgets/fields/char_field.json",
-      "description": "Однострочное текстовое поле",
+      "description": "Строковое поле: подпись + однострочный input",
       "size": {
         "width": 540,
-        "height": 36
+        "height": 40
       },
       "slots": [],
       "variants": [
@@ -299,14 +299,15 @@
       "class": "SelectionField",
       "category": "fields",
       "path": "widgets/fields/selection_field.json",
-      "description": "Поле selection (выпадающий список)",
+      "description": "Поле selection: закрытое и открытое с списком (variant:open)",
       "size": {
         "width": 540,
-        "height": 36
+        "height": 40
       },
       "slots": [],
       "variants": [
         "default",
+        "open",
         "readonly",
         "invalid"
       ],
@@ -318,10 +319,10 @@
       "class": "TextField",
       "category": "fields",
       "path": "widgets/fields/text_field.json",
-      "description": "Многострочное текстовое поле",
+      "description": "Многострочное поле с ручкой ресайза внизу справа",
       "size": {
         "width": 540,
-        "height": 72
+        "height": 80
       },
       "slots": [],
       "variants": [
