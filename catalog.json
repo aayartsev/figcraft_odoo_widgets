@@ -709,7 +709,7 @@
       "class": "ListView",
       "category": "views",
       "path": "widgets/views/list_view.json",
-      "description": "List/tree: слот CP, заголовок колонок и строки контактов",
+      "description": "List/tree: колонки + кнопка optional columns; variant:optional_columns — меню полей",
       "size": {
         "width": 1366,
         "height": 520
@@ -727,7 +727,8 @@
         }
       ],
       "variants": [
-        "default"
+        "default",
+        "optional_columns"
       ],
       "tags": [
         "views",

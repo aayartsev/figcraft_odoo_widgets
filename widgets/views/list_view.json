@@ -29,7 +29,8 @@
         "rotation": "portrait"
       },
       "children": [
-        2
+        2,
+        32
       ],
       "width": 0.0,
       "height": 0.0
@@ -121,7 +122,8 @@
         5,
         6,
         7,
-        8
+        8,
+        25
       ],
       "transform": [
         1.0,
@@ -1171,9 +1173,2408 @@
       "overrides": [
         "characters"
       ]
+    },
+    "25": {
+      "id": 25,
+      "name": "ColumnsConfig",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1326.0,
+        8.0
+      ],
+      "width": 24.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ]
+    },
+    "26": {
+      "id": 26,
+      "name": "Slider1",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "27": {
+      "id": 27,
+      "name": "Knob1",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        3.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "28": {
+      "id": 28,
+      "name": "Slider2",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        12.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "29": {
+      "id": 29,
+      "name": "Knob2",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        14.0,
+        9.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "30": {
+      "id": 30,
+      "name": "Slider3",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        18.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "31": {
+      "id": 31,
+      "name": "Knob3",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 25,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        6.0,
+        15.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "32": {
+      "id": 32,
+      "name": "variant:optional_columns",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        33,
+        34,
+        35,
+        36,
+        61
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        560.0
+      ],
+      "width": 1366.0,
+      "height": 420.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "33": {
+      "id": 33,
+      "name": "HeaderStrip",
+      "type": "frame",
+      "parent": 32,
+      "width": 1366.0,
+      "height": 40.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.972549,
+            "g": 0.9764706,
+            "b": 0.98039216,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true
+    },
+    "34": {
+      "id": 34,
+      "name": "HName",
+      "type": "text",
+      "characters": "Name",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 32,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        12.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "35": {
+      "id": 35,
+      "name": "HEmail",
+      "type": "text",
+      "characters": "Email",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 32,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        316.0,
+        12.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "36": {
+      "id": 36,
+      "name": "OptionalColumnsMenu",
+      "type": "frame",
+      "parent": 32,
+      "children": [
+        37,
+        41,
+        45,
+        49,
+        52,
+        55,
+        58
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1120.0,
+        36.0
+      ],
+      "width": 220.0,
+      "height": 280.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "37": {
+      "id": 37,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        38,
+        39,
+        40
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        8.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "38": {
+      "id": 38,
+      "name": "CheckOn",
+      "type": "frame",
+      "parent": 37,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "39": {
+      "id": 39,
+      "name": "Tick",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 7.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 37,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        10.0
+      ],
+      "width": 10.0,
+      "height": 7.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "40": {
+      "id": 40,
+      "name": "OptEmail",
+      "type": "text",
+      "characters": "Email",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 37,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "41": {
+      "id": 41,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        42,
+        43,
+        44
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        36.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "42": {
+      "id": 42,
+      "name": "CheckOn",
+      "type": "frame",
+      "parent": 41,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "43": {
+      "id": 43,
+      "name": "Tick",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 7.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 41,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        10.0
+      ],
+      "width": 10.0,
+      "height": 7.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "44": {
+      "id": 44,
+      "name": "OptPhone",
+      "type": "text",
+      "characters": "Phone",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 41,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "45": {
+      "id": 45,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        46,
+        47,
+        48
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        64.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "46": {
+      "id": 46,
+      "name": "CheckOn",
+      "type": "frame",
+      "parent": 45,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "47": {
+      "id": 47,
+      "name": "Tick",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 7.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 45,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        10.0
+      ],
+      "width": 10.0,
+      "height": 7.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "48": {
+      "id": 48,
+      "name": "OptCity",
+      "type": "text",
+      "characters": "City",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 45,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "49": {
+      "id": 49,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        50,
+        51
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        92.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "50": {
+      "id": 50,
+      "name": "CheckOff",
+      "type": "frame",
+      "parent": 49,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "51": {
+      "id": 51,
+      "name": "OptStreet",
+      "type": "text",
+      "characters": "Street",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 49,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "52": {
+      "id": 52,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        53,
+        54
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        120.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "53": {
+      "id": 53,
+      "name": "CheckOff",
+      "type": "frame",
+      "parent": 52,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "54": {
+      "id": 54,
+      "name": "OptTags",
+      "type": "text",
+      "characters": "Tags",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 52,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "55": {
+      "id": 55,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        56,
+        57
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        148.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "56": {
+      "id": 56,
+      "name": "CheckOff",
+      "type": "frame",
+      "parent": 55,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "57": {
+      "id": 57,
+      "name": "OptSales",
+      "type": "text",
+      "characters": "Salesperson",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 55,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "58": {
+      "id": 58,
+      "name": "OptRow",
+      "type": "frame",
+      "parent": 36,
+      "children": [
+        59,
+        60
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        176.0
+      ],
+      "width": 220.0,
+      "height": 28.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "59": {
+      "id": 59,
+      "name": "CheckOff",
+      "type": "frame",
+      "parent": 58,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "60": {
+      "id": 60,
+      "name": "OptCountry",
+      "type": "text",
+      "characters": "Country",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 58,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        36.0,
+        6.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "61": {
+      "id": 61,
+      "name": "ColumnsConfig",
+      "type": "frame",
+      "parent": 32,
+      "children": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1326.0,
+        8.0
+      ],
+      "width": 24.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "62": {
+      "id": 62,
+      "name": "S1",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        6.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "63": {
+      "id": 63,
+      "name": "K1",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        3.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "64": {
+      "id": 64,
+      "name": "S2",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        12.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "65": {
+      "id": 65,
+      "name": "K2",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        14.0,
+        9.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "66": {
+      "id": 66,
+      "name": "S3",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 16.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        18.0
+      ],
+      "width": 16.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "67": {
+      "id": 67,
+      "name": "K3",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 61,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        6.0,
+        15.0
+      ],
+      "width": 6.0,
+      "height": 6.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
     }
   },
-  "next_id": 25,
+  "next_id": 68,
   "styles": [],
   "variables": {
     "collections": [],
