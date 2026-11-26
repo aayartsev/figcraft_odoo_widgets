@@ -16,10 +16,23 @@ widgets/
   custom_views/      # calendar, graph, pivot, activity (+ _template.json)
   discussion/        # Discuss: sidebar, thread, message, composer
   custom/            # виджеты под конкретный проект (+ _template.json)
-demos/               # собранные демо-страницы FigCraft
+demos/               # справочные compose (не все собираются билдером)
 schemas/             # JSON Schema для файлов виджетов
 catalog.json         # каталог всех виджетов
+figcraft_build/      # Rust-утилита: validate + atlas → .figcraft
+dist/                # собранные .figcraft (gitignore)
 ```
+
+## Сборка атласа
+
+Источник правды — JSON. Файл для FigCraft собирает утилита:
+
+```bash
+cargo run -p figcraft_build -- validate
+cargo run -p figcraft_build -- atlas
+```
+
+Откройте `dist/atlas_all_widgets.figcraft` в FigCraft **0.18.1**. Подробности: [`figcraft_build/README.md`](figcraft_build/README.md) и [спека билдера](docs/superpowers/specs/2026-11-26-figcraft-build-tool-design.md).
 
 ## Правила файла виджета
 
@@ -50,13 +63,10 @@ catalog.json         # каталог всех виджетов
 
 ## Демо
 
-[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — shell + navbar + root menu + control panel + пустая область view.
-
-[`demos/demo_contacts_list_kanban_form.figcraft`](demos/demo_contacts_list_kanban_form.figcraft) — Contacts в трёх режимах (List / Kanban / Form). Рядом лежит [`demo_contacts_list_kanban_form.json`](demos/demo_contacts_list_kanban_form.json) — собранное дерево слотов (исходник композиции); в FigCraft открывайте `.figcraft`.
+[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — справочный compose: shell + navbar + root menu + control panel + пустая область view. Пока **не** собирается `figcraft_build` (билдер v1 делает только атлас виджетов).
 
 ## С чего начать
 
 1. Выберите виджеты в [`catalog.json`](catalog.json)
-2. Откройте или импортируйте фрагменты `figcraft` в FigCraft
-3. Вставьте дочерние виджеты во фреймы `slot:*`
-4. Для своих кусков скопируйте `widgets/custom/_template.json` или `widgets/custom_views/_template.json`
+2. Соберите атлас (`cargo run -p figcraft_build -- atlas`) и откройте в FigCraft
+3. Для своих кусков скопируйте `widgets/custom/_template.json` или `widgets/custom_views/_template.json`
