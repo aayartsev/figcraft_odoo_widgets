@@ -111,7 +111,8 @@
 | `text` | `#212529` | Основной текст |
 | `muted` | `#6C757D` | Вторичные подписи |
 | `primaryBtn` | `#71639E` | Основные кнопки (в Community `$o-action` = бренд) |
-| `link` | `#017E84` | Ссылки / акцент Discuss (`$o-enterprise-action-color`; в mail и в Community) |
+| `link` / Discuss | `#017E84` | Акцент Discuss / messaging (`$o-enterprise-action-color`) |
+| `formLink` | `#66598F` | Ссылки формы / many2one (`$link-color` = darken brand 5%) |
 | `navbarBadge` | `#28A745` | Badge в верхней панели (`$o-success`) |
 
 Каркас приложения: **верхняя панель (`Navbar`) + область действия** — без постоянного левого меню. `RootMenu` / `MenuItem` — содержимое боковой панели AppsMenu, категория `menu` сохраняется.

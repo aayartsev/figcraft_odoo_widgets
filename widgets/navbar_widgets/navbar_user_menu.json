@@ -30,31 +30,34 @@
         "fill": "#00000000",
         "layout": "horizontal",
         "mainAlign": "center",
-        "crossAlign": "center",
-        "gap": 6
+        "crossAlign": "center"
       },
       "children": [
         {
-          "type": "ellipse",
+          "type": "frame",
           "name": "Avatar",
           "width": 28,
           "height": 28,
           "props": {
-            "fill": "#FFFFFF"
-          }
-        },
-        {
-          "type": "text",
-          "name": "Initials",
-          "text": "AD",
-          "x": 8,
-          "y": 11,
-          "props": {
-            "fontFamily": "Inter",
-            "fontStyle": "Semi Bold",
-            "fontSize": 11,
-            "fill": "#71639E"
-          }
+            "fill": "#FFFFFF",
+            "cornerRadius": 14,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Initials",
+              "text": "AD",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 11,
+                "fill": "#71639E"
+              }
+            }
+          ]
         }
       ]
     }

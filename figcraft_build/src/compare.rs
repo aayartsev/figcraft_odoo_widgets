@@ -63,8 +63,18 @@ fn compare_node(
         });
     }
 
-    check_f64(path, "width", frag.width.unwrap_or(0.0), node.width, diffs);
-    check_f64(path, "height", frag.height.unwrap_or(0.0), node.height, diffs);
+    // Text without explicit JSON size is estimated in convert; only compare when set.
+    if frag.type_name == "text" {
+        if let Some(w) = frag.width {
+            check_f64(path, "width", w, node.width, diffs);
+        }
+        if let Some(h) = frag.height {
+            check_f64(path, "height", h, node.height, diffs);
+        }
+    } else {
+        check_f64(path, "width", frag.width.unwrap_or(0.0), node.width, diffs);
+        check_f64(path, "height", frag.height.unwrap_or(0.0), node.height, diffs);
+    }
     // transform translation ≈ x/y
     let t = node.transform.translation();
     check_f64(path, "x", frag.x.unwrap_or(0.0), t.x, diffs);

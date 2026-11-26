@@ -8,7 +8,7 @@ use anyhow::{Context, Result, bail};
 use figcraft_doc::Document;
 use std::path::Path;
 
-/// Build a document that mirrors the fragment JSON (no hug/layout rewrite).
+/// Build a document that mirrors the fragment JSON (text without size gets an estimated box).
 pub fn build_widget_document(root: &Path, catalog: &Catalog, class: &str) -> Result<Document> {
     let entry = catalog
         .widgets

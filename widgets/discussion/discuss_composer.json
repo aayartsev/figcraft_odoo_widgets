@@ -3,10 +3,10 @@
   "class": "DiscussComposer",
   "odooVersion": "20",
   "category": "discussion",
-  "description": "Поле ввода сообщения Discuss",
+  "description": "Поле ввода сообщения Discuss (pill)",
   "size": {
-    "width": 802,
-    "height": 68
+    "width": 616,
+    "height": 46
   },
   "slots": [],
   "variants": [
@@ -23,42 +23,52 @@
       "name": "DiscussComposer",
       "x": 0,
       "y": 0,
-      "width": 802,
-      "height": 68,
+      "width": 616,
+      "height": 46,
       "props": {
-        "fill": "#FFFFFF",
+        "fill": "#00000000",
         "layout": "horizontal",
         "gap": 8,
-        "padding": 8,
-        "crossAlign": "max",
-        "stroke": "#DEE2E6",
-        "strokeWeight": 1,
-        "cornerRadius": 8,
+        "padding": [
+          0,
+          8,
+          0,
+          8
+        ],
+        "crossAlign": "center",
         "sizingH": "fill"
       },
       "children": [
         {
           "type": "frame",
           "name": "Input",
-          "width": 700,
-          "height": 52,
+          "width": 560,
+          "height": 40,
           "props": {
-            "fill": "#F8F9FA",
-            "cornerRadius": 6,
+            "fill": "#FFFFFF",
+            "cornerRadius": 21,
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1,
             "layout": "horizontal",
-            "padding": 10,
+            "padding": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "crossAlign": "center",
             "sizingH": "fill",
-            "sizingV": "fill"
+            "sizingV": "fixed"
           },
           "children": [
             {
               "type": "text",
               "name": "Placeholder",
-              "text": "Message #general",
+              "text": "Message OdooBot…",
               "props": {
                 "fontFamily": "Inter",
                 "fontSize": 13,
-                "fill": "#6C757D"
+                "fill": "#495057"
               }
             }
           ]
@@ -66,11 +76,11 @@
         {
           "type": "frame",
           "name": "Send",
-          "width": 72,
-          "height": 36,
+          "width": 32,
+          "height": 32,
           "props": {
             "fill": "#017E84",
-            "cornerRadius": 4,
+            "cornerRadius": 16,
             "layout": "horizontal",
             "mainAlign": "center",
             "crossAlign": "center"
@@ -79,11 +89,9 @@
             {
               "type": "text",
               "name": "SendLabel",
-              "text": "Send",
+              "text": "↑",
               "props": {
-                "fontFamily": "Inter",
-                "fontStyle": "Medium",
-                "fontSize": 13,
+                "fontSize": 14,
                 "fill": "#FFFFFF"
               }
             }

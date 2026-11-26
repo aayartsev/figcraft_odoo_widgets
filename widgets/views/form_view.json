@@ -146,7 +146,7 @@
             "layout": "vertical",
             "gap": 16,
             "padding": 24,
-            "cornerRadius": 4,
+            "cornerRadius": 6,
             "stroke": "#DEE2E6",
             "strokeWeight": 1,
             "sizingH": "fill",

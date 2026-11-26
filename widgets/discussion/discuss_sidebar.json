@@ -3,9 +3,9 @@
   "class": "DiscussSidebar",
   "odooVersion": "20",
   "category": "discussion",
-  "description": "Левая панель Discuss со списками каналов и DM",
+  "description": "Сайдбар Discuss Odoo 20: icon rail + список бесед",
   "size": {
-    "width": 280,
+    "width": 278,
     "height": 722
   },
   "slots": [
@@ -33,48 +33,135 @@
       "name": "DiscussSidebar",
       "x": 0,
       "y": 0,
-      "width": 280,
+      "width": 278,
       "height": 722,
       "props": {
-        "fill": "#FFFFFF",
-        "layout": "vertical",
+        "fill": "#F8F9FA",
+        "layout": "horizontal",
         "gap": 8,
-        "padding": [
-          12,
-          0,
-          12,
-          0
-        ],
-        "stroke": "#DEE2E6",
-        "strokeWeight": 1
+        "padding": 8,
+        "sizingH": "fixed",
+        "sizingV": "fixed"
       },
       "children": [
         {
           "type": "frame",
-          "name": "Search",
-          "width": 280,
-          "height": 36,
+          "name": "IconRail",
+          "width": 72,
+          "height": 706,
           "props": {
-            "layout": "horizontal",
+            "fill": "#F8F9FA",
+            "layout": "vertical",
+            "gap": 8,
             "padding": [
-              0,
-              12,
-              0,
-              12
+              8,
+              8,
+              8,
+              8
             ],
-            "sizingH": "fill"
+            "crossAlign": "center",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "TabChats",
+              "width": 40,
+              "height": 40,
+              "props": {
+                "fill": "#017E84",
+                "cornerRadius": 20,
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "TabChatsIcon",
+                  "text": "💬",
+                  "props": {
+                    "fontSize": 14,
+                    "fill": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "TabChannels",
+              "width": 40,
+              "height": 40,
+              "props": {
+                "fill": "#DDDBE8",
+                "cornerRadius": 20,
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "TabChannelsIcon",
+                  "text": "#",
+                  "props": {
+                    "fontSize": 16,
+                    "fill": "#66598F"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "TabMeetings",
+              "width": 40,
+              "height": 40,
+              "props": {
+                "fill": "#DDDBE8",
+                "cornerRadius": 20,
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "TabMeetingsIcon",
+                  "text": "◷",
+                  "props": {
+                    "fontSize": 14,
+                    "fill": "#66598F"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "ListCard",
+          "width": 190,
+          "height": 706,
+          "props": {
+            "fill": "#FFFFFF",
+            "cornerRadius": 12,
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1,
+            "layout": "vertical",
+            "gap": 8,
+            "padding": 8,
+            "sizingH": "fill",
+            "sizingV": "fill"
           },
           "children": [
             {
               "type": "frame",
               "name": "SearchBox",
-              "width": 256,
+              "width": 174,
               "height": 32,
               "props": {
                 "fill": "#F8F9FA",
-                "cornerRadius": 4,
-                "stroke": "#DEE2E6",
-                "strokeWeight": 1,
+                "cornerRadius": 8,
                 "layout": "horizontal",
                 "padding": [
                   0,
@@ -89,7 +176,7 @@
                 {
                   "type": "text",
                   "name": "ph",
-                  "text": "Search conversations",
+                  "text": "Search Conversation",
                   "props": {
                     "fontFamily": "Inter",
                     "fontSize": 12,
@@ -97,39 +184,84 @@
                   }
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "name": "Filters",
+              "width": 174,
+              "height": 24,
+              "props": {
+                "layout": "horizontal",
+                "gap": 4,
+                "sizingH": "fill"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "FilterAll",
+                  "width": 40,
+                  "height": 22,
+                  "props": {
+                    "fill": "#E9ECEF",
+                    "cornerRadius": 11,
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "FilterAllLabel",
+                      "text": "All",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 11,
+                        "fill": "#212529"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "FilterUnread",
+                  "width": 52,
+                  "height": 22,
+                  "props": {
+                    "fill": "#00000000",
+                    "cornerRadius": 11,
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "FilterUnreadLabel",
+                      "text": "Unread",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 11,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "slot:channels",
+              "width": 174,
+              "height": 620,
+              "props": {
+                "layout": "vertical",
+                "gap": 4,
+                "sizingH": "fill",
+                "sizingV": "fill"
+              },
+              "children": []
             }
           ]
-        },
-        {
-          "type": "text",
-          "name": "Section",
-          "text": "Channels",
-          "width": 280,
-          "props": {
-            "fontFamily": "Inter",
-            "fontStyle": "Semi Bold",
-            "fontSize": 11,
-            "fill": "#6C757D"
-          }
-        },
-        {
-          "type": "frame",
-          "name": "slot:channels",
-          "width": 280,
-          "height": 600,
-          "props": {
-            "layout": "vertical",
-            "gap": 2,
-            "padding": [
-              0,
-              8,
-              0,
-              8
-            ],
-            "sizingH": "fill",
-            "sizingV": "fill"
-          },
-          "children": []
         }
       ]
     }

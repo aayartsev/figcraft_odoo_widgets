@@ -3,7 +3,7 @@
   "class": "KanbanView",
   "odooVersion": "20",
   "category": "views",
-  "description": "Kanban-доска с колонками и карточками",
+  "description": "Kanban Contacts: карточки без колонок (ungrouped)",
   "size": {
     "width": 1366,
     "height": 560
@@ -25,7 +25,8 @@
     "control_panel": "slot:control_panel"
   },
   "variants": [
-    "default"
+    "default",
+    "ungrouped"
   ],
   "tags": [
     "views",
@@ -69,80 +70,82 @@
           "height": 560,
           "props": {
             "fill": "#F8F9FA",
-            "layout": "horizontal",
-            "gap": 16,
-            "padding": 16
+            "layout": "vertical",
+            "gap": 0,
+            "padding": 8,
+            "sizingH": "fill",
+            "sizingV": "fill"
           },
           "children": [
             {
               "type": "frame",
               "name": "slot:columns",
-              "width": 1074,
-              "height": 528,
+              "width": 1350,
+              "height": 544,
               "props": {
                 "fill": "#00000000",
                 "layout": "horizontal",
-                "gap": 16,
+                "gap": 8,
+                "wrap": true,
                 "sizingH": "fill",
                 "sizingV": "fill"
               },
               "children": [
                 {
                   "type": "frame",
-                  "name": "ColumnNew",
-                  "width": 260,
-                  "height": 528,
+                  "name": "CardAdmin",
+                  "width": 439,
+                  "height": 80,
                   "props": {
-                    "fill": "#E9ECEF",
-                    "layout": "vertical",
+                    "fill": "#FFFFFF",
+                    "stroke": "#DEE2E6",
+                    "strokeWeight": 1,
+                    "layout": "horizontal",
                     "gap": 8,
-                    "padding": 12,
-                    "cornerRadius": 6,
+                    "padding": 8,
+                    "crossAlign": "center",
                     "sizingH": "fixed",
-                    "sizingV": "fill"
+                    "sizingV": "fixed"
                   },
                   "children": [
                     {
-                      "type": "text",
-                      "name": "ColTitle1",
-                      "text": "New",
+                      "type": "frame",
+                      "name": "Avatar1",
+                      "width": 48,
+                      "height": 48,
                       "props": {
-                        "fontFamily": "Inter",
-                        "fontStyle": "Semi Bold",
-                        "fontSize": 13,
-                        "fill": "#212529"
-                      }
+                        "fill": "#71639E",
+                        "cornerRadius": 4
+                      },
+                      "children": []
                     },
                     {
                       "type": "frame",
-                      "name": "Card1",
-                      "width": 236,
-                      "height": 72,
+                      "name": "Meta1",
+                      "width": 360,
+                      "height": 64,
                       "props": {
-                        "fill": "#FFFFFF",
                         "layout": "vertical",
                         "gap": 4,
-                        "padding": 12,
-                        "cornerRadius": 4,
-                        "sizingH": "fill",
-                        "sizingV": "hug"
+                        "mainAlign": "center",
+                        "sizingH": "fill"
                       },
                       "children": [
                         {
                           "type": "text",
-                          "name": "c1t",
-                          "text": "Office redesign",
+                          "name": "Title1",
+                          "text": "Administrator",
                           "props": {
                             "fontFamily": "Inter",
-                            "fontStyle": "Medium",
-                            "fontSize": 13,
+                            "fontStyle": "Semi Bold",
+                            "fontSize": 14,
                             "fill": "#212529"
                           }
                         },
                         {
                           "type": "text",
-                          "name": "c1s",
-                          "text": "Azure Interior",
+                          "name": "Sub1",
+                          "text": "admin@example.com",
                           "props": {
                             "fontFamily": "Inter",
                             "fontSize": 12,
@@ -155,126 +158,59 @@
                 },
                 {
                   "type": "frame",
-                  "name": "ColumnProgress",
-                  "width": 260,
-                  "height": 528,
+                  "name": "CardCompany",
+                  "width": 439,
+                  "height": 80,
                   "props": {
-                    "fill": "#E9ECEF",
-                    "layout": "vertical",
+                    "fill": "#FFFFFF",
+                    "stroke": "#DEE2E6",
+                    "strokeWeight": 1,
+                    "layout": "horizontal",
                     "gap": 8,
-                    "padding": 12,
-                    "cornerRadius": 6,
+                    "padding": 8,
+                    "crossAlign": "center",
                     "sizingH": "fixed",
-                    "sizingV": "fill"
+                    "sizingV": "fixed"
                   },
                   "children": [
                     {
-                      "type": "text",
-                      "name": "ColTitle2",
-                      "text": "In Progress",
+                      "type": "frame",
+                      "name": "Avatar2",
+                      "width": 48,
+                      "height": 48,
                       "props": {
-                        "fontFamily": "Inter",
-                        "fontStyle": "Semi Bold",
-                        "fontSize": 13,
-                        "fill": "#212529"
-                      }
+                        "fill": "#E9ECEF",
+                        "cornerRadius": 4
+                      },
+                      "children": []
                     },
                     {
                       "type": "frame",
-                      "name": "Card2",
-                      "width": 236,
-                      "height": 72,
+                      "name": "Meta2",
+                      "width": 360,
+                      "height": 64,
                       "props": {
-                        "fill": "#FFFFFF",
                         "layout": "vertical",
                         "gap": 4,
-                        "padding": 12,
-                        "cornerRadius": 4,
-                        "sizingH": "fill",
-                        "sizingV": "hug"
+                        "mainAlign": "center",
+                        "sizingH": "fill"
                       },
                       "children": [
                         {
                           "type": "text",
-                          "name": "c2t",
-                          "text": "Showroom refresh",
+                          "name": "Title2",
+                          "text": "My Company",
                           "props": {
                             "fontFamily": "Inter",
-                            "fontStyle": "Medium",
-                            "fontSize": 13,
+                            "fontStyle": "Semi Bold",
+                            "fontSize": 14,
                             "fill": "#212529"
                           }
                         },
                         {
                           "type": "text",
-                          "name": "c2s",
-                          "text": "Deco Addict",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontSize": 12,
-                            "fill": "#6C757D"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "name": "ColumnDone",
-                  "width": 260,
-                  "height": 528,
-                  "props": {
-                    "fill": "#E9ECEF",
-                    "layout": "vertical",
-                    "gap": 8,
-                    "padding": 12,
-                    "cornerRadius": 6,
-                    "sizingH": "fixed",
-                    "sizingV": "fill"
-                  },
-                  "children": [
-                    {
-                      "type": "text",
-                      "name": "ColTitle3",
-                      "text": "Done",
-                      "props": {
-                        "fontFamily": "Inter",
-                        "fontStyle": "Semi Bold",
-                        "fontSize": 13,
-                        "fill": "#212529"
-                      }
-                    },
-                    {
-                      "type": "frame",
-                      "name": "Card3",
-                      "width": 236,
-                      "height": 72,
-                      "props": {
-                        "fill": "#FFFFFF",
-                        "layout": "vertical",
-                        "gap": 4,
-                        "padding": 12,
-                        "cornerRadius": 4,
-                        "sizingH": "fill",
-                        "sizingV": "hug"
-                      },
-                      "children": [
-                        {
-                          "type": "text",
-                          "name": "c3t",
-                          "text": "Lobby mats",
-                          "props": {
-                            "fontFamily": "Inter",
-                            "fontStyle": "Medium",
-                            "fontSize": 13,
-                            "fill": "#212529"
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "name": "c3s",
-                          "text": "Ready Mat",
+                          "name": "Sub2",
+                          "text": "Belarus",
                           "props": {
                             "fontFamily": "Inter",
                             "fontSize": 12,

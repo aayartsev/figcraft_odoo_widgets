@@ -3,9 +3,9 @@
   "class": "DiscussThread",
   "odooVersion": "20",
   "category": "discussion",
-  "description": "Лента сообщений / панель переписки Discuss",
+  "description": "Панель переписки Discuss: header + messages + composer",
   "size": {
-    "width": 826,
+    "width": 624,
     "height": 640
   },
   "slots": [
@@ -40,29 +40,31 @@
       "name": "DiscussThread",
       "x": 0,
       "y": 0,
-      "width": 826,
+      "width": 624,
       "height": 640,
       "props": {
         "fill": "#F8F9FA",
         "layout": "vertical",
-        "gap": 0
+        "gap": 8,
+        "padding": 8
       },
       "children": [
         {
           "type": "frame",
           "name": "ThreadHeader",
-          "width": 826,
+          "width": 608,
           "height": 48,
           "props": {
             "fill": "#FFFFFF",
             "layout": "horizontal",
             "padding": [
-              0,
-              16,
-              0,
-              16
+              8,
+              12,
+              8,
+              12
             ],
             "crossAlign": "center",
+            "cornerRadius": 12,
             "stroke": "#DEE2E6",
             "strokeWeight": 1,
             "sizingH": "fill"
@@ -71,7 +73,7 @@
             {
               "type": "text",
               "name": "ChannelTitle",
-              "text": "# general",
+              "text": "OdooBot",
               "props": {
                 "fontFamily": "Inter",
                 "fontStyle": "Semi Bold",
@@ -84,13 +86,18 @@
         {
           "type": "frame",
           "name": "slot:messages",
-          "width": 826,
-          "height": 500,
+          "width": 608,
+          "height": 520,
           "props": {
             "fill": "#F8F9FA",
             "layout": "vertical",
             "gap": 12,
-            "padding": 16,
+            "padding": [
+              8,
+              8,
+              8,
+              8
+            ],
             "sizingH": "fill",
             "sizingV": "fill"
           },
@@ -99,15 +106,13 @@
         {
           "type": "frame",
           "name": "slot:composer",
-          "width": 826,
-          "height": 92,
+          "width": 608,
+          "height": 52,
           "props": {
-            "fill": "#FFFFFF",
+            "fill": "#00000000",
             "layout": "vertical",
-            "padding": 12,
-            "sizingH": "fill",
-            "stroke": "#DEE2E6",
-            "strokeWeight": 1
+            "padding": 0,
+            "sizingH": "fill"
           },
           "children": []
         }

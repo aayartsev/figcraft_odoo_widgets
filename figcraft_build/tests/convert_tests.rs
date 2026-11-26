@@ -57,6 +57,32 @@ fn convert_frame_text_rectangle() {
 }
 
 #[test]
+fn text_without_size_gets_estimated_box() {
+    let root = node_from(json!({
+        "type": "frame",
+        "name": "Box",
+        "width": 200,
+        "height": 40,
+        "props": { "layout": "horizontal" },
+        "children": [
+            {
+                "type": "text",
+                "name": "Label",
+                "text": "Hello",
+                "props": { "fontSize": 14, "fill": "#212529" }
+            }
+        ]
+    }));
+
+    let doc = fragment_to_document(&root, "test").unwrap();
+    let page = doc.first_page().unwrap();
+    let summary = collect_tree_summary(&doc, page);
+    let label = summary.iter().find(|(n, ..)| n == "Label").unwrap();
+    assert!(label.2 > 0.0, "estimated width must be > 0, got {}", label.2);
+    assert!(label.3 > 0.0, "estimated height must be > 0, got {}", label.3);
+}
+
+#[test]
 fn unsupported_type_errors() {
     let root = node_from(json!({
         "type": "vector",

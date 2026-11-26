@@ -30,31 +30,31 @@
       "class": "DiscussChannelItem",
       "category": "discussion",
       "path": "widgets/discussion/discuss_channel_item.json",
-      "description": "Строка канала или DM в сайдбаре Discuss"
+      "description": "Элемент списка бесед Discuss (NotificationItem)"
     },
     {
       "class": "DiscussComposer",
       "category": "discussion",
       "path": "widgets/discussion/discuss_composer.json",
-      "description": "Поле ввода сообщения Discuss"
+      "description": "Поле ввода сообщения Discuss (pill)"
     },
     {
       "class": "DiscussMessage",
       "category": "discussion",
       "path": "widgets/discussion/discuss_message.json",
-      "description": "Одно сообщение Discuss: автор и текст"
+      "description": "Одно сообщение Discuss: автор и bubble"
     },
     {
       "class": "DiscussSidebar",
       "category": "discussion",
       "path": "widgets/discussion/discuss_sidebar.json",
-      "description": "Левая панель Discuss со списками каналов и DM"
+      "description": "Сайдбар Discuss Odoo 20: icon rail + список бесед"
     },
     {
       "class": "DiscussThread",
       "category": "discussion",
       "path": "widgets/discussion/discuss_thread.json",
-      "description": "Лента сообщений / панель переписки Discuss"
+      "description": "Панель переписки Discuss: header + messages + composer"
     },
     {
       "class": "BooleanField",
@@ -78,7 +78,7 @@
       "class": "Many2oneField",
       "category": "fields",
       "path": "widgets/fields/many2one_field.json",
-      "description": "Поле many2one со стрелкой выпадающего списка"
+      "description": "Поле many2one; ссылка form-link #66598F"
     },
     {
       "class": "MonetaryField",
@@ -162,7 +162,7 @@
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов"
+      "description": "Панель действия (~93px): кнопки, поиск, pager и виды"
     },
     {
       "class": "FormView",
@@ -174,7 +174,7 @@
       "class": "KanbanView",
       "category": "views",
       "path": "widgets/views/kanban_view.json",
-      "description": "Kanban-доска с колонками и карточками"
+      "description": "Kanban Contacts: карточки без колонок (ungrouped)"
     },
     {
       "class": "ListView",
