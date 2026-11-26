@@ -201,7 +201,7 @@
       "class": "BooleanField",
       "category": "fields",
       "path": "widgets/fields/boolean_field.json",
-      "description": "Чекбокс boolean: подпись + checked (#71639E) с vector-галочкой",
+      "description": "Boolean: checkbox или variant:radio (Yes/No)",
       "size": {
         "width": 540,
         "height": 40
@@ -209,8 +209,9 @@
       "slots": [],
       "variants": [
         "default",
-        "checked",
-        "readonly"
+        "radio",
+        "readonly",
+        "invalid"
       ],
       "tags": [
         "fields"
@@ -299,7 +300,7 @@
       "class": "SelectionField",
       "category": "fields",
       "path": "widgets/fields/selection_field.json",
-      "description": "Поле selection: закрытое и открытое с списком (variant:open)",
+      "description": "Selection: dropdown, variant:open и variant:radio",
       "size": {
         "width": 540,
         "height": 40
@@ -308,11 +309,31 @@
       "variants": [
         "default",
         "open",
+        "radio",
         "readonly",
         "invalid"
       ],
       "tags": [
         "fields"
+      ]
+    },
+    {
+      "class": "StatusBarField",
+      "category": "fields",
+      "path": "widgets/fields/status_bar_field.json",
+      "description": "Statusbar формы: этапы-шеврон (активный #71639E)",
+      "size": {
+        "width": 480,
+        "height": 32
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "statusbar",
+        "form"
       ]
     },
     {
@@ -569,15 +590,17 @@
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия: New, крошки, pager, переключатель видов, поиск",
+      "description": "Панель действия в одну строку: New, крошки, слот search, pager, виды",
       "size": {
         "width": 1366,
-        "height": 93
+        "height": 46
       },
       "slots": [
         {
-          "name": "actions",
-          "accepts": []
+          "name": "search",
+          "accepts": [
+            "SearchBar"
+          ]
         }
       ],
       "variants": [
@@ -589,10 +612,31 @@
       ]
     },
     {
+      "class": "SearchBar",
+      "category": "views",
+      "path": "widgets/views/search_bar.json",
+      "description": "Поиск ControlPanel: закрытый, open (dropdown) и filtered (фасеты)",
+      "size": {
+        "width": 700,
+        "height": 32
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "open",
+        "filtered"
+      ],
+      "tags": [
+        "views",
+        "search",
+        "control-panel"
+      ]
+    },
+    {
       "class": "FormView",
       "category": "views",
       "path": "widgets/views/form_view.json",
-      "description": "Form view: слот CP, статусбар Draft/Done, sheet с заголовком и slot:fields",
+      "description": "Form: слот CP, кнопки действий слева, слот statusbar справа, sheet",
       "size": {
         "width": 1366,
         "height": 640
@@ -602,6 +646,12 @@
           "name": "control_panel",
           "accepts": [
             "ControlPanel"
+          ]
+        },
+        {
+          "name": "statusbar",
+          "accepts": [
+            "StatusBarField"
           ]
         },
         {

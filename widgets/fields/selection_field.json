@@ -30,7 +30,8 @@
       },
       "children": [
         2,
-        8
+        8,
+        20
       ],
       "width": 0.0,
       "height": 0.0
@@ -1012,9 +1013,455 @@
         "grid_column_span": 0,
         "grid_row_span": 0
       }
+    },
+    "20": {
+      "id": 20,
+      "name": "variant:radio",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        21,
+        22,
+        26
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        280.0
+      ],
+      "width": 540.0,
+      "height": 40.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ]
+    },
+    "21": {
+      "id": 21,
+      "name": "Label",
+      "type": "text",
+      "characters": "Type",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "right",
+      "parent": 20,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        11.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "22": {
+      "id": 22,
+      "name": "OptionCompany",
+      "type": "frame",
+      "parent": 20,
+      "children": [
+        23,
+        24,
+        25
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        8.0
+      ],
+      "width": 110.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "23": {
+      "id": 23,
+      "name": "RadioOuter",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        4.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "24": {
+      "id": 24,
+      "name": "RadioDot",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        8.0
+      ],
+      "width": 8.0,
+      "height": 8.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "25": {
+      "id": 25,
+      "name": "L1",
+      "type": "text",
+      "characters": "Company",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        24.0,
+        4.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "26": {
+      "id": 26,
+      "name": "OptionIndividual",
+      "type": "frame",
+      "parent": 20,
+      "children": [
+        27,
+        28
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        300.0,
+        8.0
+      ],
+      "width": 120.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "27": {
+      "id": 27,
+      "name": "RadioOuter",
+      "type": "ellipse",
+      "start": 0.0,
+      "sweep": 6.283185307179586,
+      "inner": 0.0,
+      "parent": 26,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        4.0
+      ],
+      "width": 16.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "28": {
+      "id": 28,
+      "name": "L2",
+      "type": "text",
+      "characters": "Individual",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 26,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        24.0,
+        4.0
+      ],
+      "width": 90.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
     }
   },
-  "next_id": 20,
+  "next_id": 29,
   "styles": [],
   "variables": {
     "collections": [],

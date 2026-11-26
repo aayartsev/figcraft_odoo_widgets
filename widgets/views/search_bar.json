@@ -1,0 +1,1372 @@
+{
+  "format": "figcraft",
+  "version": 1,
+  "imageIndex": [],
+  "name": "SearchBar",
+  "pages": [
+    1
+  ],
+  "nodes": {
+    "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
+      "background": {
+        "r": 0.11764706,
+        "g": 0.11764706,
+        "b": 0.11764706,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
+      },
+      "children": [
+        2,
+        4,
+        18
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    "2": {
+      "id": 2,
+      "name": "SearchBar",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        3
+      ],
+      "width": 700.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.80784315,
+            "g": 0.83137256,
+            "b": 0.85490197,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "3": {
+      "id": 3,
+      "name": "Placeholder",
+      "type": "text",
+      "characters": "Search...",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        7.0
+      ],
+      "width": 120.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "4": {
+      "id": 4,
+      "name": "variant:open",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        5,
+        7
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        56.0
+      ],
+      "width": 700.0,
+      "height": 240.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ]
+    },
+    "5": {
+      "id": 5,
+      "name": "Input",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        6
+      ],
+      "width": 700.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "6": {
+      "id": 6,
+      "name": "Query",
+      "type": "text",
+      "characters": "Azure",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 5,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        7.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "7": {
+      "id": 7,
+      "name": "Dropdown",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        36.0
+      ],
+      "width": 700.0,
+      "height": 200.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "8": {
+      "id": 8,
+      "name": "Hint",
+      "type": "text",
+      "characters": "Search a field for:",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 11.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        10.0
+      ],
+      "width": 200.0,
+      "height": 13.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "9": {
+      "id": 9,
+      "name": "ItemActive",
+      "type": "frame",
+      "parent": 7,
+      "children": [
+        10
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        30.0
+      ],
+      "width": 700.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.972549,
+            "g": 0.9764706,
+            "b": 0.98039216,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true
+    },
+    "10": {
+      "id": 10,
+      "name": "Item1Text",
+      "type": "text",
+      "characters": "Name for: Azure",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 9,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        8.0
+      ],
+      "width": 400.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "11": {
+      "id": 11,
+      "name": "Item",
+      "type": "frame",
+      "parent": 7,
+      "children": [
+        12
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        62.0
+      ],
+      "width": 700.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true
+    },
+    "12": {
+      "id": 12,
+      "name": "Item2Text",
+      "type": "text",
+      "characters": "Email for: Azure",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 11,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        8.0
+      ],
+      "width": 400.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "13": {
+      "id": 13,
+      "name": "Sep",
+      "type": "rectangle",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        98.0
+      ],
+      "width": 700.0,
+      "height": 1.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "14": {
+      "id": 14,
+      "name": "FiltersHead",
+      "type": "text",
+      "characters": "Filters",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 11.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        108.0
+      ],
+      "width": 80.0,
+      "height": 13.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "15": {
+      "id": 15,
+      "name": "FilterItem",
+      "type": "text",
+      "characters": "Customers",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        128.0
+      ],
+      "width": 200.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "16": {
+      "id": 16,
+      "name": "GroupHead",
+      "type": "text",
+      "characters": "Group By",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 11.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        156.0
+      ],
+      "width": 80.0,
+      "height": 13.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "17": {
+      "id": 17,
+      "name": "GroupItem",
+      "type": "text",
+      "characters": "Company",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 7,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        176.0
+      ],
+      "width": 200.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "18": {
+      "id": 18,
+      "name": "variant:filtered",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        19,
+        22,
+        25
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        320.0
+      ],
+      "width": 700.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.80784315,
+            "g": 0.83137256,
+            "b": 0.85490197,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "19": {
+      "id": 19,
+      "name": "Facet",
+      "type": "frame",
+      "parent": 18,
+      "children": [
+        20,
+        21
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        6.0,
+        4.0
+      ],
+      "width": 118.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.90588236,
+            "g": 0.8901961,
+            "b": 0.9490196,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "20": {
+      "id": 20,
+      "name": "FacetLabel",
+      "type": "text",
+      "characters": "Customers",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 19,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        4.0
+      ],
+      "width": 80.0,
+      "height": 15.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "21": {
+      "id": 21,
+      "name": "FacetRemove",
+      "type": "text",
+      "characters": "×",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 14.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "center",
+      "parent": 19,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        96.0,
+        3.0
+      ],
+      "width": 14.0,
+      "height": 17.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "22": {
+      "id": 22,
+      "name": "Facet",
+      "type": "frame",
+      "parent": 18,
+      "children": [
+        23,
+        24
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        130.0,
+        4.0
+      ],
+      "width": 168.0,
+      "height": 24.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.90588236,
+            "g": 0.8901961,
+            "b": 0.9490196,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "23": {
+      "id": 23,
+      "name": "FacetLabel2",
+      "type": "text",
+      "characters": "Name: Azure",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        4.0
+      ],
+      "width": 130.0,
+      "height": 15.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "24": {
+      "id": 24,
+      "name": "FacetRemove2",
+      "type": "text",
+      "characters": "×",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 14.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "center",
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        146.0,
+        3.0
+      ],
+      "width": 14.0,
+      "height": 17.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "25": {
+      "id": 25,
+      "name": "Placeholder",
+      "type": "text",
+      "characters": "Search...",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 18,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        310.0,
+        7.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    }
+  },
+  "next_id": 26,
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "current_page": 1,
+  "document_colors": [],
+  "comments": []
+}

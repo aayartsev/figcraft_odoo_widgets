@@ -1,0 +1,775 @@
+{
+  "format": "figcraft",
+  "version": 1,
+  "imageIndex": [],
+  "name": "StatusBarField",
+  "pages": [
+    1
+  ],
+  "nodes": {
+    "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
+      "background": {
+        "r": 0.11764706,
+        "g": 0.11764706,
+        "b": 0.11764706,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
+      },
+      "children": [
+        2
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    "2": {
+      "id": 2,
+      "name": "StatusBarField",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "width": 480.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "name": "StageActive",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 160.0,
+            "y": 16.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 32.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 32.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
+      },
+      "parent": 2,
+      "blend": "normal",
+      "width": 160.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "4": {
+      "id": 4,
+      "name": "Stage1Label",
+      "type": "text",
+      "characters": "Quotation",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "center",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        8.0
+      ],
+      "width": 130.0,
+      "height": 15.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "5": {
+      "id": 5,
+      "name": "Stage",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 160.0,
+            "y": 16.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 32.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 32.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 16.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 5,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
+      },
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        150.0,
+        0.0
+      ],
+      "width": 160.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9137255,
+            "g": 0.9254902,
+            "b": 0.9372549,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "6": {
+      "id": 6,
+      "name": "Stage2Label",
+      "type": "text",
+      "characters": "Quotation Sent",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "center",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        170.0,
+        8.0
+      ],
+      "width": 130.0,
+      "height": 15.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "7": {
+      "id": 7,
+      "name": "Stage",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 160.0,
+            "y": 16.0,
+            "radius": 0.0
+          },
+          {
+            "x": 150.0,
+            "y": 32.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 32.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 16.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 5,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
+      },
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        300.0,
+        0.0
+      ],
+      "width": 160.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9137255,
+            "g": 0.9254902,
+            "b": 0.9372549,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "8": {
+      "id": 8,
+      "name": "Stage3Label",
+      "type": "text",
+      "characters": "Sales Order",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "center",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        320.0,
+        8.0
+      ],
+      "width": 130.0,
+      "height": 15.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    }
+  },
+  "next_id": 9,
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "current_page": 1,
+  "document_colors": [],
+  "comments": []
+}
