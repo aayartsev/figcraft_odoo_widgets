@@ -1,352 +1,290 @@
 {
-  "comments": [],
-  "current_page": 1,
-  "document_colors": [],
   "format": "figcraft",
+  "version": 1,
   "imageIndex": [],
   "name": "MonetaryField",
-  "next_id": 7,
+  "pages": [
+    1
+  ],
   "nodes": {
     "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
       "background": {
-        "a": 1.0,
-        "b": 0.9607843160629272,
-        "g": 0.9607843160629272,
-        "r": 0.9607843160629272
+        "r": 0.9607843,
+        "g": 0.9607843,
+        "b": 0.9607843,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
       },
       "children": [
         2
       ],
-      "flows": [],
-      "height": 0.0,
-      "id": 1,
-      "name": "Page 1",
-      "prototype": {
-        "background": {
-          "a": 1.0,
-          "b": 0.11764705926179886,
-          "g": 0.11764705926179886,
-          "r": 0.11764705926179886
-        },
-        "device": "None",
-        "rotation": "portrait"
-      },
-      "type": "page",
-      "width": 0.0
+      "width": 0.0,
+      "height": 0.0
     },
     "2": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "hug"
-      },
+      "id": 2,
+      "name": "MonetaryField",
+      "type": "frame",
+      "parent": 1,
       "children": [
         3,
         4
       ],
-      "clip": true,
+      "width": 540.0,
+      "height": 40.0,
       "fills": [
         {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.0,
-            "g": 0.0,
-            "r": 0.0
-          },
-          "colorAlpha": 0.0,
-          "opacity": 0.0,
           "type": "solid",
-          "visible": true
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
         }
-      ],
-      "height": 36.0,
-      "id": 2,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 12.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "MonetaryField",
-      "parent": 1,
-      "type": "frame",
-      "width": 540.0
+      ]
     },
     "3": {
-      "blend": "normal",
-      "characters": "Expected Revenue",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fixed",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.4901960790157318,
-            "g": 0.4588235318660736,
-            "r": 0.42352941632270813
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 17.0,
       "id": 3,
       "name": "Label",
-      "parent": 2,
+      "type": "text",
+      "characters": "Expected Revenue",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 13.0,
         "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
-        "line_height": {
-          "unit": "auto"
-        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
-      "type": "text",
-      "width": 160.0
+      "auto_resize": "none",
+      "align_h": "right",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        11.0
+      ],
+      "width": 160.0,
+      "height": 18.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
     },
     "4": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
-      },
+      "id": 4,
+      "name": "Input",
+      "type": "frame",
+      "parent": 2,
       "children": [
         5,
         6
       ],
-      "clip": true,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        4.0
+      ],
+      "width": 364.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.80784315,
+            "g": 0.83137256,
+            "b": 0.85490197,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
       "corners": {
         "radii": [
-          4.0,
-          4.0,
-          4.0,
-          4.0
+          3.0,
+          3.0,
+          3.0,
+          3.0
         ],
         "smoothing": 0.0
       },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 32.0,
-      "id": 4,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 8.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          6.0,
-          10.0,
-          6.0,
-          10.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Input",
-      "parent": 2,
-      "strokes": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9019607901573181,
-            "g": 0.886274516582489,
-            "r": 0.8705882430076599
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "type": "frame",
-      "width": 360.0
+      "clip": true
     },
     "5": {
-      "blend": "normal",
-      "characters": "USD",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.4901960790157318,
-            "g": 0.4588235318660736,
-            "r": 0.42352941632270813
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 16.0,
       "id": 5,
       "name": "Currency",
-      "parent": 4,
+      "type": "text",
+      "characters": "USD",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 12.0,
         "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
-        "line_height": {
-          "unit": "auto"
-        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
-      "type": "text",
-      "width": 21.0
-    },
-    "6": {
+      "auto_resize": "none",
+      "align_h": "right",
+      "parent": 4,
       "blend": "normal",
-      "characters": "12,500.00",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        330.0,
+        8.0
+      ],
+      "width": 28.0,
+      "height": 16.0,
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 0.16078431904315948,
-            "g": 0.14509804546833038,
-            "r": 0.12941177189350128
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 17.0,
+      "overrides": [
+        "characters"
+      ]
+    },
+    "6": {
       "id": 6,
       "name": "Value",
-      "parent": 4,
+      "type": "text",
+      "characters": "12,500.00",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 13.0,
         "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
-        "line_height": {
-          "unit": "auto"
-        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
-      "type": "text",
-      "width": 66.0
+      "auto_resize": "none",
+      "parent": 4,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        10.0,
+        7.0
+      ],
+      "width": 90.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
     }
   },
-  "pages": [
-    1
-  ],
+  "next_id": 7,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
-  "version": 1
+  "current_page": 1,
+  "document_colors": [],
+  "comments": []
 }

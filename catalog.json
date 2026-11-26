@@ -280,10 +280,10 @@
       "class": "MonetaryField",
       "category": "fields",
       "path": "widgets/fields/monetary_field.json",
-      "description": "Денежное поле с валютой",
+      "description": "Денежное поле: подпись + сумма и код валюты справа в input",
       "size": {
         "width": 540,
-        "height": 36
+        "height": 40
       },
       "slots": [],
       "variants": [
