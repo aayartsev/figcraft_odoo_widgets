@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "class": "ListView",
+  "odooVersion": "20",
+  "category": "views",
+  "description": "Табличный list / tree view с заголовком и примером строк",
+  "size": {
+    "width": 1106,
+    "height": 520
+  },
+  "slots": [
+    {
+      "name": "columns",
+      "accepts": []
+    }
+  ],
+  "slotAnchors": {
+    "columns": "slot:columns"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "views",
+    "list",
+    "tree"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "ListView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 520,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 0,
+        "padding": 0,
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "HeaderRow",
+          "width": 1106,
+          "height": 40,
+          "props": {
+            "fill": "#F9F9F9",
+            "layout": "horizontal",
+            "gap": 0,
+            "padding": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "sizingV": "fixed",
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "ColName",
+              "text": "Name",
+              "width": 280,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "ColEmail",
+              "text": "Email",
+              "width": 320,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "ColPhone",
+              "text": "Phone",
+              "width": 200,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "ColCity",
+              "text": "City",
+              "width": 180,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "slot:columns",
+          "width": 1106,
+          "height": 480,
+          "props": {
+            "fill": "#FFFFFF",
+            "layout": "vertical",
+            "gap": 0,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "Row1",
+              "width": 1106,
+              "height": 40,
+              "props": {
+                "fill": "#FFFFFF",
+                "layout": "horizontal",
+                "padding": [
+                  0,
+                  16,
+                  0,
+                  16
+                ],
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fixed",
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "r1n",
+                  "text": "Azure Interior",
+                  "width": 280,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r1e",
+                  "text": "azure@example.com",
+                  "width": 320,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r1p",
+                  "text": "+1 555-0100",
+                  "width": 200,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r1c",
+                  "text": "Metropolis",
+                  "width": 180,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Row2",
+              "width": 1106,
+              "height": 40,
+              "props": {
+                "fill": "#F9F9F9",
+                "layout": "horizontal",
+                "padding": [
+                  0,
+                  16,
+                  0,
+                  16
+                ],
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fixed",
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "r2n",
+                  "text": "Deco Addict",
+                  "width": 280,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r2e",
+                  "text": "deco@example.com",
+                  "width": 320,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r2p",
+                  "text": "+1 555-0101",
+                  "width": 200,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r2c",
+                  "text": "Gotham",
+                  "width": 180,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Row3",
+              "width": 1106,
+              "height": 40,
+              "props": {
+                "fill": "#FFFFFF",
+                "layout": "horizontal",
+                "padding": [
+                  0,
+                  16,
+                  0,
+                  16
+                ],
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fixed",
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "r3n",
+                  "text": "Ready Mat",
+                  "width": 280,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r3e",
+                  "text": "ready@example.com",
+                  "width": 320,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r3p",
+                  "text": "+1 555-0102",
+                  "width": 200,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "r3c",
+                  "text": "Star City",
+                  "width": 180,
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "class": "DiscussMessage",
+  "odooVersion": "20",
+  "category": "discussion",
+  "description": "Одно сообщение Discuss: автор и текст",
+  "size": {
+    "width": 794,
+    "height": 64
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "own",
+    "system"
+  ],
+  "tags": [
+    "discussion",
+    "message"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "DiscussMessage",
+      "x": 0,
+      "y": 0,
+      "width": 794,
+      "height": 64,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 12,
+        "sizingH": "fill"
+      },
+      "children": [
+        {
+          "type": "ellipse",
+          "name": "Avatar",
+          "width": 32,
+          "height": 32,
+          "props": {
+            "fill": "#714B67"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "Body",
+          "width": 740,
+          "height": 64,
+          "props": {
+            "layout": "vertical",
+            "gap": 4,
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "Meta",
+              "width": 740,
+              "height": 18,
+              "props": {
+                "layout": "horizontal",
+                "gap": 8,
+                "crossAlign": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "Author",
+                  "text": "Mitchell Admin",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Semi Bold",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "Time",
+                  "text": "10:24",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 11,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Content",
+              "text": "Let's review the partner list before the call.",
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#212529"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

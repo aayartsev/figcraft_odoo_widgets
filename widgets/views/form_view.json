@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "class": "FormView",
+  "odooVersion": "20",
+  "category": "views",
+  "description": "Form view: статус, заголовок и область для полей",
+  "size": {
+    "width": 1106,
+    "height": 640
+  },
+  "slots": [
+    {
+      "name": "fields",
+      "accepts": [
+        "CharField",
+        "TextField",
+        "BooleanField",
+        "Many2oneField",
+        "SelectionField",
+        "DateField",
+        "MonetaryField"
+      ]
+    }
+  ],
+  "slotAnchors": {
+    "fields": "slot:fields"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "views",
+    "form"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "FormView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 640,
+      "props": {
+        "fill": "#F9F9F9",
+        "layout": "vertical",
+        "gap": 16,
+        "padding": 16
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "StatusBar",
+          "width": 1074,
+          "height": 36,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "mainAlign": "max",
+            "gap": 0,
+            "sizingH": "fill",
+            "sizingV": "hug"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "StatusDraft",
+              "width": 80,
+              "height": 28,
+              "props": {
+                "fill": "#714B67",
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center",
+                "cornerRadius": 4
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "DraftLabel",
+                  "text": "Draft",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Medium",
+                    "fontSize": 12,
+                    "fill": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "StatusDone",
+              "width": 80,
+              "height": 28,
+              "props": {
+                "fill": "#E9ECEF",
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center",
+                "cornerRadius": 4
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "DoneLabel",
+                  "text": "Done",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Medium",
+                    "fontSize": 12,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Sheet",
+          "width": 1074,
+          "height": 560,
+          "props": {
+            "fill": "#FFFFFF",
+            "layout": "vertical",
+            "gap": 16,
+            "padding": 24,
+            "cornerRadius": 4,
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Title",
+              "text": "Azure Interior",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Bold",
+                "fontSize": 24,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "frame",
+              "name": "slot:fields",
+              "width": 1026,
+              "height": 460,
+              "props": {
+                "fill": "#00000000",
+                "layout": "vertical",
+                "gap": 12,
+                "sizingH": "fill",
+                "sizingV": "fill"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

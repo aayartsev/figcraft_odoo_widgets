@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "class": "BooleanField",
+  "odooVersion": "20",
+  "category": "fields",
+  "description": "Чекбокс boolean",
+  "size": {
+    "width": 540,
+    "height": 28
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "checked",
+    "readonly"
+  ],
+  "tags": [
+    "fields"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "BooleanField",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 28,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 12,
+        "crossAlign": "center"
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "Label",
+          "text": "Is Company",
+          "width": 160,
+          "props": {
+            "fontFamily": "Inter",
+            "fontSize": 13,
+            "fill": "#6C757D"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "Checkbox",
+          "width": 16,
+          "height": 16,
+          "props": {
+            "fill": "#714B67",
+            "cornerRadius": 3,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Check",
+              "text": "✓",
+              "props": {
+                "fontSize": 11,
+                "fill": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

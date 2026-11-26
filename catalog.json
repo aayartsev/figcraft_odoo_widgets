@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "odooVersion": "20",
+  "widgets": [
+    {
+      "class": "ActivityView",
+      "category": "custom_views",
+      "path": "widgets/custom_views/activity_view.json",
+      "description": "Расписание активностей (activity view)"
+    },
+    {
+      "class": "CalendarView",
+      "category": "custom_views",
+      "path": "widgets/custom_views/calendar_view.json",
+      "description": "Календарный custom view с сеткой недели и событиями"
+    },
+    {
+      "class": "GraphView",
+      "category": "custom_views",
+      "path": "widgets/custom_views/graph_view.json",
+      "description": "График / chart custom view со столбцами-заглушками"
+    },
+    {
+      "class": "PivotView",
+      "category": "custom_views",
+      "path": "widgets/custom_views/pivot_view.json",
+      "description": "Сводная таблица (pivot)"
+    },
+    {
+      "class": "DiscussChannelItem",
+      "category": "discussion",
+      "path": "widgets/discussion/discuss_channel_item.json",
+      "description": "Строка канала или DM в сайдбаре Discuss"
+    },
+    {
+      "class": "DiscussComposer",
+      "category": "discussion",
+      "path": "widgets/discussion/discuss_composer.json",
+      "description": "Поле ввода сообщения Discuss"
+    },
+    {
+      "class": "DiscussMessage",
+      "category": "discussion",
+      "path": "widgets/discussion/discuss_message.json",
+      "description": "Одно сообщение Discuss: автор и текст"
+    },
+    {
+      "class": "DiscussSidebar",
+      "category": "discussion",
+      "path": "widgets/discussion/discuss_sidebar.json",
+      "description": "Левая панель Discuss со списками каналов и DM"
+    },
+    {
+      "class": "DiscussThread",
+      "category": "discussion",
+      "path": "widgets/discussion/discuss_thread.json",
+      "description": "Лента сообщений / панель переписки Discuss"
+    },
+    {
+      "class": "BooleanField",
+      "category": "fields",
+      "path": "widgets/fields/boolean_field.json",
+      "description": "Чекбокс boolean"
+    },
+    {
+      "class": "CharField",
+      "category": "fields",
+      "path": "widgets/fields/char_field.json",
+      "description": "Однострочное текстовое поле"
+    },
+    {
+      "class": "DateField",
+      "category": "fields",
+      "path": "widgets/fields/date_field.json",
+      "description": "Поле даты"
+    },
+    {
+      "class": "Many2oneField",
+      "category": "fields",
+      "path": "widgets/fields/many2one_field.json",
+      "description": "Поле many2one со стрелкой выпадающего списка"
+    },
+    {
+      "class": "MonetaryField",
+      "category": "fields",
+      "path": "widgets/fields/monetary_field.json",
+      "description": "Денежное поле с валютой"
+    },
+    {
+      "class": "SelectionField",
+      "category": "fields",
+      "path": "widgets/fields/selection_field.json",
+      "description": "Поле selection (выпадающий список)"
+    },
+    {
+      "class": "TextField",
+      "category": "fields",
+      "path": "widgets/fields/text_field.json",
+      "description": "Многострочное текстовое поле"
+    },
+    {
+      "class": "MenuItem",
+      "category": "menu",
+      "path": "widgets/menu/menu_item.json",
+      "description": "Пункт корневого меню (заголовок секции или кликабельный элемент)"
+    },
+    {
+      "class": "RootMenu",
+      "category": "menu",
+      "path": "widgets/menu/root_menu.json",
+      "description": "Левое корневое меню приложения со списком пунктов"
+    },
+    {
+      "class": "NavbarAppsMenu",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_apps_menu.json",
+      "description": "Кнопка переключения приложений (иконка-сетка) в navbar"
+    },
+    {
+      "class": "NavbarMessagingMenu",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_messaging_menu.json",
+      "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных"
+    },
+    {
+      "class": "NavbarSystrayItem",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_systray_item.json",
+      "description": "Обычная иконка systray с опциональным бейджем"
+    },
+    {
+      "class": "NavbarUserMenu",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_user_menu.json",
+      "description": "Аватар / меню пользователя в systray"
+    },
+    {
+      "class": "Navbar",
+      "category": "shell",
+      "path": "widgets/shell/navbar.json",
+      "description": "Верхняя панель приложения: apps-меню, название приложения и systray"
+    },
+    {
+      "class": "WebClientShell",
+      "category": "shell",
+      "path": "widgets/shell/web_client_shell.json",
+      "description": "Каркас web client: navbar, меню и область action"
+    },
+    {
+      "class": "ControlPanel",
+      "category": "views",
+      "path": "widgets/views/control_panel.json",
+      "description": "Панель действия: breadcrumbs, поиск, переключатель видов и кнопки"
+    },
+    {
+      "class": "FormView",
+      "category": "views",
+      "path": "widgets/views/form_view.json",
+      "description": "Form view: статус, заголовок и область для полей"
+    },
+    {
+      "class": "KanbanView",
+      "category": "views",
+      "path": "widgets/views/kanban_view.json",
+      "description": "Kanban-доска с колонками и карточками"
+    },
+    {
+      "class": "ListView",
+      "category": "views",
+      "path": "widgets/views/list_view.json",
+      "description": "Табличный list / tree view с заголовком и примером строк"
+    }
+  ]
+}

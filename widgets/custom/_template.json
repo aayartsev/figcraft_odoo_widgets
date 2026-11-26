@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "class": "CustomWidgetName",
+  "odooVersion": "20",
+  "category": "custom",
+  "description": "Виджет под проект — скопируйте файл, переименуйте в snake_case класса и замените содержимое",
+  "size": {
+    "width": 320,
+    "height": 120
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "custom",
+    "template"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "CustomWidgetName",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 120,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 8,
+        "padding": 16,
+        "cornerRadius": 6,
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "Title",
+          "text": "Custom widget",
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Semi Bold",
+            "fontSize": 14,
+            "fill": "#212529"
+          }
+        },
+        {
+          "type": "text",
+          "name": "Hint",
+          "text": "Replace with project UI",
+          "props": {
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fill": "#6C757D"
+          }
+        }
+      ]
+    }
+  }
+}

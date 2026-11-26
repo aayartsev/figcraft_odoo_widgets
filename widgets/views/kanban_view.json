@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "class": "KanbanView",
+  "odooVersion": "20",
+  "category": "views",
+  "description": "Kanban-доска с колонками и карточками",
+  "size": {
+    "width": 1106,
+    "height": 560
+  },
+  "slots": [
+    {
+      "name": "columns",
+      "accepts": []
+    }
+  ],
+  "slotAnchors": {
+    "columns": "slot:columns"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "views",
+    "kanban"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "KanbanView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 560,
+      "props": {
+        "fill": "#F9F9F9",
+        "layout": "horizontal",
+        "gap": 16,
+        "padding": 16
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "slot:columns",
+          "width": 1074,
+          "height": 528,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "gap": 16,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "ColumnNew",
+              "width": 260,
+              "height": 528,
+              "props": {
+                "fill": "#E9ECEF",
+                "layout": "vertical",
+                "gap": 8,
+                "padding": 12,
+                "cornerRadius": 6,
+                "sizingH": "fixed",
+                "sizingV": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "ColTitle1",
+                  "text": "New",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Semi Bold",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "name": "Card1",
+                  "width": 236,
+                  "height": 72,
+                  "props": {
+                    "fill": "#FFFFFF",
+                    "layout": "vertical",
+                    "gap": 4,
+                    "padding": 12,
+                    "cornerRadius": 4,
+                    "sizingH": "fill",
+                    "sizingV": "hug"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "c1t",
+                      "text": "Office redesign",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontStyle": "Medium",
+                        "fontSize": 13,
+                        "fill": "#212529"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "name": "c1s",
+                      "text": "Azure Interior",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 12,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "ColumnProgress",
+              "width": 260,
+              "height": 528,
+              "props": {
+                "fill": "#E9ECEF",
+                "layout": "vertical",
+                "gap": 8,
+                "padding": 12,
+                "cornerRadius": 6,
+                "sizingH": "fixed",
+                "sizingV": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "ColTitle2",
+                  "text": "In Progress",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Semi Bold",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "name": "Card2",
+                  "width": 236,
+                  "height": 72,
+                  "props": {
+                    "fill": "#FFFFFF",
+                    "layout": "vertical",
+                    "gap": 4,
+                    "padding": 12,
+                    "cornerRadius": 4,
+                    "sizingH": "fill",
+                    "sizingV": "hug"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "c2t",
+                      "text": "Showroom refresh",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontStyle": "Medium",
+                        "fontSize": 13,
+                        "fill": "#212529"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "name": "c2s",
+                      "text": "Deco Addict",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 12,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "ColumnDone",
+              "width": 260,
+              "height": 528,
+              "props": {
+                "fill": "#E9ECEF",
+                "layout": "vertical",
+                "gap": 8,
+                "padding": 12,
+                "cornerRadius": 6,
+                "sizingH": "fixed",
+                "sizingV": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "ColTitle3",
+                  "text": "Done",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Semi Bold",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "name": "Card3",
+                  "width": 236,
+                  "height": 72,
+                  "props": {
+                    "fill": "#FFFFFF",
+                    "layout": "vertical",
+                    "gap": 4,
+                    "padding": 12,
+                    "cornerRadius": 4,
+                    "sizingH": "fill",
+                    "sizingV": "hug"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "c3t",
+                      "text": "Lobby mats",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontStyle": "Medium",
+                        "fontSize": 13,
+                        "fill": "#212529"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "name": "c3s",
+                      "text": "Ready Mat",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 12,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

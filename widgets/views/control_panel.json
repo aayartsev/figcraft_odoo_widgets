@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "class": "ControlPanel",
+  "odooVersion": "20",
+  "category": "views",
+  "description": "Панель действия: breadcrumbs, поиск, переключатель видов и кнопки",
+  "size": {
+    "width": 1106,
+    "height": 72
+  },
+  "slots": [
+    {
+      "name": "actions",
+      "accepts": []
+    }
+  ],
+  "slotAnchors": {
+    "actions": "slot:actions"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "views",
+    "control-panel"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "ControlPanel",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 72,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 8,
+        "padding": [
+          10,
+          16,
+          10,
+          16
+        ],
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1,
+        "strokeAlign": "outside"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "TopRow",
+          "width": 1074,
+          "height": 28,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "mainAlign": "spaceBetween",
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "sizingV": "hug"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Breadcrumb",
+              "text": "Discuss / Inbox",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 16,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "frame",
+              "name": "slot:actions",
+              "width": 200,
+              "height": 28,
+              "props": {
+                "fill": "#00000000",
+                "layout": "horizontal",
+                "gap": 8,
+                "mainAlign": "max",
+                "crossAlign": "center",
+                "sizingH": "hug",
+                "sizingV": "hug"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "NewButton",
+                  "width": 72,
+                  "height": 28,
+                  "props": {
+                    "fill": "#714B67",
+                    "cornerRadius": 4,
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "NewLabel",
+                      "text": "New",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontStyle": "Medium",
+                        "fontSize": 13,
+                        "fill": "#FFFFFF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "BottomRow",
+          "width": 1074,
+          "height": 28,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "gap": 8,
+            "mainAlign": "spaceBetween",
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "sizingV": "hug"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "SearchBar",
+              "width": 420,
+              "height": 28,
+              "props": {
+                "fill": "#F9F9F9",
+                "cornerRadius": 4,
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1,
+                "layout": "horizontal",
+                "padding": [
+                  0,
+                  10,
+                  0,
+                  10
+                ],
+                "crossAlign": "center",
+                "sizingH": "fill",
+                "sizingV": "fixed"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "SearchPlaceholder",
+                  "text": "Search...",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Regular",
+                    "fontSize": 13,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "ViewSwitcher",
+              "width": 120,
+              "height": 28,
+              "props": {
+                "fill": "#F9F9F9",
+                "cornerRadius": 4,
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1,
+                "layout": "horizontal",
+                "gap": 0,
+                "sizingH": "hug",
+                "sizingV": "fixed"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "ListMode",
+                  "width": 40,
+                  "height": 28,
+                  "props": {
+                    "fill": "#714B67",
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "ListLabel",
+                      "text": "≡",
+                      "props": {
+                        "fontSize": 14,
+                        "fill": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "KanbanMode",
+                  "width": 40,
+                  "height": 28,
+                  "props": {
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "KanbanLabel",
+                      "text": "▦",
+                      "props": {
+                        "fontSize": 12,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "name": "FormMode",
+                  "width": 40,
+                  "height": 28,
+                  "props": {
+                    "fill": "#00000000",
+                    "layout": "horizontal",
+                    "mainAlign": "center",
+                    "crossAlign": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "FormLabel",
+                      "text": "▭",
+                      "props": {
+                        "fontSize": 12,
+                        "fill": "#6C757D"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

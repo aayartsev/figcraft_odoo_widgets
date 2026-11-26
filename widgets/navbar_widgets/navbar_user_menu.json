@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "class": "NavbarUserMenu",
+  "odooVersion": "20",
+  "category": "navbar_widgets",
+  "description": "Аватар / меню пользователя в systray",
+  "size": {
+    "width": 44,
+    "height": 40
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "navbar",
+    "systray",
+    "user"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "NavbarUserMenu",
+      "x": 0,
+      "y": 0,
+      "width": 44,
+      "height": 40,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "mainAlign": "center",
+        "crossAlign": "center",
+        "gap": 6
+      },
+      "children": [
+        {
+          "type": "ellipse",
+          "name": "Avatar",
+          "width": 28,
+          "height": 28,
+          "props": {
+            "fill": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "name": "Initials",
+          "text": "AD",
+          "x": 8,
+          "y": 11,
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Semi Bold",
+            "fontSize": 11,
+            "fill": "#714B67"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "class": "NavbarAppsMenu",
+  "odooVersion": "20",
+  "category": "navbar_widgets",
+  "description": "Кнопка переключения приложений (иконка-сетка) в navbar",
+  "size": {
+    "width": 40,
+    "height": 40
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "open"
+  ],
+  "tags": [
+    "navbar",
+    "apps"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "NavbarAppsMenu",
+      "x": 0,
+      "y": 0,
+      "width": 40,
+      "height": 40,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "mainAlign": "center",
+        "crossAlign": "center",
+        "cornerRadius": 6
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "AppsGrid",
+          "width": 18,
+          "height": 18,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "gap": 3,
+            "wrap": true,
+            "sizingH": "fixed",
+            "sizingV": "fixed"
+          },
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "d1",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d2",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d3",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d4",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d5",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d6",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d7",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d8",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "d9",
+              "width": 4,
+              "height": 4,
+              "props": {
+                "fill": "#FFFFFF",
+                "cornerRadius": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

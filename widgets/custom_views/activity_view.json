@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "class": "ActivityView",
+  "odooVersion": "20",
+  "category": "custom_views",
+  "description": "Расписание активностей (activity view)",
+  "size": {
+    "width": 1106,
+    "height": 420
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "custom_views",
+    "activity"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "ActivityView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 420,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 8,
+        "padding": 16
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "Title",
+          "text": "Activities",
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Semi Bold",
+            "fontSize": 16,
+            "fill": "#212529"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "ActRow",
+          "width": 1074,
+          "height": 56,
+          "props": {
+            "fill": "#F9F9F9",
+            "layout": "horizontal",
+            "gap": 12,
+            "padding": 12,
+            "crossAlign": "center",
+            "cornerRadius": 6,
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "ellipse",
+              "name": "Dot",
+              "width": 12,
+              "height": 12,
+              "props": {
+                "fill": "#EB7F6D"
+              }
+            },
+            {
+              "type": "frame",
+              "name": "Meta",
+              "width": 800,
+              "height": 32,
+              "props": {
+                "layout": "vertical",
+                "gap": 2,
+                "sizingH": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "a1",
+                  "text": "Call Azure Interior",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontStyle": "Medium",
+                    "fontSize": 13,
+                    "fill": "#212529"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "a2",
+                  "text": "Due today · Phone Call",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 12,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

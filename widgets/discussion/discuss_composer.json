@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "class": "DiscussComposer",
+  "odooVersion": "20",
+  "category": "discussion",
+  "description": "Поле ввода сообщения Discuss",
+  "size": {
+    "width": 802,
+    "height": 68
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "discussion",
+    "composer"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "DiscussComposer",
+      "x": 0,
+      "y": 0,
+      "width": 802,
+      "height": 68,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "horizontal",
+        "gap": 8,
+        "padding": 8,
+        "crossAlign": "max",
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1,
+        "cornerRadius": 8,
+        "sizingH": "fill"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "Input",
+          "width": 700,
+          "height": 52,
+          "props": {
+            "fill": "#F9F9F9",
+            "cornerRadius": 6,
+            "layout": "horizontal",
+            "padding": 10,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Placeholder",
+              "text": "Message #general",
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Send",
+          "width": 72,
+          "height": 36,
+          "props": {
+            "fill": "#008784",
+            "cornerRadius": 4,
+            "layout": "horizontal",
+            "mainAlign": "center",
+            "crossAlign": "center"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "SendLabel",
+              "text": "Send",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Medium",
+                "fontSize": 13,
+                "fill": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

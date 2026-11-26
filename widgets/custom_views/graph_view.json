@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "class": "GraphView",
+  "odooVersion": "20",
+  "category": "custom_views",
+  "description": "График / chart custom view со столбцами-заглушками",
+  "size": {
+    "width": 1106,
+    "height": 480
+  },
+  "slots": [],
+  "variants": [
+    "bar",
+    "line",
+    "pie"
+  ],
+  "tags": [
+    "custom_views",
+    "graph"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "GraphView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 480,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 16,
+        "padding": 24,
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "Title",
+          "text": "Revenue by Month",
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Semi Bold",
+            "fontSize": 16,
+            "fill": "#212529"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "Bars",
+          "width": 1058,
+          "height": 320,
+          "props": {
+            "layout": "horizontal",
+            "gap": 24,
+            "crossAlign": "max",
+            "mainAlign": "center",
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "rectangle",
+              "name": "b1",
+              "width": 48,
+              "height": 120,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "b2",
+              "width": 48,
+              "height": 180,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "b3",
+              "width": 48,
+              "height": 220,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "b4",
+              "width": 48,
+              "height": 160,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "b5",
+              "width": 48,
+              "height": 260,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            },
+            {
+              "type": "rectangle",
+              "name": "b6",
+              "width": 48,
+              "height": 200,
+              "props": {
+                "fill": "#714B67",
+                "cornerRadius": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

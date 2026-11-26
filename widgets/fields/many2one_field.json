@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "class": "Many2oneField",
+  "odooVersion": "20",
+  "category": "fields",
+  "description": "Поле many2one со стрелкой выпадающего списка",
+  "size": {
+    "width": 540,
+    "height": 36
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "readonly",
+    "invalid"
+  ],
+  "tags": [
+    "fields"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "Many2oneField",
+      "x": 0,
+      "y": 0,
+      "width": 540,
+      "height": 36,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 12,
+        "crossAlign": "center",
+        "sizingH": "fill",
+        "sizingV": "hug"
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "Label",
+          "text": "Salesperson",
+          "width": 160,
+          "props": {
+            "fontFamily": "Inter",
+            "fontSize": 13,
+            "fill": "#6C757D"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "Input",
+          "width": 360,
+          "height": 32,
+          "props": {
+            "fill": "#FFFFFF",
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1,
+            "cornerRadius": 4,
+            "layout": "horizontal",
+            "padding": [
+              6,
+              10,
+              6,
+              10
+            ],
+            "mainAlign": "spaceBetween",
+            "crossAlign": "center",
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Value",
+              "text": "Mitchell Admin",
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#008784"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Caret",
+              "text": "▾",
+              "props": {
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

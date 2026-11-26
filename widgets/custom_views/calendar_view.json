@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "class": "CalendarView",
+  "odooVersion": "20",
+  "category": "custom_views",
+  "description": "Календарный custom view с сеткой недели и событиями",
+  "size": {
+    "width": 1106,
+    "height": 560
+  },
+  "slots": [
+    {
+      "name": "events",
+      "accepts": []
+    }
+  ],
+  "slotAnchors": {
+    "events": "slot:events"
+  },
+  "variants": [
+    "week",
+    "month",
+    "day"
+  ],
+  "tags": [
+    "custom_views",
+    "calendar"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "CalendarView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 560,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 8,
+        "padding": 16,
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "CalHeader",
+          "width": 1074,
+          "height": 32,
+          "props": {
+            "layout": "horizontal",
+            "mainAlign": "spaceBetween",
+            "crossAlign": "center",
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Range",
+              "text": "Nov 24 – Nov 30, 2026",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 14,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Mode",
+              "text": "Week",
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Days",
+          "width": 1074,
+          "height": 28,
+          "props": {
+            "layout": "horizontal",
+            "gap": 4,
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "Mon",
+              "text": "Mon",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Tue",
+              "text": "Tue",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Wed",
+              "text": "Wed",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Thu",
+              "text": "Thu",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Fri",
+              "text": "Fri",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Sat",
+              "text": "Sat",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            },
+            {
+              "type": "text",
+              "name": "Sun",
+              "text": "Sun",
+              "width": 150,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fill": "#6C757D",
+                "textAlign": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "slot:events",
+          "width": 1074,
+          "height": 460,
+          "props": {
+            "fill": "#F9F9F9",
+            "layout": "horizontal",
+            "gap": 4,
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "DayCol",
+              "width": 150,
+              "height": 460,
+              "props": {
+                "fill": "#FFFFFF",
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1,
+                "layout": "vertical",
+                "padding": 8,
+                "gap": 6,
+                "sizingV": "fill"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "name": "Event1",
+                  "width": 134,
+                  "height": 48,
+                  "props": {
+                    "fill": "#714B67",
+                    "cornerRadius": 4,
+                    "padding": 6,
+                    "layout": "vertical"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "name": "ev",
+                      "text": "Demo call",
+                      "props": {
+                        "fontFamily": "Inter",
+                        "fontSize": 11,
+                        "fill": "#FFFFFF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

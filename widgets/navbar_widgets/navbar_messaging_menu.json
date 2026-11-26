@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "class": "NavbarMessagingMenu",
+  "odooVersion": "20",
+  "category": "navbar_widgets",
+  "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных",
+  "size": {
+    "width": 40,
+    "height": 40
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "withUnread"
+  ],
+  "tags": [
+    "navbar",
+    "systray",
+    "discuss",
+    "messaging"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "NavbarMessagingMenu",
+      "x": 0,
+      "y": 0,
+      "width": 40,
+      "height": 40,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "mainAlign": "center",
+        "crossAlign": "center"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "Bubble",
+          "width": 20,
+          "height": 16,
+          "props": {
+            "fill": "#FFFFFF",
+            "cornerRadius": 4
+          },
+          "children": []
+        },
+        {
+          "type": "ellipse",
+          "name": "UnreadBadge",
+          "x": 26,
+          "y": 6,
+          "width": 10,
+          "height": 10,
+          "props": {
+            "fill": "#EB7F6D"
+          }
+        }
+      ]
+    }
+  }
+}

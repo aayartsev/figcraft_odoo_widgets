@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "class": "Navbar",
+  "odooVersion": "20",
+  "category": "shell",
+  "description": "Верхняя панель приложения: apps-меню, название приложения и systray",
+  "size": {
+    "width": 1366,
+    "height": 46
+  },
+  "slots": [
+    {
+      "name": "apps",
+      "accepts": [
+        "NavbarAppsMenu"
+      ]
+    },
+    {
+      "name": "systray",
+      "accepts": [
+        "NavbarSystrayItem",
+        "NavbarUserMenu",
+        "NavbarMessagingMenu"
+      ]
+    }
+  ],
+  "slotAnchors": {
+    "apps": "slot:apps",
+    "systray": "slot:systray"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "shell",
+    "navbar"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "Navbar",
+      "x": 0,
+      "y": 0,
+      "width": 1366,
+      "height": 46,
+      "props": {
+        "fill": "#714B67",
+        "layout": "horizontal",
+        "gap": 12,
+        "padding": [
+          0,
+          12,
+          0,
+          8
+        ],
+        "mainAlign": "spaceBetween",
+        "crossAlign": "center"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "Left",
+          "width": 400,
+          "height": 46,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "gap": 8,
+            "crossAlign": "center",
+            "sizingH": "hug",
+            "sizingV": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "slot:apps",
+              "width": 40,
+              "height": 40,
+              "props": {
+                "fill": "#00000000",
+                "layout": "horizontal",
+                "mainAlign": "center",
+                "crossAlign": "center",
+                "sizingH": "hug",
+                "sizingV": "hug"
+              },
+              "children": []
+            },
+            {
+              "type": "text",
+              "name": "CurrentApp",
+              "text": "Discuss",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 16,
+                "fill": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "slot:systray",
+          "width": 280,
+          "height": 46,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "gap": 4,
+            "mainAlign": "max",
+            "crossAlign": "center",
+            "sizingH": "hug",
+            "sizingV": "fill"
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "class": "DiscussSidebar",
+  "odooVersion": "20",
+  "category": "discussion",
+  "description": "Левая панель Discuss со списками каналов и DM",
+  "size": {
+    "width": 280,
+    "height": 722
+  },
+  "slots": [
+    {
+      "name": "channels",
+      "accepts": [
+        "DiscussChannelItem"
+      ]
+    }
+  ],
+  "slotAnchors": {
+    "channels": "slot:channels"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "discussion",
+    "discuss"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "DiscussSidebar",
+      "x": 0,
+      "y": 0,
+      "width": 280,
+      "height": 722,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 8,
+        "padding": [
+          12,
+          0,
+          12,
+          0
+        ],
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "Search",
+          "width": 280,
+          "height": 36,
+          "props": {
+            "layout": "horizontal",
+            "padding": [
+              0,
+              12,
+              0,
+              12
+            ],
+            "sizingH": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "name": "SearchBox",
+              "width": 256,
+              "height": 32,
+              "props": {
+                "fill": "#F9F9F9",
+                "cornerRadius": 4,
+                "stroke": "#DEE2E6",
+                "strokeWeight": 1,
+                "layout": "horizontal",
+                "padding": [
+                  0,
+                  10,
+                  0,
+                  10
+                ],
+                "crossAlign": "center",
+                "sizingH": "fill"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "ph",
+                  "text": "Search conversations",
+                  "props": {
+                    "fontFamily": "Inter",
+                    "fontSize": 12,
+                    "fill": "#6C757D"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "name": "Section",
+          "text": "Channels",
+          "width": 280,
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Semi Bold",
+            "fontSize": 11,
+            "fill": "#6C757D"
+          }
+        },
+        {
+          "type": "frame",
+          "name": "slot:channels",
+          "width": 280,
+          "height": 600,
+          "props": {
+            "layout": "vertical",
+            "gap": 2,
+            "padding": [
+              0,
+              8,
+              0,
+              8
+            ],
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

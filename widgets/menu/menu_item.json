@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "class": "MenuItem",
+  "odooVersion": "20",
+  "category": "menu",
+  "description": "Пункт корневого меню (заголовок секции или кликабельный элемент)",
+  "size": {
+    "width": 244,
+    "height": 36
+  },
+  "slots": [],
+  "variants": [
+    "default",
+    "active",
+    "section"
+  ],
+  "tags": [
+    "menu",
+    "navigation"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "MenuItem",
+      "x": 0,
+      "y": 0,
+      "width": 244,
+      "height": 36,
+      "props": {
+        "fill": "#00000000",
+        "layout": "horizontal",
+        "gap": 10,
+        "padding": [
+          0,
+          12,
+          0,
+          12
+        ],
+        "crossAlign": "center",
+        "cornerRadius": 6,
+        "sizingH": "fill",
+        "sizingV": "fixed"
+      },
+      "children": [
+        {
+          "type": "ellipse",
+          "name": "Icon",
+          "width": 14,
+          "height": 14,
+          "props": {
+            "fill": "#6C757D"
+          }
+        },
+        {
+          "type": "text",
+          "name": "Label",
+          "text": "Inbox",
+          "props": {
+            "fontFamily": "Inter",
+            "fontStyle": "Regular",
+            "fontSize": 13,
+            "fill": "#212529"
+          }
+        }
+      ]
+    }
+  }
+}

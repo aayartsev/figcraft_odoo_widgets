@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "class": "RootMenu",
+  "odooVersion": "20",
+  "category": "menu",
+  "description": "Левое корневое меню приложения со списком пунктов",
+  "size": {
+    "width": 260,
+    "height": 722
+  },
+  "slots": [
+    {
+      "name": "items",
+      "accepts": [
+        "MenuItem"
+      ]
+    }
+  ],
+  "slotAnchors": {
+    "items": "slot:items"
+  },
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "menu",
+    "navigation"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "RootMenu",
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 722,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 0,
+        "padding": [
+          12,
+          0,
+          12,
+          0
+        ],
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1,
+        "strokeAlign": "outside"
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "AppHeader",
+          "width": 260,
+          "height": 40,
+          "props": {
+            "fill": "#00000000",
+            "layout": "horizontal",
+            "padding": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "sizingV": "fixed"
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "AppName",
+              "text": "Discuss",
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 14,
+                "fill": "#212529"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "slot:items",
+          "width": 260,
+          "height": 670,
+          "props": {
+            "fill": "#00000000",
+            "layout": "vertical",
+            "gap": 2,
+            "padding": [
+              4,
+              8,
+              4,
+              8
+            ],
+            "sizingH": "fill",
+            "sizingV": "fill"
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

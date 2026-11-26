@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "class": "PivotView",
+  "odooVersion": "20",
+  "category": "custom_views",
+  "description": "Сводная таблица (pivot)",
+  "size": {
+    "width": 1106,
+    "height": 420
+  },
+  "slots": [],
+  "variants": [
+    "default"
+  ],
+  "tags": [
+    "custom_views",
+    "pivot"
+  ],
+  "figcraft": {
+    "kind": "fragment",
+    "root": {
+      "type": "frame",
+      "name": "PivotView",
+      "x": 0,
+      "y": 0,
+      "width": 1106,
+      "height": 420,
+      "props": {
+        "fill": "#FFFFFF",
+        "layout": "vertical",
+        "gap": 0,
+        "stroke": "#DEE2E6",
+        "strokeWeight": 1
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "PHeader",
+          "width": 1106,
+          "height": 40,
+          "props": {
+            "fill": "#F9F9F9",
+            "layout": "horizontal",
+            "padding": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "h0",
+              "text": "Salesperson",
+              "width": 220,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "h1",
+              "text": "Q1",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "h2",
+              "text": "Q2",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            },
+            {
+              "type": "text",
+              "name": "h3",
+              "text": "Total",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 12,
+                "fill": "#6C757D"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "PRow",
+          "width": 1106,
+          "height": 40,
+          "props": {
+            "layout": "horizontal",
+            "padding": [
+              0,
+              16,
+              0,
+              16
+            ],
+            "crossAlign": "center",
+            "sizingH": "fill",
+            "stroke": "#DEE2E6",
+            "strokeWeight": 1
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "r0",
+              "text": "Mitchell Admin",
+              "width": 220,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "text",
+              "name": "r1",
+              "text": "42,000",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "text",
+              "name": "r2",
+              "text": "51,200",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontSize": 13,
+                "fill": "#212529"
+              }
+            },
+            {
+              "type": "text",
+              "name": "r3",
+              "text": "93,200",
+              "width": 140,
+              "props": {
+                "fontFamily": "Inter",
+                "fontStyle": "Semi Bold",
+                "fontSize": 13,
+                "fill": "#212529"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
