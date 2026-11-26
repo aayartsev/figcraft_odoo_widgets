@@ -1,658 +1,210 @@
 {
-  "comments": [],
-  "current_page": 1,
-  "document_colors": [],
   "format": "figcraft",
+  "version": 1,
   "imageIndex": [],
   "name": "KanbanView",
-  "next_id": 16,
+  "pages": [
+    1
+  ],
   "nodes": {
     "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
       "background": {
-        "a": 1.0,
-        "b": 0.9607843160629272,
-        "g": 0.9607843160629272,
-        "r": 0.9607843160629272
+        "r": 0.9607843,
+        "g": 0.9607843,
+        "b": 0.9607843,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
       },
       "children": [
         2
       ],
-      "flows": [],
-      "height": 0.0,
-      "id": 1,
-      "name": "Page 1",
-      "prototype": {
-        "background": {
-          "a": 1.0,
-          "b": 0.11764705926179886,
-          "g": 0.11764705926179886,
-          "r": 0.11764705926179886
-        },
-        "device": "None",
-        "rotation": "portrait"
-      },
-      "type": "page",
-      "width": 0.0
-    },
-    "10": {
-      "blend": "normal",
-      "characters": "admin@example.com",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.4901960790157318,
-            "g": 0.4588235318660736,
-            "r": 0.42352941632270813
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 16.0,
-      "id": 10,
-      "name": "Sub1",
-      "parent": 8,
-      "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
-        "font_family": "Inter",
-        "font_size": 12.0,
-        "font_style": "Regular",
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "line_height": {
-          "unit": "auto"
-        },
-        "link": null
-      },
-      "type": "text",
-      "width": 115.0
-    },
-    "11": {
-      "children": [
-        12,
-        13
-      ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 80.0,
-      "id": 11,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 8.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          8.0,
-          8.0,
-          8.0,
-          8.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "CardCompany",
-      "parent": 5,
-      "strokes": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9019607901573181,
-            "g": 0.886274516582489,
-            "r": 0.8705882430076599
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "type": "frame",
-      "width": 439.0
-    },
-    "12": {
-      "clip": true,
-      "corners": {
-        "radii": [
-          4.0,
-          4.0,
-          4.0,
-          4.0
-        ],
-        "smoothing": 0.0
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9372549057006836,
-            "g": 0.9254902005195618,
-            "r": 0.9137254953384399
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 48.0,
-      "id": 12,
-      "name": "Avatar2",
-      "parent": 11,
-      "type": "frame",
-      "width": 48.0
-    },
-    "13": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
-      },
-      "children": [
-        14,
-        15
-      ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 64.0,
-      "id": 13,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 4.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "center",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Meta2",
-      "parent": 11,
-      "type": "frame",
-      "width": 360.0
-    },
-    "14": {
-      "blend": "normal",
-      "characters": "My Company",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.16078431904315948,
-            "g": 0.14509804546833038,
-            "r": 0.12941177189350128
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 19.0,
-      "id": 14,
-      "name": "Title2",
-      "parent": 13,
-      "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
-        "font_family": "Inter",
-        "font_size": 14.0,
-        "font_style": "Semi Bold",
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "line_height": {
-          "unit": "auto"
-        },
-        "link": null
-      },
-      "type": "text",
-      "width": 79.0
-    },
-    "15": {
-      "blend": "normal",
-      "characters": "Belarus",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.4901960790157318,
-            "g": 0.4588235318660736,
-            "r": 0.42352941632270813
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 16.0,
-      "id": 15,
-      "name": "Sub2",
-      "parent": 13,
-      "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
-        "font_family": "Inter",
-        "font_size": 12.0,
-        "font_style": "Regular",
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "line_height": {
-          "unit": "auto"
-        },
-        "link": null
-      },
-      "type": "text",
-      "width": 48.0
+      "width": 0.0,
+      "height": 0.0
     },
     "2": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fill"
-      },
+      "id": 2,
+      "name": "KanbanView",
+      "type": "frame",
+      "parent": 1,
       "children": [
         3,
         4
       ],
-      "clip": true,
+      "width": 1366.0,
+      "height": 560.0,
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 0.9803921580314636,
-            "g": 0.9764705896377563,
-            "r": 0.9725490212440491
+            "r": 0.972549,
+            "g": 0.9764706,
+            "b": 0.98039216,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
-      ],
-      "height": 560.0,
-      "id": 2,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "KanbanView",
-      "parent": 1,
-      "type": "frame",
-      "width": 1366.0
+      ]
     },
     "3": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "hug"
-      },
-      "clip": true,
+      "id": 3,
+      "name": "slot:control_panel",
+      "type": "frame",
+      "parent": 2,
+      "width": 1366.0,
+      "height": 93.0,
       "fills": [
         {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.0,
-            "g": 0.0,
-            "r": 0.0
-          },
-          "colorAlpha": 0.0,
-          "opacity": 0.0,
           "type": "solid",
-          "visible": true
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 0.0,
-      "id": 3,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "slot:control_panel",
-      "parent": 2,
-      "type": "frame",
-      "width": 1366.0
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true
     },
     "4": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fill"
-      },
+      "id": 4,
+      "name": "Board",
+      "type": "frame",
+      "parent": 2,
       "children": [
         5
       ],
-      "clip": true,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        93.0
+      ],
+      "width": 1366.0,
+      "height": 467.0,
       "fills": [
         {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9803921580314636,
-            "g": 0.9764705896377563,
-            "r": 0.9725490212440491
-          },
-          "opacity": 1.0,
           "type": "solid",
-          "visible": true
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
         }
-      ],
-      "height": 560.0,
-      "id": 4,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          8.0,
-          8.0,
-          8.0,
-          8.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Board",
-      "parent": 2,
-      "type": "frame",
-      "width": 1366.0
+      ]
     },
     "5": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fill"
-      },
+      "id": 5,
+      "name": "slot:columns",
+      "type": "frame",
+      "parent": 4,
       "children": [
         6,
         11
       ],
-      "clip": true,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        16.0
+      ],
+      "width": 1334.0,
+      "height": 435.0,
       "fills": [
         {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.0,
-            "g": 0.0,
-            "r": 0.0
-          },
-          "colorAlpha": 0.0,
-          "opacity": 0.0,
           "type": "solid",
-          "visible": true
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
         }
-      ],
-      "height": 544.0,
-      "id": 5,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 8.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": true
-      },
-      "name": "slot:columns",
-      "parent": 4,
-      "type": "frame",
-      "width": 1350.0
+      ]
     },
     "6": {
+      "id": 6,
+      "name": "CardAdmin",
+      "type": "frame",
+      "parent": 5,
       "children": [
         7,
         8
       ],
-      "clip": true,
+      "width": 439.0,
+      "height": 80.0,
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 1.0,
+            "r": 1.0,
             "g": 1.0,
-            "r": 1.0
+            "b": 1.0,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 80.0,
-      "id": 6,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 8.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          8.0,
-          8.0,
-          8.0,
-          8.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "CardAdmin",
-      "parent": 5,
       "strokes": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 0.9019607901573181,
-            "g": 0.886274516582489,
-            "r": 0.8705882430076599
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "type": "frame",
-      "width": 439.0
-    },
-    "7": {
-      "clip": true,
       "corners": {
         "radii": [
           4.0,
@@ -662,149 +214,416 @@
         ],
         "smoothing": 0.0
       },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.6196078658103943,
-            "g": 0.38823530077934265,
-            "r": 0.4431372582912445
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 48.0,
+      "clip": true
+    },
+    "7": {
       "id": 7,
       "name": "Avatar1",
-      "parent": 6,
       "type": "frame",
-      "width": 48.0
+      "parent": 6,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        16.0
+      ],
+      "width": 48.0,
+      "height": 48.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
     },
     "8": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
-      },
+      "id": 8,
+      "name": "Meta1",
+      "type": "frame",
+      "parent": 6,
       "children": [
         9,
         10
       ],
-      "clip": true,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        80.0,
+        18.0
+      ],
+      "width": 330.0,
+      "height": 44.0,
       "fills": [
         {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "opacity": 1.0,
           "type": "solid",
-          "visible": true
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
         }
-      ],
-      "height": 64.0,
-      "id": 8,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 4.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "center",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Meta1",
-      "parent": 6,
-      "type": "frame",
-      "width": 360.0
+      ]
     },
     "9": {
-      "blend": "normal",
-      "characters": "Administrator",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.16078431904315948,
-            "g": 0.14509804546833038,
-            "r": 0.12941177189350128
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 19.0,
       "id": 9,
       "name": "Title1",
-      "parent": 8,
+      "type": "text",
+      "characters": "Administrator",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
+        "font_style": "SemiBold",
         "font_size": 14.0,
-        "font_style": "Semi Bold",
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "none",
+      "parent": 8,
+      "blend": "normal",
+      "width": 200.0,
+      "height": 18.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
+    },
+    "10": {
+      "id": 10,
+      "name": "Sub1",
+      "type": "text",
+      "characters": "admin@example.com",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
         "line_height": {
           "unit": "auto"
         },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
+      "auto_resize": "none",
+      "parent": 8,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        24.0
+      ],
+      "width": 220.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
+    },
+    "11": {
+      "id": 11,
+      "name": "CardCompany",
+      "type": "frame",
+      "parent": 5,
+      "children": [
+        12,
+        13
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        455.0,
+        0.0
+      ],
+      "width": 439.0,
+      "height": 80.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "12": {
+      "id": 12,
+      "name": "Avatar2",
+      "type": "frame",
+      "parent": 11,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        16.0
+      ],
+      "width": 48.0,
+      "height": 48.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "13": {
+      "id": 13,
+      "name": "Meta2",
+      "type": "frame",
+      "parent": 11,
+      "children": [
+        14,
+        15
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        80.0,
+        18.0
+      ],
+      "width": 330.0,
+      "height": 44.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ]
+    },
+    "14": {
+      "id": 14,
+      "name": "Title2",
       "type": "text",
-      "width": 102.0
+      "characters": "My Company",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "SemiBold",
+        "font_size": 14.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "none",
+      "parent": 13,
+      "blend": "normal",
+      "width": 200.0,
+      "height": 18.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
+    },
+    "15": {
+      "id": 15,
+      "name": "Sub2",
+      "type": "text",
+      "characters": "Belarus",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "none",
+      "parent": 13,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        24.0
+      ],
+      "width": 120.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "overrides": [
+        "characters"
+      ]
     }
   },
-  "pages": [
-    1
-  ],
+  "next_id": 16,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
-  "version": 1
+  "current_page": 1,
+  "document_colors": [],
+  "comments": []
 }

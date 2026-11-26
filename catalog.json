@@ -201,10 +201,10 @@
       "class": "BooleanField",
       "category": "fields",
       "path": "widgets/fields/boolean_field.json",
-      "description": "Чекбокс boolean",
+      "description": "Чекбокс boolean: подпись + checked (#71639E) с vector-галочкой",
       "size": {
         "width": 540,
-        "height": 28
+        "height": 40
       },
       "slots": [],
       "variants": [
@@ -569,7 +569,7 @@
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия: кнопки и крошки, поиск, pager и переключатель видов",
+      "description": "Панель действия: New, крошки, pager, переключатель видов, поиск",
       "size": {
         "width": 1366,
         "height": 93
@@ -592,7 +592,7 @@
       "class": "FormView",
       "category": "views",
       "path": "widgets/views/form_view.json",
-      "description": "Form view: статус, заголовок и область для полей",
+      "description": "Form view: слот CP, статусбар Draft/Done, sheet с заголовком и slot:fields",
       "size": {
         "width": 1366,
         "height": 640
@@ -629,7 +629,7 @@
       "class": "KanbanView",
       "category": "views",
       "path": "widgets/views/kanban_view.json",
-      "description": "Kanban Contacts: карточки без колонок (ungrouped)",
+      "description": "Kanban Contacts: слот CP и карточки без колонок (ungrouped)",
       "size": {
         "width": 1366,
         "height": 560
@@ -659,7 +659,7 @@
       "class": "ListView",
       "category": "views",
       "path": "widgets/views/list_view.json",
-      "description": "Табличный list / tree view с заголовком и примером строк",
+      "description": "List/tree: слот CP, заголовок колонок и строки контактов",
       "size": {
         "width": 1366,
         "height": 520
