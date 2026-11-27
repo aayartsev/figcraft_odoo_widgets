@@ -1,492 +1,558 @@
 {
-  "comments": [],
-  "current_page": 1,
-  "document_colors": [],
   "format": "figcraft",
-  "imageIndex": [],
+  "version": 1,
   "name": "DiscussMessage",
-  "next_id": 10,
+  "pages": [
+    1
+  ],
+  "current_page": 1,
   "nodes": {
     "1": {
-      "background": {
-        "a": 1.0,
-        "b": 0.9607843160629272,
-        "g": 0.9607843160629272,
-        "r": 0.9607843160629272
-      },
-      "children": [
-        2
-      ],
-      "flows": [],
-      "height": 0.0,
-      "id": 1,
       "name": "Page 1",
+      "type": "page",
+      "children": [
+        2,
+        8,
+        12
+      ],
+      "width": 0.0,
+      "height": 0.0,
+      "background": {
+        "r": 0.9607843137254902,
+        "g": 0.9607843137254902,
+        "b": 0.9607843137254902,
+        "a": 1.0
+      },
+      "flows": [],
       "prototype": {
-        "background": {
-          "a": 1.0,
-          "b": 0.11764705926179886,
-          "g": 0.11764705926179886,
-          "r": 0.11764705926179886
-        },
         "device": "None",
+        "background": {
+          "r": 0.11764705882352941,
+          "g": 0.11764705882352941,
+          "b": 0.11764705882352941,
+          "a": 1.0
+        },
         "rotation": "portrait"
       },
-      "type": "page",
-      "width": 0.0
+      "id": 1
     },
     "2": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
-      },
+      "name": "DiscussMessage",
+      "type": "frame",
+      "width": 592.0,
+      "height": 80.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
       "children": [
         3,
-        4
+        4,
+        5
       ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.0,
-            "g": 0.0,
-            "r": 0.0
-          },
-          "colorAlpha": 0.0,
-          "opacity": 0.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 80.0,
       "id": 2,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 12.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "DiscussMessage",
-      "parent": 1,
-      "type": "frame",
-      "width": 592.0
+      "parent": 1
     },
     "3": {
-      "clip": true,
-      "corners": {
-        "radii": [
-          6.0,
-          6.0,
-          6.0,
-          6.0
-        ],
-        "smoothing": 0.0
-      },
+      "name": "av",
+      "type": "ellipse",
+      "width": 32.0,
+      "height": 32.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        8.0
+      ],
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 0.6196078658103943,
-            "g": 0.38823530077934265,
-            "r": 0.4431372582912445
+            "r": 0.9098039215686274,
+            "g": 0.9647058823529412,
+            "b": 0.9725490196078431,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 32.0,
+      "blend": "normal",
       "id": 3,
-      "name": "Avatar",
-      "parent": 2,
-      "type": "frame",
-      "width": 32.0
+      "parent": 2
     },
     "4": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
+      "name": "ini",
+      "type": "text",
+      "characters": "MA",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Semi Bold",
+        "font_size": 10.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
       },
-      "children": [
-        5,
-        8
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        18.0
       ],
-      "clip": true,
+      "width": 16.0,
+      "height": 12.0,
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
+            "r": 0.00392156862745098,
+            "g": 0.49411764705882355,
+            "b": 0.5176470588235295,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 80.0,
       "id": 4,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 4.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Body",
-      "parent": 2,
-      "type": "frame",
-      "width": 548.0
+      "parent": 2
     },
     "5": {
+      "name": "bubble",
+      "type": "frame",
+      "width": 360.0,
+      "height": 64.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        44.0,
+        8.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9098039215686274,
+            "g": 0.9647058823529412,
+            "b": 0.9725490196078431,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
       "children": [
         6,
         7
       ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 18.0,
+      "corner_radius": 8.0,
       "id": 5,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 8.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Meta",
-      "parent": 4,
-      "type": "frame",
-      "width": 548.0
+      "parent": 2
     },
     "6": {
-      "blend": "normal",
-      "characters": "OdooBot",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.16078431904315948,
-            "g": 0.14509804546833038,
-            "r": 0.12941177189350128
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 17.0,
-      "id": 6,
-      "name": "Author",
-      "parent": 5,
+      "name": "a",
+      "type": "text",
+      "characters": "Mitchell Admin",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 13.0,
         "font_style": "Semi Bold",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
-        "line_height": {
-          "unit": "auto"
-        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
-      "type": "text",
-      "width": 51.0
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        8.0
+      ],
+      "width": 140.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.00392156862745098,
+            "g": 0.49411764705882355,
+            "b": 0.5176470588235295,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 6,
+      "parent": 5
     },
     "7": {
-      "blend": "normal",
-      "characters": "22:02",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.4901960790157318,
-            "g": 0.4588235318660736,
-            "r": 0.42352941632270813
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 15.0,
-      "id": 7,
-      "name": "Time",
-      "parent": 5,
+      "name": "b",
+      "type": "text",
+      "characters": "Hello team — kickoff notes attached.",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 11.0,
         "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
-        "line_height": {
-          "unit": "auto"
-        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
-      "type": "text",
-      "width": 31.0
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        30.0
+      ],
+      "width": 320.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941176470588237,
+            "g": 0.1450980392156863,
+            "b": 0.1607843137254902,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 7,
+      "parent": 5
     },
     "8": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "fixed"
-      },
+      "name": "variant:own",
+      "type": "frame",
+      "width": 592.0,
+      "height": 72.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        100.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
       "children": [
         9
       ],
-      "clip": true,
-      "corners": {
-        "radii": [
-          9.0,
-          9.0,
-          9.0,
-          9.0
-        ],
-        "smoothing": 0.0
-      },
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9725490212440491,
-            "g": 0.9647058844566345,
-            "r": 0.9098039269447327
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 52.0,
       "id": 8,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          8.0,
-          12.0,
-          8.0,
-          12.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "Bubble",
-      "parent": 4,
-      "strokes": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9176470637321472,
-            "g": 0.9019607901573181,
-            "r": 0.8196078538894653
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "type": "frame",
-      "width": 420.0
+      "parent": 1
     },
     "9": {
-      "blend": "normal",
-      "characters": "Hello 👋 Odoo's Discuss helps employees collaborate.",
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "hug",
-        "sizing_v": "hug"
-      },
+      "name": "bubble",
+      "type": "frame",
+      "width": 360.0,
+      "height": 56.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        220.0,
+        8.0
+      ],
       "fills": [
         {
-          "blend": "normal",
+          "type": "solid",
           "color": {
-            "a": 1.0,
-            "b": 0.34117648005485535,
-            "g": 0.3137255012989044,
-            "r": 0.2862745225429535
+            "r": 0.8196078431372549,
+            "g": 0.9019607843137255,
+            "b": 0.9176470588235294,
+            "a": 1.0
           },
           "opacity": 1.0,
-          "type": "solid",
-          "visible": true
+          "visible": true,
+          "blend": "normal"
         }
       ],
-      "height": 17.0,
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        10,
+        11
+      ],
+      "corner_radius": 8.0,
       "id": 9,
-      "name": "Content",
-      "parent": 8,
+      "parent": 8
+    },
+    "10": {
+      "name": "a",
+      "type": "text",
+      "characters": "You",
       "style": {
-        "case": "original",
-        "decoration": "none",
-        "fills": null,
         "font_family": "Inter",
-        "font_size": 13.0,
-        "font_style": "Regular",
+        "font_style": "Semi Bold",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
         "letter_spacing": {
           "unit": "percent",
           "value": 0.0
         },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        8.0
+      ],
+      "width": 40.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.00392156862745098,
+            "g": 0.49411764705882355,
+            "b": 0.5176470588235295,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 10,
+      "parent": 9
+    },
+    "11": {
+      "name": "b",
+      "type": "text",
+      "characters": "Thanks, looking now.",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
         "line_height": {
           "unit": "auto"
         },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
         "link": null
       },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        28.0
+      ],
+      "width": 300.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941176470588237,
+            "g": 0.1450980392156863,
+            "b": 0.1607843137254902,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 11,
+      "parent": 9
+    },
+    "12": {
+      "name": "variant:system",
+      "type": "frame",
+      "width": 592.0,
+      "height": 40.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        190.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        13
+      ],
+      "id": 12,
+      "parent": 1
+    },
+    "13": {
+      "name": "s",
       "type": "text",
-      "width": 372.0
+      "characters": "Mitchell Admin joined the channel",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        96.0,
+        12.0
+      ],
+      "width": 400.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.4235294117647059,
+            "g": 0.4588235294117647,
+            "b": 0.49019607843137253,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 13,
+      "parent": 12
     }
   },
-  "pages": [
-    1
-  ],
+  "next_id": 14,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
-  "version": 1
+  "document_colors": [],
+  "comments": [],
+  "imageIndex": []
 }

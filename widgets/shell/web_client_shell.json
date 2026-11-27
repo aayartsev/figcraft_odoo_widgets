@@ -1,209 +1,275 @@
 {
-  "comments": [],
-  "current_page": 1,
-  "document_colors": [],
   "format": "figcraft",
-  "imageIndex": [],
+  "version": 1,
   "name": "WebClientShell",
-  "next_id": 5,
-  "nodes": {
-    "1": {
-      "background": {
-        "a": 1.0,
-        "b": 0.9607843160629272,
-        "g": 0.9607843160629272,
-        "r": 0.9607843160629272
-      },
-      "children": [
-        2
-      ],
-      "flows": [],
-      "height": 0.0,
-      "id": 1,
-      "name": "Page 1",
-      "prototype": {
-        "background": {
-          "a": 1.0,
-          "b": 0.11764705926179886,
-          "g": 0.11764705926179886,
-          "r": 0.11764705926179886
-        },
-        "device": "None",
-        "rotation": "portrait"
-      },
-      "type": "page",
-      "width": 0.0
-    },
-    "2": {
-      "children": [
-        3,
-        4
-      ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9803921580314636,
-            "g": 0.9764705896377563,
-            "r": 0.9725490212440491
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 768.0,
-      "id": 2,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "WebClientShell",
-      "parent": 1,
-      "type": "frame",
-      "width": 1366.0
-    },
-    "3": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fixed"
-      },
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.6196078658103943,
-            "g": 0.38823530077934265,
-            "r": 0.4431372582912445
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 46.0,
-      "id": 3,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "slot:navbar",
-      "parent": 2,
-      "type": "frame",
-      "width": 1366.0
-    },
-    "4": {
-      "child_layout": {
-        "absolute": false,
-        "grid_column": null,
-        "grid_column_span": 0,
-        "grid_row": null,
-        "grid_row_span": 0,
-        "max_h": null,
-        "max_w": null,
-        "min_h": null,
-        "min_w": null,
-        "sizing_h": "fill",
-        "sizing_v": "fill"
-      },
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.9803921580314636,
-            "g": 0.9764705896377563,
-            "r": 0.9725490212440491
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 722.0,
-      "id": 4,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "min",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "min",
-        "mode": "vertical",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
-      "name": "slot:action",
-      "parent": 2,
-      "type": "frame",
-      "width": 1366.0
-    }
-  },
   "pages": [
     1
   ],
+  "current_page": 1,
+  "nodes": {
+    "1": {
+      "name": "Page 1",
+      "type": "page",
+      "children": [
+        2
+      ],
+      "width": 0.0,
+      "height": 0.0,
+      "background": {
+        "r": 0.9607843137254902,
+        "g": 0.9607843137254902,
+        "b": 0.9607843137254902,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764705882352941,
+          "g": 0.11764705882352941,
+          "b": 0.11764705882352941,
+          "a": 1.0
+        },
+        "rotation": "portrait"
+      },
+      "id": 1
+    },
+    "2": {
+      "name": "WebClientShell",
+      "type": "frame",
+      "width": 1366.0,
+      "height": 768.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9725490196078431,
+            "g": 0.9764705882352941,
+            "b": 0.9803921568627451,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        3,
+        5
+      ],
+      "id": 2,
+      "parent": 1
+    },
+    "3": {
+      "name": "slot:navbar",
+      "type": "frame",
+      "width": 1366.0,
+      "height": 46.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313725490196076,
+            "g": 0.38823529411764707,
+            "b": 0.6196078431372549,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        4
+      ],
+      "id": 3,
+      "parent": 2
+    },
+    "4": {
+      "name": "hint",
+      "type": "text",
+      "characters": "slot:navbar → Navbar",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        16.0,
+        15.0
+      ],
+      "width": 300.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 4,
+      "parent": 3
+    },
+    "5": {
+      "name": "slot:action",
+      "type": "frame",
+      "width": 1366.0,
+      "height": 722.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        46.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9725490196078431,
+            "g": 0.9764705882352941,
+            "b": 0.9803921568627451,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        6
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.8705882352941177,
+            "g": 0.8862745098039215,
+            "b": 0.9019607843137255,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 5,
+      "parent": 2
+    },
+    "6": {
+      "name": "hint",
+      "type": "text",
+      "characters": "slot:action",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        24.0,
+        24.0
+      ],
+      "width": 200.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784313725490196,
+            "g": 0.7098039215686275,
+            "b": 0.7411764705882353,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 6,
+      "parent": 5
+    }
+  },
+  "next_id": 7,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
-  "version": 1
+  "document_colors": [],
+  "comments": [],
+  "imageIndex": []
 }

@@ -6,10 +6,10 @@
       "class": "DiscussChannelItem",
       "category": "discussion",
       "path": "widgets/discussion/discuss_channel_item.json",
-      "description": "Элемент списка бесед Discuss (NotificationItem)",
+      "description": "Канал Discuss; variant:active / variant:unread",
       "size": {
         "width": 174,
-        "height": 58
+        "height": 40
       },
       "slots": [],
       "variants": [
@@ -26,7 +26,7 @@
       "class": "DiscussComposer",
       "category": "discussion",
       "path": "widgets/discussion/discuss_composer.json",
-      "description": "Поле ввода сообщения Discuss (pill)",
+      "description": "Composer Discuss: pill + send vector (#017E84)",
       "size": {
         "width": 616,
         "height": 46
@@ -44,7 +44,7 @@
       "class": "DiscussMessage",
       "category": "discussion",
       "path": "widgets/discussion/discuss_message.json",
-      "description": "Одно сообщение Discuss: автор и bubble",
+      "description": "Сообщение Discuss; variant:own / variant:system",
       "size": {
         "width": 592,
         "height": 80
@@ -258,14 +258,15 @@
       "class": "ImageField",
       "category": "fields",
       "path": "widgets/fields/image_field.json",
-      "description": "Превью изображения (виджет image, не binary)",
+      "description": "Превью image + edit/clear; variant:empty Upload",
       "size": {
         "width": 540,
-        "height": 120
+        "height": 140
       },
       "slots": [],
       "variants": [
-        "default"
+        "default",
+        "empty"
       ],
       "tags": [
         "fields",
@@ -453,7 +454,7 @@
       "class": "MenuItem",
       "category": "menu",
       "path": "widgets/menu/menu_item.json",
-      "description": "Пункт боковой панели AppsMenu (приложение или секция)",
+      "description": "Пункт AppsMenu; variant:active / variant:section",
       "size": {
         "width": 244,
         "height": 36
@@ -474,7 +475,7 @@
       "class": "RootMenu",
       "category": "menu",
       "path": "widgets/menu/root_menu.json",
-      "description": "Содержимое боковой панели AppsMenu: список приложений",
+      "description": "Сайдбар Apps: поиск + slot:items",
       "size": {
         "width": 260,
         "height": 722
@@ -500,7 +501,7 @@
       "class": "NavbarAppsMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_apps_menu.json",
-      "description": "Кнопка AppsMenu (сетка) в верхней панели",
+      "description": "Кнопка Apps (сетка 9 точек); variant:open — панель приложений",
       "size": {
         "width": 40,
         "height": 40
@@ -519,7 +520,7 @@
       "class": "NavbarMessagingMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_messaging_menu.json",
-      "description": "Вход в сообщения / Discuss в systray с бейджем непрочитанных",
+      "description": "Discuss в systray; variant:withUnread — бейдж",
       "size": {
         "width": 40,
         "height": 40
@@ -558,14 +559,15 @@
       "class": "NavbarSwitchCompanyMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_switch_company_menu.json",
-      "description": "Смена компании в systray",
+      "description": "Смена компании в systray; caret + variant:open",
       "size": {
-        "width": 88,
+        "width": 120,
         "height": 40
       },
       "slots": [],
       "variants": [
-        "default"
+        "default",
+        "open"
       ],
       "tags": [
         "navbar",
@@ -577,7 +579,7 @@
       "class": "NavbarSystrayItem",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_systray_item.json",
-      "description": "Шаблон произвольного пункта systray с опциональным бейджем",
+      "description": "Шаблон systray (колокол); variant:withBadge",
       "size": {
         "width": 36,
         "height": 40
@@ -596,7 +598,7 @@
       "class": "NavbarUserMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_user_menu.json",
-      "description": "Аватар / меню пользователя в systray",
+      "description": "Круглый аватар пользователя в systray",
       "size": {
         "width": 44,
         "height": 40
@@ -684,12 +686,19 @@
       "class": "ActivityView",
       "category": "views",
       "path": "widgets/views/activity_view.json",
-      "description": "Расписание активностей (activity view)",
+      "description": "Матрица активностей: записи × Email/Call/Meeting/To-Do; цвета planned/today/overdue; slot:control_panel",
       "size": {
-        "width": 1106,
-        "height": 420
+        "width": 1366,
+        "height": 560
       },
-      "slots": [],
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
       "variants": [
         "default"
       ],
@@ -702,14 +711,24 @@
       "class": "CalendarView",
       "category": "views",
       "path": "widgets/views/calendar_view.json",
-      "description": "Календарный custom view с сеткой недели и событиями",
+      "description": "Календарь week/month/day + справа Attendees (Meet with); slot:control_panel / events / attendees",
       "size": {
-        "width": 1106,
-        "height": 560
+        "width": 1366,
+        "height": 640
       },
       "slots": [
         {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        },
+        {
           "name": "events",
+          "accepts": []
+        },
+        {
+          "name": "attendees",
           "accepts": []
         }
       ],

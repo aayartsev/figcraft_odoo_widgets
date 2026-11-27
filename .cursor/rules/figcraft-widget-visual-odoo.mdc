@@ -36,10 +36,11 @@ alwaysApply: false
 10. BinaryField **default** — имя файла + три иконки `vector`: download · pencil (edit) · trash (clear); **`variant:empty`** — «Upload».
 11. ImageField — отдельный класс (превью), не `variant` у BinaryField.
 12. CharField **`variant:email` / `phone` / `url`**: справа от input — action-иконка как в form Odoo (`envelope` / `phone`+«Call» / `globe`), цвет `#71639E`; input чуть уже, чтобы иконка не залезала в поле.
-13. GraphView: корень = **bar**; соседние кадры **`variant:line`** / **`variant:pie`**. На каждом кадре — та же панель мер + активный тип в переключателе.
-14. PivotView: **default** — заполненная сводная; **`variant:no_data`** — слот CP + панель мер, в центре «No data to display» (кнопки настроек приглушены).
-15. Если в Odoo есть open / filtered / radio / line / pie / no_data — **сверять все** заявленные состояния, не только default.
-16. В [`catalog.json`](catalog.json) отразить variants и коротко описать смысл в `description`, если состояние добавили.
+13. CalendarView: сетка week/month/day + **справа** панель Attendees / Meet with (чекбоксы людей с цветом + «Add Attendees»); мини-календарь сверху панели. Не оставлять только сетку без боковой колонки.
+14. GraphView: корень = **bar**; соседние кадры **`variant:line`** / **`variant:pie`**. На каждом кадре — та же панель мер + активный тип в переключателе.
+15. PivotView: **default** — заполненная сводная; **`variant:no_data`** — слот CP + панель мер, в центре «No data to display» (кнопки настроек приглушены).
+16. Если в Odoo есть open / filtered / radio / line / pie / no_data — **сверять все** заявленные состояния, не только default.
+17. В [`catalog.json`](catalog.json) отразить variants и коротко описать смысл в `description`, если состояние добавили.
 
 ## 4. Иконки, caret, ручки
 

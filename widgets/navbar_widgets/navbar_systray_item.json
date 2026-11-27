@@ -1,157 +1,752 @@
 {
-  "comments": [],
-  "current_page": 1,
-  "document_colors": [],
   "format": "figcraft",
-  "imageIndex": [],
+  "version": 1,
   "name": "NavbarSystrayItem",
-  "next_id": 5,
+  "pages": [
+    1
+  ],
+  "current_page": 1,
   "nodes": {
     "1": {
-      "background": {
-        "a": 1.0,
-        "b": 0.9607843160629272,
-        "g": 0.9607843160629272,
-        "r": 0.9607843160629272
-      },
-      "children": [
-        2
-      ],
-      "flows": [],
-      "height": 0.0,
-      "id": 1,
       "name": "Page 1",
+      "type": "page",
+      "children": [
+        2,
+        5
+      ],
+      "width": 0.0,
+      "height": 0.0,
+      "background": {
+        "r": 0.9607843137254902,
+        "g": 0.9607843137254902,
+        "b": 0.9607843137254902,
+        "a": 1.0
+      },
+      "flows": [],
       "prototype": {
-        "background": {
-          "a": 1.0,
-          "b": 0.11764705926179886,
-          "g": 0.11764705926179886,
-          "r": 0.11764705926179886
-        },
         "device": "None",
+        "background": {
+          "r": 0.11764705882352941,
+          "g": 0.11764705882352941,
+          "b": 0.11764705882352941,
+          "a": 1.0
+        },
         "rotation": "portrait"
       },
-      "type": "page",
-      "width": 0.0
+      "id": 1
     },
     "2": {
-      "children": [
-        3,
-        4
-      ],
-      "clip": true,
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.0,
-            "g": 0.0,
-            "r": 0.0
-          },
-          "colorAlpha": 0.0,
-          "opacity": 0.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 40.0,
-      "id": 2,
-      "layout": {
-        "column_tracks": [],
-        "content_align": "auto",
-        "cross_align": "center",
-        "cross_gap": 0.0,
-        "gap": 0.0,
-        "grid_columns": 2,
-        "grid_rows": 2,
-        "main_align": "center",
-        "mode": "horizontal",
-        "padding": [
-          0.0,
-          0.0,
-          0.0,
-          0.0
-        ],
-        "reverse_z": false,
-        "row_tracks": [],
-        "strokes_included": true,
-        "wrap": false
-      },
       "name": "NavbarSystrayItem",
-      "parent": 1,
       "type": "frame",
-      "width": 36.0
-    },
-    "3": {
-      "blend": "normal",
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 1.0,
-            "g": 1.0,
-            "r": 1.0
-          },
-          "colorAlpha": 0.800000011920929,
-          "opacity": 0.800000011920929,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 18.0,
-      "id": 3,
-      "inner": 0.0,
-      "name": "Icon",
-      "parent": 2,
-      "start": 0.0,
-      "sweep": 6.283185307179586,
-      "type": "ellipse",
-      "width": 18.0
-    },
-    "4": {
-      "blend": "normal",
-      "fills": [
-        {
-          "blend": "normal",
-          "color": {
-            "a": 1.0,
-            "b": 0.2705882489681244,
-            "g": 0.6549019813537598,
-            "r": 0.1568627506494522
-          },
-          "opacity": 1.0,
-          "type": "solid",
-          "visible": true
-        }
-      ],
-      "height": 8.0,
-      "id": 4,
-      "inner": 0.0,
-      "name": "Badge",
-      "parent": 2,
-      "start": 0.0,
-      "sweep": 6.283185307179586,
+      "width": 36.0,
+      "height": 40.0,
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        22.0,
+        0.0,
+        0.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        3,
+        4
+      ],
+      "id": 2,
+      "parent": 1
+    },
+    "3": {
+      "name": "bell",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 12.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 10.0,
+            "radius": 0.0
+          },
+          {
+            "x": 18.0,
+            "y": 8.0,
+            "radius": 0.0
+          },
+          {
+            "x": 24.0,
+            "y": 10.0,
+            "radius": 0.0
+          },
+          {
+            "x": 24.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 26.0,
+            "y": 22.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 22.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 14.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 5,
+            "b": 6,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 6,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        8.0
+      ],
+      "width": 16.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.6,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 3,
+      "parent": 2
+    },
+    "4": {
+      "name": "bell_clapper",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 16.0,
+            "y": 24.0,
+            "radius": 0.0
+          },
+          {
+            "x": 20.0,
+            "y": 24.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        8.0
+      ],
+      "width": 4.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.6,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 4,
+      "parent": 2
+    },
+    "5": {
+      "name": "variant:withBadge",
+      "type": "frame",
+      "width": 36.0,
+      "height": 40.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        60.0,
+        0.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        6,
+        7,
+        8
+      ],
+      "id": 5,
+      "parent": 1
+    },
+    "6": {
+      "name": "bell",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 12.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 10.0,
+            "radius": 0.0
+          },
+          {
+            "x": 18.0,
+            "y": 8.0,
+            "radius": 0.0
+          },
+          {
+            "x": 24.0,
+            "y": 10.0,
+            "radius": 0.0
+          },
+          {
+            "x": 24.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 26.0,
+            "y": 22.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 22.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 14.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 5,
+            "b": 6,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 6,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        8.0
+      ],
+      "width": 16.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.6,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 6,
+      "parent": 5
+    },
+    "7": {
+      "name": "bell_clapper",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 16.0,
+            "y": 24.0,
+            "radius": 0.0
+          },
+          {
+            "x": 20.0,
+            "y": 24.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        4.0,
+        8.0
+      ],
+      "width": 4.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.6,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 7,
+      "parent": 5
+    },
+    "8": {
+      "name": "badge",
+      "type": "frame",
+      "width": 14.0,
+      "height": 14.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        20.0,
         6.0
       ],
-      "type": "ellipse",
-      "width": 8.0
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.8627450980392157,
+            "g": 0.20784313725490197,
+            "b": 0.27058823529411763,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        9
+      ],
+      "corner_radius": 7.0,
+      "id": 8,
+      "parent": 5
+    },
+    "9": {
+      "name": "n",
+      "type": "text",
+      "characters": "1",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 9.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "width": 8.0,
+      "height": 10.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 9,
+      "parent": 8
     }
   },
-  "pages": [
-    1
-  ],
+  "next_id": 10,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
-  "version": 1
+  "document_colors": [],
+  "comments": [],
+  "imageIndex": []
 }

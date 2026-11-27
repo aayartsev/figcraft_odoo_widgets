@@ -8,41 +8,38 @@
   "current_page": 1,
   "nodes": {
     "1": {
-      "id": 1,
       "name": "Page 1",
       "type": "page",
       "children": [
-        2
+        2,
+        14
       ],
       "width": 0.0,
       "height": 0.0,
       "background": {
-        "r": 0.9607843,
-        "g": 0.9607843,
-        "b": 0.9607843,
+        "r": 0.9607843137254902,
+        "g": 0.9607843137254902,
+        "b": 0.9607843137254902,
         "a": 1.0
       },
       "flows": [],
       "prototype": {
         "device": "None",
         "background": {
-          "r": 0.11764706,
-          "g": 0.11764706,
-          "b": 0.11764706,
+          "r": 0.11764705882352941,
+          "g": 0.11764705882352941,
+          "b": 0.11764705882352941,
           "a": 1.0
         },
         "rotation": "portrait"
-      }
+      },
+      "id": 1
     },
     "2": {
-      "id": 2,
       "name": "ImageField",
       "type": "frame",
-      "parent": 1,
-      "children": [
-        3,
-        4
-      ],
+      "width": 540.0,
+      "height": 140.0,
       "transform": [
         1.0,
         0.0,
@@ -51,8 +48,6 @@
         0.0,
         0.0
       ],
-      "width": 540.0,
-      "height": 120.0,
       "fills": [
         {
           "type": "solid",
@@ -68,10 +63,16 @@
           "colorAlpha": 0.0
         }
       ],
-      "clip": true
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        3,
+        4
+      ],
+      "id": 2,
+      "parent": 1
     },
     "3": {
-      "id": 3,
       "name": "Label",
       "type": "text",
       "characters": "Image",
@@ -92,8 +93,6 @@
         "link": null
       },
       "auto_resize": "height",
-      "align_h": "right",
-      "parent": 2,
       "blend": "normal",
       "transform": [
         1.0,
@@ -101,64 +100,68 @@
         0.0,
         1.0,
         0.0,
-        11.0
+        8.0
       ],
       "width": 160.0,
-      "height": 16.25,
+      "height": 16.0,
       "fills": [
         {
           "type": "solid",
           "color": {
-            "r": 0.42352942,
-            "g": 0.45882353,
-            "b": 0.49019608,
+            "r": 0.4235294117647059,
+            "g": 0.4588235294117647,
+            "b": 0.49019607843137253,
             "a": 1.0
           },
           "opacity": 1.0,
           "visible": true,
           "blend": "normal"
         }
-      ]
+      ],
+      "id": 3,
+      "parent": 2
     },
     "4": {
-      "id": 4,
       "name": "Preview",
       "type": "frame",
-      "parent": 2,
-      "children": [
-        5
-      ],
+      "width": 120.0,
+      "height": 120.0,
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
         176.0,
-        10.0
+        8.0
       ],
-      "width": 120.0,
-      "height": 100.0,
       "fills": [
         {
           "type": "solid",
           "color": {
-            "r": 0.9137255,
-            "g": 0.9254902,
-            "b": 0.9372549,
+            "r": 0.9137254901960784,
+            "g": 0.9254901960784314,
+            "b": 0.9372549019607843,
             "a": 1.0
           },
           "opacity": 1.0,
           "visible": true,
           "blend": "normal"
         }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        5,
+        7,
+        8
       ],
       "strokes": [
         {
           "type": "solid",
           "color": {
-            "r": 0.87058824,
-            "g": 0.8862745,
-            "b": 0.9019608,
+            "r": 0.8705882352941177,
+            "g": 0.8862745098039215,
+            "b": 0.9019607843137255,
             "a": 1.0
           },
           "opacity": 1.0,
@@ -166,51 +169,53 @@
           "blend": "normal"
         }
       ],
-      "corners": {
-        "radii": [
-          4.0,
-          4.0,
-          4.0,
-          4.0
-        ],
-        "smoothing": 0.0
+      "stroke": {
+        "weight": 1.0,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
       },
-      "clip": true
+      "corner_radius": 3.0,
+      "id": 4,
+      "parent": 2
     },
     "5": {
-      "id": 5,
       "name": "ph",
       "type": "vector",
       "network": {
         "vertices": [
           {
-            "x": 10.0,
+            "x": 20.0,
+            "y": 80.0,
+            "radius": 0.0
+          },
+          {
+            "x": 50.0,
             "y": 40.0,
             "radius": 0.0
           },
           {
-            "x": 30.0,
-            "y": 15.0,
+            "x": 70.0,
+            "y": 60.0,
             "radius": 0.0
           },
           {
-            "x": 45.0,
+            "x": 90.0,
             "y": 35.0,
             "radius": 0.0
           },
           {
-            "x": 55.0,
-            "y": 25.0,
+            "x": 110.0,
+            "y": 80.0,
             "radius": 0.0
           },
           {
-            "x": 70.0,
-            "y": 45.0,
-            "radius": 0.0
-          },
-          {
-            "x": 10.0,
-            "y": 45.0,
+            "x": 20.0,
+            "y": 80.0,
             "radius": 0.0
           }
         ],
@@ -278,39 +283,39 @@
         ],
         "regions": []
       },
-      "parent": 4,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        40.0,
-        30.0
+        15.0,
+        35.0
       ],
-      "width": 60.0,
-      "height": 30.0,
+      "width": 90.0,
+      "height": 45.0,
       "fills": [
         {
           "type": "solid",
           "color": {
-            "r": 0.80784315,
-            "g": 0.83137256,
-            "b": 0.85490197,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
             "a": 1.0
           },
-          "opacity": 1.0,
+          "opacity": 0.0,
           "visible": true,
-          "blend": "normal"
+          "blend": "normal",
+          "colorAlpha": 0.0
         }
       ],
       "strokes": [
         {
           "type": "solid",
           "color": {
-            "r": 0.6784314,
-            "g": 0.70980394,
-            "b": 0.7411765,
+            "r": 0.6784313725490196,
+            "g": 0.7098039215686275,
+            "b": 0.7411764705882353,
             "a": 1.0
           },
           "opacity": 1.0,
@@ -322,15 +327,863 @@
         "weight": 1.5,
         "align": "center",
         "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 5,
+      "parent": 4
+    },
+    "7": {
+      "name": "sun",
+      "type": "frame",
+      "width": 16.0,
+      "height": 16.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        88.0,
+        18.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784313725490196,
+            "g": 0.7098039215686275,
+            "b": 0.7411764705882353,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [],
+      "corner_radius": 8.0,
+      "id": 7,
+      "parent": 4
+    },
+    "8": {
+      "name": "Actions",
+      "type": "frame",
+      "width": 120.0,
+      "height": 28.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        92.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.45,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "id": 8,
+      "parent": 4
+    },
+    "9": {
+      "name": "pen",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 3.0,
+            "y": 11.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 6.0,
+            "radius": 0.0
+          },
+          {
+            "x": 5.0,
+            "y": 13.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 13.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 11.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        28.0,
+        8.0
+      ],
+      "width": 12.0,
+      "height": 12.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 9,
+      "parent": 8
+    },
+    "10": {
+      "name": "pen_line",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 2.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 14.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        28.0,
+        8.0
+      ],
+      "width": 10.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 10,
+      "parent": 8
+    },
+    "11": {
+      "name": "tl",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 1.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 13.0,
+            "y": 4.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        72.0,
+        7.0
+      ],
+      "width": 12.0,
+      "height": 0.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 11,
+      "parent": 8
+    },
+    "12": {
+      "name": "th",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 4.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 5.0,
+            "y": 2.0,
+            "radius": 0.0
+          },
+          {
+            "x": 9.0,
+            "y": 2.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 4.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        72.0,
+        7.0
+      ],
+      "width": 8.0,
+      "height": 2.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 12,
+      "parent": 8
+    },
+    "13": {
+      "name": "tb",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 3.0,
+            "y": 5.0,
+            "radius": 0.0
+          },
+          {
+            "x": 11.0,
+            "y": 5.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 4.0,
+            "y": 14.0,
+            "radius": 0.0
+          },
+          {
+            "x": 3.0,
+            "y": 5.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        72.0,
+        7.0
+      ],
+      "width": 8.0,
+      "height": 9.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "id": 13,
+      "parent": 8
+    },
+    "14": {
+      "name": "variant:empty",
+      "type": "frame",
+      "width": 540.0,
+      "height": 140.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        180.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": false,
+      "blend": "normal",
+      "children": [
+        15,
+        16
+      ],
+      "id": 14,
+      "parent": 1
+    },
+    "15": {
+      "name": "Label",
+      "type": "text",
+      "characters": "Image",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        8.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.4235294117647059,
+            "g": 0.4588235294117647,
+            "b": 0.49019607843137253,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 15,
+      "parent": 14
+    },
+    "16": {
+      "name": "Preview",
+      "type": "frame",
+      "width": 120.0,
+      "height": 120.0,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        8.0
+      ],
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9725490196078431,
+            "g": 0.9764705882352941,
+            "b": 0.9803921568627451,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "clip": true,
+      "blend": "normal",
+      "children": [
+        17
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.8705882352941177,
+            "g": 0.8862745098039215,
+            "b": 0.9019607843137255,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "inside",
+        "sides": null,
         "cap_start": "none",
         "cap_end": "none",
         "join": "miter",
         "miter_limit": 4.0,
         "dashes": []
-      }
+      },
+      "corner_radius": 3.0,
+      "id": 16,
+      "parent": 14
+    },
+    "17": {
+      "name": "up",
+      "type": "text",
+      "characters": "Upload",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        28.0,
+        52.0
+      ],
+      "width": 70.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313725490196076,
+            "g": 0.38823529411764707,
+            "b": 0.6196078431372549,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "id": 17,
+      "parent": 16
     }
   },
-  "next_id": 6,
+  "next_id": 18,
   "styles": [],
   "variables": {
     "collections": [],
