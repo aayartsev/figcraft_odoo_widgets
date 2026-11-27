@@ -10,7 +10,6 @@ pub const CATEGORY_ORDER: &[&str] = &[
     "menu",
     "views",
     "fields",
-    "custom_views",
     "discussion",
     "custom",
 ];

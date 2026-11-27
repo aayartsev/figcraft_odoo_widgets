@@ -23,9 +23,8 @@
 | `shell` | `widgets/shell/` | Каркас приложения (web client, navbar) |
 | `navbar_widgets` | `widgets/navbar_widgets/` | Куски apps-меню, разделы, systray |
 | `menu` | `widgets/menu/` | Содержимое боковой панели AppsMenu (sidebar), не постоянное левое меню |
-| `views` | `widgets/views/` | Стандартные виды + control panel |
+| `views` | `widgets/views/` | Все представления action: list / form / kanban, CP, search, calendar / graph / pivot / activity / hierarchy |
 | `fields` | `widgets/fields/` | Виджеты полей форм и списков |
-| `custom_views` | `widgets/custom_views/` | Нестандартные виды (calendar, graph, pivot, …) |
 | `discussion` | `widgets/discussion/` | UI Discuss / сообщений |
 | `custom` | `widgets/custom/` | Виджеты под конкретный проект |
 
@@ -127,9 +126,9 @@
 2. `size` ребёнка должен помещаться в слот; ширину можно растягивать до `fill`, если у родителя auto-layout
 3. Демо-страницы лежат в `demos/` как собранные документы FigCraft (целый файл, не гибридные метаданные)
 
-## Custom views и custom widgets
+## Виды и custom widgets
 
-- **custom_views** — альтернативные режимы action view (calendar, graph, pivot, activity, map, …)
+- **views** — все режимы action view в одной папке: list / form / kanban, control panel, search, calendar / graph / pivot / activity / hierarchy, …
 - **custom** — разовые виджеты проекта (KPI, особые блоки форм), которых нет в ядре Odoo
 
 ## Discussion

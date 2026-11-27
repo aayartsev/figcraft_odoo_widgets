@@ -58,7 +58,8 @@
 
 ## Категории
 
-Без изменений по смыслу: shell, navbar_widgets, menu, views, fields, custom_views, discussion, custom.
+Категории: shell, navbar_widgets, menu, views, fields, discussion, custom.  
+Папка `widgets/custom_views/` объединена с `widgets/views/` (2026-11-27).
 
 ## Визуальный язык
 

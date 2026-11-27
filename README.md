@@ -43,9 +43,8 @@ cargo run -p figcraft_build -- validate
 | `shell` | Каркас приложения (navbar + область действия) |
 | `navbar_widgets` | Элементы верхней панели и systray |
 | `menu` | Содержимое боковой панели AppsMenu |
-| `views` | list / form / kanban и control panel |
+| `views` | list / form / kanban, control panel, search, calendar / graph / pivot / activity / hierarchy |
 | `fields` | Поля форм |
-| `custom_views` | calendar, graph, pivot, activity |
 | `discussion` | UI Discuss / сообщений |
 | `custom` | Разовые виджеты под проект |
 

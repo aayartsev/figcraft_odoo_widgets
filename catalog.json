@@ -4,8 +4,8 @@
   "widgets": [
     {
       "class": "ActivityView",
-      "category": "custom_views",
-      "path": "widgets/custom_views/activity_view.json",
+      "category": "views",
+      "path": "widgets/views/activity_view.json",
       "description": "Расписание активностей (activity view)",
       "size": {
         "width": 1106,
@@ -16,14 +16,14 @@
         "default"
       ],
       "tags": [
-        "custom_views",
+        "views",
         "activity"
       ]
     },
     {
       "class": "CalendarView",
-      "category": "custom_views",
-      "path": "widgets/custom_views/calendar_view.json",
+      "category": "views",
+      "path": "widgets/views/calendar_view.json",
       "description": "Календарный custom view с сеткой недели и событиями",
       "size": {
         "width": 1106,
@@ -41,45 +41,85 @@
         "day"
       ],
       "tags": [
-        "custom_views",
+        "views",
         "calendar"
       ]
     },
     {
       "class": "GraphView",
-      "category": "custom_views",
-      "path": "widgets/custom_views/graph_view.json",
-      "description": "График / chart custom view со столбцами-заглушками",
+      "category": "views",
+      "path": "widgets/views/graph_view.json",
+      "description": "График: меры/группировка, bar + variant:line / variant:pie; slot:control_panel",
       "size": {
-        "width": 1106,
-        "height": 480
+        "width": 1366,
+        "height": 600
       },
-      "slots": [],
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
       "variants": [
         "bar",
         "line",
         "pie"
       ],
       "tags": [
-        "custom_views",
+        "views",
         "graph"
       ]
     },
     {
-      "class": "PivotView",
-      "category": "custom_views",
-      "path": "widgets/custom_views/pivot_view.json",
-      "description": "Сводная таблица (pivot)",
+      "class": "HierarchyView",
+      "category": "views",
+      "path": "widgets/views/hierarchy_view.json",
+      "description": "Иерархия / org chart: корень и дочерние узлы (contacts hierarchy)",
       "size": {
-        "width": 1106,
-        "height": 420
+        "width": 1366,
+        "height": 560
       },
-      "slots": [],
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
       "variants": [
         "default"
       ],
       "tags": [
-        "custom_views",
+        "views",
+        "hierarchy"
+      ]
+    },
+    {
+      "class": "PivotView",
+      "category": "views",
+      "path": "widgets/views/pivot_view.json",
+      "description": "Сводная таблица с мерами, группами и Total; variant:no_data; slot:control_panel",
+      "size": {
+        "width": 1366,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
+      "variants": [
+        "default",
+        "no_data"
+      ],
+      "tags": [
+        "views",
         "pivot"
       ]
     },
