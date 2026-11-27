@@ -590,7 +590,7 @@
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
-      "description": "Панель действия в одну строку: New, крошки, слот search, pager, виды",
+      "description": "Панель в 1 ряд: New, крошки, slot:search, pager; виды справа у края (list/kanban/hierarchy/activity/calendar/graph/pivot/form)",
       "size": {
         "width": 1366,
         "height": 46
