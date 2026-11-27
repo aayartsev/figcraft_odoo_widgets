@@ -517,10 +517,10 @@
       ]
     },
     {
-      "class": "NavbarMessagingMenu",
+      "class": "NavbarActivityMenu",
       "category": "navbar_widgets",
-      "path": "widgets/navbar_widgets/navbar_messaging_menu.json",
-      "description": "Discuss в systray; variant:withUnread — бейдж",
+      "path": "widgets/navbar_widgets/navbar_activity_menu.json",
+      "description": "Активности в systray (часы); variant:withBadge / variant:open",
       "size": {
         "width": 40,
         "height": 40
@@ -528,7 +528,29 @@
       "slots": [],
       "variants": [
         "default",
-        "withUnread"
+        "withBadge",
+        "open"
+      ],
+      "tags": [
+        "navbar",
+        "systray",
+        "activity"
+      ]
+    },
+    {
+      "class": "NavbarMessagingMenu",
+      "category": "navbar_widgets",
+      "path": "widgets/navbar_widgets/navbar_messaging_menu.json",
+      "description": "Discuss в systray; withUnread — бейдж; open — панель сообщений",
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "withUnread",
+        "open"
       ],
       "tags": [
         "navbar",
@@ -559,9 +581,9 @@
       "class": "NavbarSwitchCompanyMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_switch_company_menu.json",
-      "description": "Смена компании в systray; caret + variant:open",
+      "description": "Смена компании в systray: свёрнуто — иконка здания; variant:open — список",
       "size": {
-        "width": 120,
+        "width": 40,
         "height": 40
       },
       "slots": [],
@@ -598,14 +620,15 @@
       "class": "NavbarUserMenu",
       "category": "navbar_widgets",
       "path": "widgets/navbar_widgets/navbar_user_menu.json",
-      "description": "Круглый аватар пользователя в systray",
+      "description": "Аватар пользователя в systray + индикатор присутствия; variant:open — меню",
       "size": {
         "width": 44,
         "height": 40
       },
       "slots": [],
       "variants": [
-        "default"
+        "default",
+        "open"
       ],
       "tags": [
         "navbar",
@@ -640,6 +663,7 @@
           "accepts": [
             "NavbarSystrayItem",
             "NavbarUserMenu",
+            "NavbarActivityMenu",
             "NavbarMessagingMenu",
             "NavbarSwitchCompanyMenu"
           ]

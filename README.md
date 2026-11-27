@@ -54,4 +54,6 @@ Odoo 20 **Community**: бренд `#71639E`, фон `#F8F9FA`, Inter в маке
 
 ## Демо
 
-[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — **устаревший** справочный compose (старый гибридный DSL). Вне нового формата, `validate` его не проверяет. Перенос в нативный JSON — отдельная работа.
+[`demos/sale_order_form.json`](demos/sale_order_form.json) — нативный демо-экран **sale.order** (Navbar + CP + Form + StatusBar + строки + итоги) для обсуждения с клиентом.  
+Сборка полных экранов — правило [`.cursor/rules/figcraft-form-demo-compose.mdc`](.cursor/rules/figcraft-form-demo-compose.mdc).  
+[`demos/demo_shell_empty_action.json`](demos/demo_shell_empty_action.json) — **устаревший** справочный compose (старый гибридный DSL); `validate` его не проверяет.

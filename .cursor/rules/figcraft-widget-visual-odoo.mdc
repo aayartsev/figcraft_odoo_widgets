@@ -63,22 +63,35 @@ alwaysApply: false
 7. **ControlPanel (desktop):** одна строка (~46px): New + крошки | `slot:search` (`SearchBar`) | pager | **переключатель видов справа у края** (после pager, с отступом ~16px от правого края панели). Поиск не во втором ряду и не как встроенный текст «Search...».
    - Иконки видов — **`vector`**, не глифы (`≡` / `▦`): list, kanban, hierarchy, activity, calendar, graph, pivot, form (полный набор библиотеки / типичный desktop switcher).
    - Активный вид: фон `#E7E3F2`, штрих иконки `#71639E`; остальные — обводка `#DEE2E6`, иконка `#6C757D`.
-8. **StatusBarField** — отдельный виджет: шеврон-цепочка этапов (активный `#71639E` + белый текст, остальные `#E9ECEF` / `#495057`). Не рисовать этапы формы как pill-кнопки внутри FormView.
-9. **FormView:** слева кнопки действий / перехода этапа (primary `#71639E`, вторичные с обводкой); справа `slot:statusbar` (`accepts: StatusBarField`). Не путать с ControlPanel.
-10. **Views / крупные макеты:**
+8. **Navbar systray** (справа на `#71639E`, иконки белые `vector`, ~40×40):
+   - порядок как в Community: **сообщения** → **активности** → **компания** → **пользователь**;
+   - `NavbarMessagingMenu`: default / `withUnread` (бейдж `#28A745`) / `open` (панель сообщений);
+   - `NavbarActivityMenu`: default (часы) / `withBadge` / `open` (список активностей) — не подменять колоколом `NavbarSystrayItem`;
+   - `NavbarSwitchCompanyMenu`: **свёрнуто** — иконка здания (фасад/окна), не длинный текст «My Company»; `open` — список компаний;
+   - `NavbarUserMenu`: круглый аватар + точка присутствия (`#28A745` online / `#FFC107` away); `open` — Preferences / account / Log out;
+   - `NavbarSystrayItem` — общий шаблон (колокол), не замена Activity;
+   - сверять **свёрнутое и открытое** с живым Odoo; в полном экране демо обычно монтируют **свёрнутые** состояния.
+9. **StatusBarField** — отдельный виджет: шеврон-цепочка этапов (активный `#71639E` + белый текст, остальные `#E9ECEF` / `#495057`). Не рисовать этапы формы как pill-кнопки внутри FormView.
+10. **FormView** (каркас виджета, не весь демо-экран — см. [`figcraft-form-demo-compose.mdc`](figcraft-form-demo-compose.mdc)):
+   - корень = **canvas** `#F8F9FA`, ширина **1366**; не делать весь FormView одной белой карточкой;
+   - сверху опционально `slot:control_panel` (~46px); ниже — **`FormStatusbar`** (~48–55px, фон `#F8F9FA`): слева кнопки действий (primary `#71639E` / белый текст; secondary — белые, обводка `#DEE2E6` или `#CED4DA`, `cornerRadius` ~3, высота ~32); справа `slot:statusbar` (`accepts: StatusBarField`);
+   - ниже statusbar — **`Sheet`**: `#FFFFFF`, обводка `#DEE2E6`, `cornerRadius` ~6; внутри Title + `slot:fields` (и дальше notebook / o2m в демо);
+   - кнопки и statusbar **только** в `FormStatusbar`, **не** внутри `Sheet`; New / крошки / поиск — в ControlPanel, не в statusbar формы;
+   - после правок — `screenshot` зоны statusbar+верх Sheet: видна серая полоса и отдельный белый лист.
+11. **Views / крупные макеты:**
    - слоты (`slot:control_panel`, `slot:search`, `slot:statusbar`, `slot:fields`, …) — видимые плейсхолдеры с размером и обводкой, не `height: 0`;
    - у Graph / Pivot / Hierarchy и др. action-views: `slot:control_panel` (~46px), ширина корня **1366**;
    - фон canvas формы/kanban/graph/pivot `#F8F9FA`; primary-кнопка (New / Send / Measures) `#71639E`;
    - list: шапка `#F8F9FA`, колонки по фиксированным `x`, строки с разделителем `#DEE2E6`;
    - kanban ungrouped: карточки ~439×80, белые, с аватаром и meta.
-11. **GraphView:** под CP — панель Measure / Group By + переключатель bar·line·pie (активный: фон `#E7E3F2`, штрих `#71639E`; остальные обводка `#DEE2E6`, иконка `#6C757D`). Область графика: оси, сетка `#DEE2E6`, серии `#71639E`; у pie — легенда справа.
-12. **PivotView:**
+12. **GraphView:** под CP — панель Measure / Group By + переключатель bar·line·pie (активный: фон `#E7E3F2`, штрих `#71639E`; остальные обводка `#DEE2E6`, иконка `#6C757D`). Область графика: оси, сетка `#DEE2E6`, серии `#71639E`; у pie — легенда справа.
+13. **PivotView:**
    - панель мер: primary **Measures** + белый caret; рядом `btn-group` Flip axis · Expand all · Download xlsx (secondary, обводка). Не подменять тройку иконкой «spreadsheet», если ориентир Community Pivot;
    - таблица — **сетка ячеек** (отдельный фрейм на ячейку; границы или явный зазор `#DEE2E6` между белыми ячейками), не «список строк» как list;
    - шапка / Total: `#F8F9FA` / `#F1F3F5`; числа в value-ячейках вправо;
    - раскрытие групп: квадрат ± (`plus-square` / `minus-square`), не шевроны list/kanban.
-13. Новый кусок UI как отдельный `class` — файл + запись в catalog + `accepts` у слота родителя; затем `validate`.
-14. Снова `screenshot` **с тем же `document`** — нет наложений; читаются подпись, значение, таблица / карточки / caret / фасеты / ручка ресайза / toolbar-иконки.
+14. Новый кусок UI как отдельный `class` — файл + запись в catalog + `accepts` у слота родителя; затем `validate`.
+15. Снова `screenshot` **с тем же `document`** — нет наложений; читаются подпись, значение, таблица / карточки / caret / фасеты / ручка ресайза / toolbar-иконки.
 
 ## 6. Сохранить в репозиторий
 
@@ -108,6 +121,11 @@ alwaysApply: false
 - Оставлять переключатель видов с отступом «посередине» правой зоны — он должен быть **у правого края**
 - Иконки видов ControlPanel глифами / тремя кнопками вместо полного vector-набора
 - Рисовать statusbar формы pill-кнопками вместо `StatusBarField`
+- Делать FormView одним белым блоком: без `FormStatusbar` / без отдельного `Sheet`, или класть кнопки и этапы внутрь листа
+- Путать `FormStatusbar` с ControlPanel (New / крошки / поиск / виды)
+- Оставлять Navbar без systray или подменять активности колоколом `NavbarSystrayItem`
+- Свёрнутую компанию текстом «My Company» вместо иконки здания; аватар без точки присутствия
+- Считать systray-виджет готовым только в default, если в каталоге есть `open` / `withUnread` / `withBadge`
 - Рисовать Pivot как сгруппированный list (шевроны + одна линия-разделитель) вместо сетки ячеек
 - Measures без caret или серым chip вместо primary-кнопки; toolbar Flip/Expand/Download бледным stroke / чёрным `#00000000`-фоном
 - Сваливать bar/line/pie Graph в один кадр без `variant:*` (если в каталоге заявлены типы)

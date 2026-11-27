@@ -1,53 +1,55 @@
 {
   "format": "figcraft",
   "version": 1,
+  "imageIndex": [],
   "name": "NavbarSwitchCompanyMenu",
   "pages": [
     1
   ],
-  "current_page": 1,
   "nodes": {
     "1": {
+      "id": 1,
       "name": "Page 1",
       "type": "page",
-      "children": [
-        2,
-        6
-      ],
-      "width": 0.0,
-      "height": 0.0,
       "background": {
-        "r": 0.9607843137254902,
-        "g": 0.9607843137254902,
-        "b": 0.9607843137254902,
+        "r": 0.9607843,
+        "g": 0.9607843,
+        "b": 0.9607843,
         "a": 1.0
       },
       "flows": [],
       "prototype": {
         "device": "None",
         "background": {
-          "r": 0.11764705882352941,
-          "g": 0.11764705882352941,
-          "b": 0.11764705882352941,
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
           "a": 1.0
         },
         "rotation": "portrait"
       },
-      "id": 1
+      "children": [
+        2,
+        6
+      ],
+      "width": 0.0,
+      "height": 0.0
     },
     "2": {
+      "id": 2,
       "name": "NavbarSwitchCompanyMenu",
       "type": "frame",
-      "width": 120.0,
-      "height": 40.0,
-      "transform": [
-        1.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
+      "parent": 1,
+      "children": [
+        20,
+        21,
+        22,
+        23,
+        24
       ],
+      "blend": "normal",
+      "width": 40.0,
+      "height": 40.0,
       "fills": [
         {
           "type": "solid",
@@ -62,30 +64,29 @@
           "blend": "normal",
           "colorAlpha": 0.0
         }
-      ],
-      "clip": false,
-      "blend": "normal",
-      "children": [
-        3,
-        4,
-        5
-      ],
-      "id": 2,
-      "parent": 1
+      ]
     },
-    "3": {
-      "name": "dot",
-      "type": "ellipse",
-      "width": 10.0,
-      "height": 10.0,
+    "6": {
+      "id": 6,
+      "name": "variant:open",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        7,
+        9,
+        11
+      ],
+      "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        4.0,
-        15.0
+        0.0,
+        50.0
       ],
+      "width": 180.0,
+      "height": 100.0,
       "fills": [
         {
           "type": "solid",
@@ -100,12 +101,61 @@
           "blend": "normal"
         }
       ],
-      "blend": "normal",
-      "id": 3,
-      "parent": 2
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.0,
+        "align": "inside",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      },
+      "clip": true
     },
-    "4": {
-      "name": "co",
+    "7": {
+      "id": 7,
+      "name": "r0",
+      "type": "frame",
+      "parent": 6,
+      "children": [
+        8
+      ],
+      "blend": "normal",
+      "width": 180.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.90588236,
+            "g": 0.8901961,
+            "b": 0.9490196,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "8": {
+      "id": 8,
+      "name": "n",
       "type": "text",
       "characters": "My Company",
       "style": {
@@ -125,17 +175,52 @@
         "link": null
       },
       "auto_resize": "height",
+      "parent": 7,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        20.0,
-        13.0
+        12.0,
+        9.0
       ],
-      "width": 80.0,
+      "width": 140.0,
       "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "9": {
+      "id": 9,
+      "name": "r1",
+      "type": "frame",
+      "parent": 6,
+      "children": [
+        10
+      ],
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        32.0
+      ],
+      "width": 180.0,
+      "height": 32.0,
       "fills": [
         {
           "type": "solid",
@@ -149,28 +234,164 @@
           "visible": true,
           "blend": "normal"
         }
-      ],
-      "id": 4,
-      "parent": 2
+      ]
     },
-    "5": {
-      "name": "caret",
+    "10": {
+      "id": 10,
+      "name": "n",
+      "type": "text",
+      "characters": "Branch EU",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 9,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        9.0
+      ],
+      "width": 140.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "11": {
+      "id": 11,
+      "name": "r2",
+      "type": "frame",
+      "parent": 6,
+      "children": [
+        12
+      ],
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        64.0
+      ],
+      "width": 180.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "12": {
+      "id": 12,
+      "name": "n",
+      "type": "text",
+      "characters": "Branch US",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 12.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 11,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        9.0
+      ],
+      "width": 140.0,
+      "height": 14.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.12941177,
+            "g": 0.14509805,
+            "b": 0.16078432,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "20": {
+      "id": 20,
+      "name": "outer",
       "type": "vector",
       "network": {
         "vertices": [
           {
-            "x": 2.0,
-            "y": 3.0,
+            "x": 0.0,
+            "y": 0.0,
             "radius": 0.0
           },
           {
-            "x": 7.0,
-            "y": 8.0,
+            "x": 18.0,
+            "y": 0.0,
             "radius": 0.0
           },
           {
-            "x": 12.0,
-            "y": 3.0,
+            "x": 18.0,
+            "y": 22.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 22.0,
             "radius": 0.0
           }
         ],
@@ -198,36 +419,58 @@
               0.0,
               0.0
             ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
           }
         ],
-        "regions": []
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
       },
+      "parent": 2,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        100.0,
-        17.0
+        11.0,
+        9.0
       ],
-      "width": 10.0,
-      "height": 5.0,
-      "fills": [
-        {
-          "type": "solid",
-          "color": {
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "a": 1.0
-          },
-          "opacity": 0.0,
-          "visible": true,
-          "blend": "normal",
-          "colorAlpha": 0.0
-        }
-      ],
+      "width": 18.0,
+      "height": 22.0,
       "strokes": [
         {
           "type": "solid",
@@ -246,56 +489,65 @@
         "weight": 1.6,
         "align": "center",
         "sides": null,
-        "cap_start": "round",
-        "cap_end": "round",
-        "join": "round",
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
         "miter_limit": 4.0,
         "dashes": []
-      },
-      "id": 5,
-      "parent": 2
+      }
     },
-    "6": {
-      "name": "variant:open",
-      "type": "frame",
-      "width": 180.0,
-      "height": 100.0,
+    "21": {
+      "id": 21,
+      "name": "h1",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 18.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 2,
+      "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        0.0,
-        50.0
+        11.0,
+        16.0
       ],
-      "fills": [
+      "width": 18.0,
+      "height": 0.0,
+      "strokes": [
         {
           "type": "solid",
           "color": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0,
-            "a": 1.0
-          },
-          "opacity": 1.0,
-          "visible": true,
-          "blend": "normal"
-        }
-      ],
-      "clip": true,
-      "blend": "normal",
-      "children": [
-        7,
-        9,
-        11
-      ],
-      "strokes": [
-        {
-          "type": "solid",
-          "color": {
-            "r": 0.8705882352941177,
-            "g": 0.8862745098039215,
-            "b": 0.9019607843137255,
             "a": 1.0
           },
           "opacity": 1.0,
@@ -304,117 +556,62 @@
         }
       ],
       "stroke": {
-        "weight": 1.0,
-        "align": "inside",
+        "weight": 1.4,
+        "align": "center",
         "sides": null,
         "cap_start": "none",
         "cap_end": "none",
-        "join": "round",
+        "join": "miter",
         "miter_limit": 4.0,
         "dashes": []
-      },
-      "corner_radius": 4.0,
-      "id": 6,
-      "parent": 1
+      }
     },
-    "7": {
-      "name": "r0",
-      "type": "frame",
-      "width": 180.0,
-      "height": 32.0,
-      "transform": [
-        1.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0
-      ],
-      "fills": [
-        {
-          "type": "solid",
-          "color": {
-            "r": 0.9058823529411765,
-            "g": 0.8901960784313725,
-            "b": 0.9490196078431372,
-            "a": 1.0
+    "22": {
+      "id": 22,
+      "name": "h2",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
           },
-          "opacity": 1.0,
-          "visible": true,
-          "blend": "normal"
-        }
-      ],
-      "clip": false,
-      "blend": "normal",
-      "children": [
-        8
-      ],
-      "id": 7,
-      "parent": 6
-    },
-    "8": {
-      "name": "n",
-      "type": "text",
-      "characters": "My Company",
-      "style": {
-        "font_family": "Inter",
-        "font_style": "Regular",
-        "font_size": 12.0,
-        "line_height": {
-          "unit": "auto"
-        },
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "decoration": "none",
-        "case": "original",
-        "fills": null,
-        "link": null
+          {
+            "x": 18.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
       },
-      "auto_resize": "height",
+      "parent": 2,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        12.0,
-        9.0
+        11.0,
+        23.0
       ],
-      "width": 140.0,
-      "height": 14.0,
-      "fills": [
-        {
-          "type": "solid",
-          "color": {
-            "r": 0.44313725490196076,
-            "g": 0.38823529411764707,
-            "b": 0.6196078431372549,
-            "a": 1.0
-          },
-          "opacity": 1.0,
-          "visible": true,
-          "blend": "normal"
-        }
-      ],
-      "id": 8,
-      "parent": 7
-    },
-    "9": {
-      "name": "r1",
-      "type": "frame",
-      "width": 180.0,
-      "height": 32.0,
-      "transform": [
-        1.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        32.0
-      ],
-      "fills": [
+      "width": 18.0,
+      "height": 0.0,
+      "strokes": [
         {
           "type": "solid",
           "color": {
@@ -428,77 +625,63 @@
           "blend": "normal"
         }
       ],
-      "clip": false,
-      "blend": "normal",
-      "children": [
-        10
-      ],
-      "id": 9,
-      "parent": 6
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
     },
-    "10": {
-      "name": "n",
-      "type": "text",
-      "characters": "Branch EU",
-      "style": {
-        "font_family": "Inter",
-        "font_style": "Regular",
-        "font_size": 12.0,
-        "line_height": {
-          "unit": "auto"
-        },
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "decoration": "none",
-        "case": "original",
-        "fills": null,
-        "link": null
+    "23": {
+      "id": 23,
+      "name": "v1",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 22.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
       },
-      "auto_resize": "height",
+      "parent": 2,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        12.0,
+        17.0,
         9.0
       ],
-      "width": 140.0,
-      "height": 14.0,
-      "fills": [
-        {
-          "type": "solid",
-          "color": {
-            "r": 0.12941176470588237,
-            "g": 0.1450980392156863,
-            "b": 0.1607843137254902,
-            "a": 1.0
-          },
-          "opacity": 1.0,
-          "visible": true,
-          "blend": "normal"
-        }
-      ],
-      "id": 10,
-      "parent": 9
-    },
-    "11": {
-      "name": "r2",
-      "type": "frame",
-      "width": 180.0,
-      "height": 32.0,
-      "transform": [
-        1.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        64.0
-      ],
-      "fills": [
+      "width": 0.0,
+      "height": 22.0,
+      "strokes": [
         {
           "type": "solid",
           "color": {
@@ -512,53 +695,69 @@
           "blend": "normal"
         }
       ],
-      "clip": false,
-      "blend": "normal",
-      "children": [
-        12
-      ],
-      "id": 11,
-      "parent": 6
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
     },
-    "12": {
-      "name": "n",
-      "type": "text",
-      "characters": "Branch US",
-      "style": {
-        "font_family": "Inter",
-        "font_style": "Regular",
-        "font_size": 12.0,
-        "line_height": {
-          "unit": "auto"
-        },
-        "letter_spacing": {
-          "unit": "percent",
-          "value": 0.0
-        },
-        "decoration": "none",
-        "case": "original",
-        "fills": null,
-        "link": null
+    "24": {
+      "id": 24,
+      "name": "v2",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 22.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
       },
-      "auto_resize": "height",
+      "parent": 2,
       "blend": "normal",
       "transform": [
         1.0,
         0.0,
         0.0,
         1.0,
-        12.0,
+        23.0,
         9.0
       ],
-      "width": 140.0,
-      "height": 14.0,
-      "fills": [
+      "width": 0.0,
+      "height": 22.0,
+      "strokes": [
         {
           "type": "solid",
           "color": {
-            "r": 0.12941176470588237,
-            "g": 0.1450980392156863,
-            "b": 0.1607843137254902,
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
             "a": 1.0
           },
           "opacity": 1.0,
@@ -566,17 +765,25 @@
           "blend": "normal"
         }
       ],
-      "id": 12,
-      "parent": 11
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
     }
   },
-  "next_id": 13,
+  "next_id": 25,
   "styles": [],
   "variables": {
     "collections": [],
     "variables": []
   },
+  "current_page": 1,
   "document_colors": [],
-  "comments": [],
-  "imageIndex": []
+  "comments": []
 }

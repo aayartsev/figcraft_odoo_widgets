@@ -1,0 +1,77 @@
+---
+description: Сборка полного экрана/формы из виджетов в demos/ (каркас слоёв + сверка с Odoo)
+globs: demos/**/*.json
+alwaysApply: false
+---
+
+# Сборка полного экрана формы (демо)
+
+Когда собирают **целый экран** для обсуждения с клиентом (не один виджет) — следовать этому циклу. Доводка отдельных виджетов — в [`figcraft-widget-visual-odoo.mdc`](figcraft-widget-visual-odoo.mdc). Хранилище — **текстовый** JSON FigCraft в `demos/`; zip под `.json` запрещён.
+
+Цель: быстрый узнаваемый макет Odoo Community, не Studio и не пиксель-перфект.
+
+## 1. Ориентир
+
+1. Живая форма в Web Client (тот же сценарий: модель / действие / язык).
+2. Виджеты только из [`catalog.json`](catalog.json) / `widgets/` — не рисовать «с нуля» то, что уже есть классом.
+3. Эталон каркаса: [`demos/sale_order_form.json`](demos/sale_order_form.json).
+
+## 2. Каркас слоёв (сверху вниз)
+
+Ширина корня ориентир **1366**. Имена фреймов — смысловые (латиница как в коде).
+
+```text
+DemoRoot (#F8F9FA)
+├── Navbar (#71639E)               # apps + brand + sections | Systray справа
+│   └── Systray                    # Messaging → Activity → Company → User (свёрнутые)
+├── ControlPanel                   # New / крошки / поиск / pager / виды — НЕ кнопки формы
+└── FormView (#F8F9FA, без «белой карточки» на весь экран)
+    ├── FormStatusbar              # кнопки действий + StatusBarField; фон #F8F9FA
+    └── Sheet                      # белый лист: title + поля + notebook / o2m / итоги
+        ├── Title
+        └── …поля и таблицы
+```
+
+| Слой | Фон / вид | Что внутри |
+|------|-----------|------------|
+| `Navbar` / `Systray` | `#71639E`, иконки белые | свёрнутые `NavbarMessagingMenu` (+бейдж) · `NavbarActivityMenu` · `NavbarSwitchCompanyMenu` · `NavbarUserMenu`; открытые `variant:open` — в файлах виджетов, не обязательно на демо-экране |
+| `FormView` (canvas) | `#F8F9FA` | statusbar + sheet; **не** один сплошной белый блок |
+| `FormStatusbar` | `#F8F9FA`, высота ~48–55 | слева primary/secondary кнопки; справа `StatusBarField` (шевроны) |
+| `Sheet` | `#FFFFFF`, обводка `#DEE2E6`, `cornerRadius` ~6 | заголовок записи и содержимое формы |
+
+Кнопки формы и виджет состояний — **только** в `FormStatusbar`, над листом. Не класть их внутрь `Sheet` и не путать с `ControlPanel`. Systray — справа в `Navbar`, не в ControlPanel.
+
+## 3. Сборка
+
+1. Сверить живую форму: какие кнопки, этапы statusbar, поля, вкладки, таблицы.
+2. Собрать каркас слоёв (§2); поля — экземпляры/копии из `widgets/fields/*`, строки — `One2manyField` / list-вариант, этапы — `StatusBarField`.
+3. Раскладка: абсолютные `x`/`y`, `layout: null` там, где auto-layout схлопывает детей. У `batch` / `save_file` / `screenshot` — явный `document`.
+4. Подписи и значения — язык ориентира (RU/EN), primary `#71639E`, ссылки many2one `#66598F`.
+
+## 4. Сохранить
+
+1. `save_file` → `demos/<сценарий>.json` с `document`.
+2. Если файл zip (`PK`): извлечь `document.json`, перезаписать путь **pretty JSON** (`indent=2`, UTF-8).
+3. `"name"` корня = имя демо (например `SaleOrderFormDemo`), не чужой виджет.
+4. `screenshot` корня + зона statusbar/sheet; рядом — живой Odoo.
+5. Кратко отметить в [`README.md`](README.md) в блоке «Демо», если добавили новый экран.
+
+## 5. Проверка перед «готово»
+
+- [ ] В `Navbar` справа есть systray: чат · часы · здание · аватар (как в живом Odoo)
+- [ ] Statusbar визуально отделён от листа (серый canvas + белый `Sheet` с обводкой)
+- [ ] Кнопки и `StatusBarField` не внутри `Sheet`
+- [ ] ControlPanel не смешан с кнопками формы и не с systray
+- [ ] Поля/таблицы узнаваемы; нет чёрных `#00000000`-заливок и глифов вместо `vector`
+- [ ] Файл — текстовый JSON, не zip
+- [ ] Открывается в FigCraft после `reload`
+
+## Не делать
+
+- Собирать весь экран одним белым `FormView` без отдельного `Sheet`
+- Рисовать этапы pill-кнопками вместо `StatusBarField`
+- Класть New / крошки / поиск в `FormStatusbar` (это ControlPanel)
+- Оставлять пустой правый край Navbar (без systray), если ориентир — обычный desktop Web Client
+- Дублировать в демо логику variants одного виджета — править виджет в `widgets/`, демо только монтирует
+- Оставлять zip в `demos/`
+- Считать готовым без сверки statusbar/sheet и systray с живой формой
