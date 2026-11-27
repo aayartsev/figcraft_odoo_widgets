@@ -32,10 +32,14 @@ alwaysApply: false
 6. Selection **`variant:open`**: обводка `#71639E`, список вариантов под input; без «Search More…» / «Create…», если в Odoo их нет.
 7. Boolean и Selection **`variant:radio`**: круги (`ellipse` + точка `#71639E`), подписи вариантов в ряд; не checkbox и не dropdown.
 8. SearchBar: **default** — placeholder `Search...`; **`variant:open`** — фокус `#71639E` и dropdown (поля поиска / Filters / Group By); **`variant:filtered`** — фасеты-чипы в строке (фон `#E7E3F2`, текст `#71639E`) + placeholder.
-9. GraphView: корень = **bar**; соседние кадры **`variant:line`** / **`variant:pie`**. На каждом кадре — та же панель мер + активный тип в переключателе.
-10. PivotView: **default** — заполненная сводная; **`variant:no_data`** — слот CP + панель мер, в центре «No data to display» (кнопки настроек приглушены).
-11. Если в Odoo есть open / filtered / radio / line / pie / no_data — **сверять все** заявленные состояния, не только default.
-12. В [`catalog.json`](catalog.json) отразить variants и коротко описать смысл в `description`, если состояние добавили.
+9. Many2manyField: **default** — tags с крестиком из **двух** `vector`-штрихов (`fill: none`); **`variant:checkboxes`**; **`variant:list`** (1366, колонки + Add a line); **`variant:list_trash`** / **`variant:list_cross`** — корзина / крестик у строки, как у One2many.
+10. BinaryField **default** — имя файла + три иконки `vector`: download · pencil (edit) · trash (clear); **`variant:empty`** — «Upload».
+11. ImageField — отдельный класс (превью), не `variant` у BinaryField.
+12. CharField **`variant:email` / `phone` / `url`**: справа от input — action-иконка как в form Odoo (`envelope` / `phone`+«Call» / `globe`), цвет `#71639E`; input чуть уже, чтобы иконка не залезала в поле.
+13. GraphView: корень = **bar**; соседние кадры **`variant:line`** / **`variant:pie`**. На каждом кадре — та же панель мер + активный тип в переключателе.
+14. PivotView: **default** — заполненная сводная; **`variant:no_data`** — слот CP + панель мер, в центре «No data to display» (кнопки настроек приглушены).
+15. Если в Odoo есть open / filtered / radio / line / pie / no_data — **сверять все** заявленные состояния, не только default.
+16. В [`catalog.json`](catalog.json) отразить variants и коротко описать смысл в `description`, если состояние добавили.
 
 ## 4. Иконки, caret, ручки
 

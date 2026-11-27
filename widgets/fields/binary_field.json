@@ -1,0 +1,1544 @@
+{
+  "format": "figcraft",
+  "version": 1,
+  "imageIndex": [],
+  "name": "BinaryField",
+  "pages": [
+    1
+  ],
+  "nodes": {
+    "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
+      "background": {
+        "r": 0.9607843,
+        "g": 0.9607843,
+        "b": 0.9607843,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
+      },
+      "children": [
+        2,
+        20
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    "2": {
+      "id": 2,
+      "name": "BinaryField",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        3,
+        4
+      ],
+      "width": 540.0,
+      "height": 40.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "3": {
+      "id": 3,
+      "name": "Label",
+      "type": "text",
+      "characters": "Attachment",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "right",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        11.0
+      ],
+      "width": 160.0,
+      "height": 16.25,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "4": {
+      "id": 4,
+      "name": "Input",
+      "type": "frame",
+      "parent": 2,
+      "children": [
+        5,
+        12,
+        15,
+        17
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        4.0
+      ],
+      "width": 348.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      }
+    },
+    "5": {
+      "id": 5,
+      "name": "Value",
+      "type": "text",
+      "characters": "invoice_2026.pdf",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 4,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        10.0,
+        7.0
+      ],
+      "width": 220.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.4,
+            "g": 0.34901962,
+            "b": 0.56078434,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      },
+      "overrides": [
+        "characters"
+      ]
+    },
+    "12": {
+      "id": 12,
+      "name": "btn_download",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        252.0,
+        4.0
+      ],
+      "width": 28.0,
+      "height": 24.0
+    },
+    "15": {
+      "id": 15,
+      "name": "btn_edit",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        24,
+        25
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        284.0,
+        4.0
+      ],
+      "width": 28.0,
+      "height": 24.0
+    },
+    "17": {
+      "id": 17,
+      "name": "btn_clear",
+      "type": "frame",
+      "parent": 4,
+      "children": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        316.0,
+        4.0
+      ],
+      "width": 28.0,
+      "height": 24.0
+    },
+    "20": {
+      "id": 20,
+      "name": "variant:empty",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        21,
+        22
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        60.0
+      ],
+      "width": 540.0,
+      "height": 40.0,
+      "clip": true
+    },
+    "21": {
+      "id": 21,
+      "name": "Label",
+      "type": "text",
+      "characters": "Attachment",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "right",
+      "parent": 20,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        11.0
+      ],
+      "width": 160.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "22": {
+      "id": 22,
+      "name": "Input",
+      "type": "frame",
+      "parent": 20,
+      "children": [
+        23
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        4.0
+      ],
+      "width": 348.0,
+      "height": 32.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "23": {
+      "id": 23,
+      "name": "Upload",
+      "type": "text",
+      "characters": "Upload",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "parent": 22,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        12.0,
+        7.0
+      ],
+      "width": 80.0,
+      "height": 16.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.44313726,
+            "g": 0.3882353,
+            "b": 0.61960787,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "child_layout": {
+        "sizing_h": "fixed",
+        "sizing_v": "hug",
+        "absolute": false,
+        "min_w": null,
+        "max_w": null,
+        "min_h": null,
+        "max_h": null,
+        "grid_column": null,
+        "grid_row": null,
+        "grid_column_span": 0,
+        "grid_row_span": 0
+      }
+    },
+    "24": {
+      "id": 24,
+      "name": "pen_body",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 7.0,
+            "radius": 0.0
+          },
+          {
+            "x": 7.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 9.0,
+            "y": 2.0,
+            "radius": 0.0
+          },
+          {
+            "x": 2.0,
+            "y": 9.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 9.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
+      },
+      "parent": 15,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        10.0,
+        9.0
+      ],
+      "width": 9.0,
+      "height": 9.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "25": {
+      "id": 25,
+      "name": "pen_line",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 15,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        9.0,
+        19.0
+      ],
+      "width": 10.0,
+      "height": 0.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "26": {
+      "id": 26,
+      "name": "trash_lid",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 17,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        8.0,
+        8.0
+      ],
+      "width": 12.0,
+      "height": 0.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "27": {
+      "id": 27,
+      "name": "trash_handle",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 2.0,
+            "radius": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 5.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 6.0,
+            "y": 2.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 17,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        11.0,
+        6.0
+      ],
+      "width": 6.0,
+      "height": 2.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "28": {
+      "id": 28,
+      "name": "trash_body",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 8.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 7.0,
+            "y": 9.0,
+            "radius": 0.0
+          },
+          {
+            "x": 1.0,
+            "y": 9.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 0,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": [
+          {
+            "loops": [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            "winding": "nonZero"
+          }
+        ]
+      },
+      "parent": 17,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        10.0,
+        9.0
+      ],
+      "width": 8.0,
+      "height": 9.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "29": {
+      "id": 29,
+      "name": "trash_h1",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 5.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 17,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        13.0,
+        11.0
+      ],
+      "width": 0.0,
+      "height": 5.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "30": {
+      "id": 30,
+      "name": "trash_h2",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 5.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 17,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        15.0,
+        11.0
+      ],
+      "width": 0.0,
+      "height": 5.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.4,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "31": {
+      "id": 31,
+      "name": "dl_shaft",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 10.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 12,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        14.0,
+        5.0
+      ],
+      "width": 0.0,
+      "height": 10.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.75,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "32": {
+      "id": 32,
+      "name": "dl_head",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 4.0,
+            "y": 4.0,
+            "radius": 0.0
+          },
+          {
+            "x": 8.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 12,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        10.0,
+        12.0
+      ],
+      "width": 8.0,
+      "height": 4.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.75,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "round",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "33": {
+      "id": 33,
+      "name": "dl_tray",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 0.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 12,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        9.0,
+        18.0
+      ],
+      "width": 10.0,
+      "height": 0.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.75,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "34": {
+      "id": 34,
+      "name": "dl_tray_l",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 2.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 12,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        9.0,
+        16.0
+      ],
+      "width": 0.0,
+      "height": 2.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.75,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    },
+    "35": {
+      "id": 35,
+      "name": "dl_tray_r",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "radius": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 2.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 12,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        19.0,
+        16.0
+      ],
+      "width": 0.0,
+      "height": 2.0,
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.28627452,
+            "g": 0.3137255,
+            "b": 0.34117648,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.75,
+        "align": "center",
+        "sides": null,
+        "cap_start": "round",
+        "cap_end": "round",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    }
+  },
+  "next_id": 36,
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "current_page": 1,
+  "document_colors": [],
+  "comments": []
+}

@@ -1,0 +1,342 @@
+{
+  "format": "figcraft",
+  "version": 1,
+  "name": "ImageField",
+  "pages": [
+    1
+  ],
+  "current_page": 1,
+  "nodes": {
+    "1": {
+      "id": 1,
+      "name": "Page 1",
+      "type": "page",
+      "children": [
+        2
+      ],
+      "width": 0.0,
+      "height": 0.0,
+      "background": {
+        "r": 0.9607843,
+        "g": 0.9607843,
+        "b": 0.9607843,
+        "a": 1.0
+      },
+      "flows": [],
+      "prototype": {
+        "device": "None",
+        "background": {
+          "r": 0.11764706,
+          "g": 0.11764706,
+          "b": 0.11764706,
+          "a": 1.0
+        },
+        "rotation": "portrait"
+      }
+    },
+    "2": {
+      "id": 2,
+      "name": "ImageField",
+      "type": "frame",
+      "parent": 1,
+      "children": [
+        3,
+        4
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "width": 540.0,
+      "height": 120.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 1.0
+          },
+          "opacity": 0.0,
+          "visible": true,
+          "blend": "normal",
+          "colorAlpha": 0.0
+        }
+      ],
+      "clip": true
+    },
+    "3": {
+      "id": 3,
+      "name": "Label",
+      "type": "text",
+      "characters": "Image",
+      "style": {
+        "font_family": "Inter",
+        "font_style": "Regular",
+        "font_size": 13.0,
+        "line_height": {
+          "unit": "auto"
+        },
+        "letter_spacing": {
+          "unit": "percent",
+          "value": 0.0
+        },
+        "decoration": "none",
+        "case": "original",
+        "fills": null,
+        "link": null
+      },
+      "auto_resize": "height",
+      "align_h": "right",
+      "parent": 2,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        11.0
+      ],
+      "width": 160.0,
+      "height": 16.25,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.42352942,
+            "g": 0.45882353,
+            "b": 0.49019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ]
+    },
+    "4": {
+      "id": 4,
+      "name": "Preview",
+      "type": "frame",
+      "parent": 2,
+      "children": [
+        5
+      ],
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        176.0,
+        10.0
+      ],
+      "width": 120.0,
+      "height": 100.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.9137255,
+            "g": 0.9254902,
+            "b": 0.9372549,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.87058824,
+            "g": 0.8862745,
+            "b": 0.9019608,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "corners": {
+        "radii": [
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "smoothing": 0.0
+      },
+      "clip": true
+    },
+    "5": {
+      "id": 5,
+      "name": "ph",
+      "type": "vector",
+      "network": {
+        "vertices": [
+          {
+            "x": 10.0,
+            "y": 40.0,
+            "radius": 0.0
+          },
+          {
+            "x": 30.0,
+            "y": 15.0,
+            "radius": 0.0
+          },
+          {
+            "x": 45.0,
+            "y": 35.0,
+            "radius": 0.0
+          },
+          {
+            "x": 55.0,
+            "y": 25.0,
+            "radius": 0.0
+          },
+          {
+            "x": 70.0,
+            "y": 45.0,
+            "radius": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 45.0,
+            "radius": 0.0
+          }
+        ],
+        "segments": [
+          {
+            "a": 0,
+            "b": 1,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 1,
+            "b": 2,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 2,
+            "b": 3,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 3,
+            "b": 4,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "a": 4,
+            "b": 5,
+            "ta": [
+              0.0,
+              0.0
+            ],
+            "tb": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "regions": []
+      },
+      "parent": 4,
+      "blend": "normal",
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        40.0,
+        30.0
+      ],
+      "width": 60.0,
+      "height": 30.0,
+      "fills": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.80784315,
+            "g": 0.83137256,
+            "b": 0.85490197,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "strokes": [
+        {
+          "type": "solid",
+          "color": {
+            "r": 0.6784314,
+            "g": 0.70980394,
+            "b": 0.7411765,
+            "a": 1.0
+          },
+          "opacity": 1.0,
+          "visible": true,
+          "blend": "normal"
+        }
+      ],
+      "stroke": {
+        "weight": 1.5,
+        "align": "center",
+        "sides": null,
+        "cap_start": "none",
+        "cap_end": "none",
+        "join": "miter",
+        "miter_limit": 4.0,
+        "dashes": []
+      }
+    }
+  },
+  "next_id": 6,
+  "styles": [],
+  "variables": {
+    "collections": [],
+    "variables": []
+  },
+  "document_colors": [],
+  "comments": [],
+  "imageIndex": []
+}

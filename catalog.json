@@ -3,127 +3,6 @@
   "odooVersion": "20",
   "widgets": [
     {
-      "class": "ActivityView",
-      "category": "views",
-      "path": "widgets/views/activity_view.json",
-      "description": "Расписание активностей (activity view)",
-      "size": {
-        "width": 1106,
-        "height": 420
-      },
-      "slots": [],
-      "variants": [
-        "default"
-      ],
-      "tags": [
-        "views",
-        "activity"
-      ]
-    },
-    {
-      "class": "CalendarView",
-      "category": "views",
-      "path": "widgets/views/calendar_view.json",
-      "description": "Календарный custom view с сеткой недели и событиями",
-      "size": {
-        "width": 1106,
-        "height": 560
-      },
-      "slots": [
-        {
-          "name": "events",
-          "accepts": []
-        }
-      ],
-      "variants": [
-        "week",
-        "month",
-        "day"
-      ],
-      "tags": [
-        "views",
-        "calendar"
-      ]
-    },
-    {
-      "class": "GraphView",
-      "category": "views",
-      "path": "widgets/views/graph_view.json",
-      "description": "График: меры/группировка, bar + variant:line / variant:pie; slot:control_panel",
-      "size": {
-        "width": 1366,
-        "height": 600
-      },
-      "slots": [
-        {
-          "name": "control_panel",
-          "accepts": [
-            "ControlPanel"
-          ]
-        }
-      ],
-      "variants": [
-        "bar",
-        "line",
-        "pie"
-      ],
-      "tags": [
-        "views",
-        "graph"
-      ]
-    },
-    {
-      "class": "HierarchyView",
-      "category": "views",
-      "path": "widgets/views/hierarchy_view.json",
-      "description": "Иерархия / org chart: корень и дочерние узлы (contacts hierarchy)",
-      "size": {
-        "width": 1366,
-        "height": 560
-      },
-      "slots": [
-        {
-          "name": "control_panel",
-          "accepts": [
-            "ControlPanel"
-          ]
-        }
-      ],
-      "variants": [
-        "default"
-      ],
-      "tags": [
-        "views",
-        "hierarchy"
-      ]
-    },
-    {
-      "class": "PivotView",
-      "category": "views",
-      "path": "widgets/views/pivot_view.json",
-      "description": "Сводная таблица с мерами, группами и Total; variant:no_data; slot:control_panel",
-      "size": {
-        "width": 1366,
-        "height": 560
-      },
-      "slots": [
-        {
-          "name": "control_panel",
-          "accepts": [
-            "ControlPanel"
-          ]
-        }
-      ],
-      "variants": [
-        "default",
-        "no_data"
-      ],
-      "tags": [
-        "views",
-        "pivot"
-      ]
-    },
-    {
       "class": "DiscussChannelItem",
       "category": "discussion",
       "path": "widgets/discussion/discuss_channel_item.json",
@@ -238,6 +117,25 @@
       ]
     },
     {
+      "class": "BinaryField",
+      "category": "fields",
+      "path": "widgets/fields/binary_field.json",
+      "description": "файл: download / edit / clear; variant:empty — Upload",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "empty"
+      ],
+      "tags": [
+        "fields",
+        "binary"
+      ]
+    },
+    {
       "class": "BooleanField",
       "category": "fields",
       "path": "widgets/fields/boolean_field.json",
@@ -261,7 +159,7 @@
       "class": "CharField",
       "category": "fields",
       "path": "widgets/fields/char_field.json",
-      "description": "Строковое поле: подпись + однострочный input",
+      "description": "Однострочный текст; email/phone/url — иконки справа (envelope / phone+Call / globe)",
       "size": {
         "width": 540,
         "height": 40
@@ -269,11 +167,32 @@
       "slots": [],
       "variants": [
         "default",
+        "email",
+        "phone",
+        "url",
         "readonly",
         "invalid"
       ],
       "tags": [
         "fields"
+      ]
+    },
+    {
+      "class": "DateField",
+      "category": "fields",
+      "path": "widgets/fields/date_field.json",
+      "description": "Дата с иконкой календаря",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "date"
       ]
     },
     {
@@ -295,6 +214,103 @@
         "fields",
         "date",
         "datetime"
+      ]
+    },
+    {
+      "class": "FloatField",
+      "category": "fields",
+      "path": "widgets/fields/float_field.json",
+      "description": "Дробное число; variant:percentage / progress_bar",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "percentage",
+        "progress_bar"
+      ],
+      "tags": [
+        "fields",
+        "float"
+      ]
+    },
+    {
+      "class": "HtmlField",
+      "category": "fields",
+      "path": "widgets/fields/html_field.json",
+      "description": "HTML-редактор: toolbar + текст",
+      "size": {
+        "width": 540,
+        "height": 200
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "html"
+      ]
+    },
+    {
+      "class": "ImageField",
+      "category": "fields",
+      "path": "widgets/fields/image_field.json",
+      "description": "Превью изображения (виджет image, не binary)",
+      "size": {
+        "width": 540,
+        "height": 120
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "image",
+        "binary"
+      ]
+    },
+    {
+      "class": "IntegerField",
+      "category": "fields",
+      "path": "widgets/fields/integer_field.json",
+      "description": "Целое число (integer)",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "integer"
+      ]
+    },
+    {
+      "class": "Many2manyField",
+      "category": "fields",
+      "path": "widgets/fields/many2many_field.json",
+      "description": "tags; checkboxes; list 1366 + list_trash / list_cross",
+      "size": {
+        "width": 540,
+        "height": 56
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "checkboxes",
+        "list",
+        "list_trash",
+        "list_cross"
+      ],
+      "tags": [
+        "fields",
+        "many2many"
       ]
     },
     {
@@ -334,6 +350,44 @@
       ],
       "tags": [
         "fields"
+      ]
+    },
+    {
+      "class": "One2manyField",
+      "category": "fields",
+      "path": "widgets/fields/one2many_field.json",
+      "description": "One2many 1366px; variant:trash (корзина) / variant:cross (крестик unlink)",
+      "size": {
+        "width": 1366,
+        "height": 260
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "trash",
+        "cross"
+      ],
+      "tags": [
+        "fields",
+        "one2many"
+      ]
+    },
+    {
+      "class": "ReferenceField",
+      "category": "fields",
+      "path": "widgets/fields/reference_field.json",
+      "description": "Reference: модель + запись",
+      "size": {
+        "width": 540,
+        "height": 40
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "fields",
+        "reference"
       ]
     },
     {
@@ -627,6 +681,49 @@
       ]
     },
     {
+      "class": "ActivityView",
+      "category": "views",
+      "path": "widgets/views/activity_view.json",
+      "description": "Расписание активностей (activity view)",
+      "size": {
+        "width": 1106,
+        "height": 420
+      },
+      "slots": [],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "views",
+        "activity"
+      ]
+    },
+    {
+      "class": "CalendarView",
+      "category": "views",
+      "path": "widgets/views/calendar_view.json",
+      "description": "Календарный custom view с сеткой недели и событиями",
+      "size": {
+        "width": 1106,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "events",
+          "accepts": []
+        }
+      ],
+      "variants": [
+        "week",
+        "month",
+        "day"
+      ],
+      "tags": [
+        "views",
+        "calendar"
+      ]
+    },
+    {
       "class": "ControlPanel",
       "category": "views",
       "path": "widgets/views/control_panel.json",
@@ -648,27 +745,6 @@
       ],
       "tags": [
         "views",
-        "control-panel"
-      ]
-    },
-    {
-      "class": "SearchBar",
-      "category": "views",
-      "path": "widgets/views/search_bar.json",
-      "description": "Поиск ControlPanel: закрытый, open (dropdown) и filtered (фасеты)",
-      "size": {
-        "width": 700,
-        "height": 32
-      },
-      "slots": [],
-      "variants": [
-        "default",
-        "open",
-        "filtered"
-      ],
-      "tags": [
-        "views",
-        "search",
         "control-panel"
       ]
     },
@@ -699,11 +775,20 @@
           "accepts": [
             "CharField",
             "TextField",
+            "HtmlField",
             "BooleanField",
-            "Many2oneField",
-            "SelectionField",
+            "IntegerField",
+            "FloatField",
+            "MonetaryField",
+            "DateField",
             "DateTimeField",
-            "MonetaryField"
+            "SelectionField",
+            "Many2oneField",
+            "Many2manyField",
+            "One2manyField",
+            "ReferenceField",
+            "BinaryField",
+            "ImageField"
           ]
         }
       ],
@@ -713,6 +798,58 @@
       "tags": [
         "views",
         "form"
+      ]
+    },
+    {
+      "class": "GraphView",
+      "category": "views",
+      "path": "widgets/views/graph_view.json",
+      "description": "График: меры/группировка, bar + variant:line / variant:pie; slot:control_panel",
+      "size": {
+        "width": 1366,
+        "height": 600
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
+      "variants": [
+        "bar",
+        "line",
+        "pie"
+      ],
+      "tags": [
+        "views",
+        "graph"
+      ]
+    },
+    {
+      "class": "HierarchyView",
+      "category": "views",
+      "path": "widgets/views/hierarchy_view.json",
+      "description": "Иерархия / org chart: корень и дочерние узлы (contacts hierarchy)",
+      "size": {
+        "width": 1366,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
+      "variants": [
+        "default"
+      ],
+      "tags": [
+        "views",
+        "hierarchy"
       ]
     },
     {
@@ -774,6 +911,53 @@
         "views",
         "list",
         "tree"
+      ]
+    },
+    {
+      "class": "PivotView",
+      "category": "views",
+      "path": "widgets/views/pivot_view.json",
+      "description": "Сводная таблица с мерами, группами и Total; variant:no_data; slot:control_panel",
+      "size": {
+        "width": 1366,
+        "height": 560
+      },
+      "slots": [
+        {
+          "name": "control_panel",
+          "accepts": [
+            "ControlPanel"
+          ]
+        }
+      ],
+      "variants": [
+        "default",
+        "no_data"
+      ],
+      "tags": [
+        "views",
+        "pivot"
+      ]
+    },
+    {
+      "class": "SearchBar",
+      "category": "views",
+      "path": "widgets/views/search_bar.json",
+      "description": "Поиск ControlPanel: закрытый, open (dropdown) и filtered (фасеты)",
+      "size": {
+        "width": 700,
+        "height": 32
+      },
+      "slots": [],
+      "variants": [
+        "default",
+        "open",
+        "filtered"
+      ],
+      "tags": [
+        "views",
+        "search",
+        "control-panel"
       ]
     }
   ]
